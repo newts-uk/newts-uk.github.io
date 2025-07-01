@@ -10,6 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
     loadServices();
     loadTeam();
 
+    // Google Form modal functionality
+    const googleFormLink = document.getElementById('google-form-link');
+    if (googleFormLink) {
+        googleFormLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            openGoogleFormModal();
+        });
+    }
+
     // Hamburger menu functionality
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('nav-active');
@@ -163,15 +172,39 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function openGoogleFormModal() {
+        const modalContent = modal.querySelector('.modal-content');
+        modalContent.classList.add('large-modal');
+        
+        modalBody.innerHTML = `
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScyEI5s1Fjm7_Wglkm1r4yais9ueGvZK8-O7xuTS1Sslpaceg/viewform?embedded=true" 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0">
+                Loading…
+            </iframe>
+        `;
+        
+        modal.classList.add('modal-visible');
+    }
+
     if (closeButton) {
         closeButton.addEventListener('click', () => {
             modal.classList.remove('modal-visible');
+            // Reset modal size when closing
+            const modalContent = modal.querySelector('.modal-content');
+            modalContent.classList.remove('large-modal');
         });
     }
 
     window.addEventListener('click', event => {
         if (event.target == modal) {
             modal.classList.remove('modal-visible');
+            // Reset modal size when closing
+            const modalContent = modal.querySelector('.modal-content');
+            modalContent.classList.remove('large-modal');
         }
     });
 

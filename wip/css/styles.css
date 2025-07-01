@@ -517,11 +517,58 @@ section h3 {
     position: relative;
 }
 
+/* Large modal for Google Form */
+.modal-content.large-modal {
+    margin: 1% auto;
+    width: 90vw;
+    max-width: 1200px;
+    height: 95vh;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+.modal-content.large-modal .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 1001;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    float: none;
+}
+
+.modal-content.large-modal iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0 0 15px 15px;
+    flex: 1;
+}
+
+.modal-content.large-modal #modal-body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 .close-button {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    z-index: 1001;
+    position: relative;
 }
 
 .close-button:hover,
@@ -598,6 +645,20 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.85em;
+}
+
+/* Footer form link styling */
+.footer-form-link {
+    color: #A8D8DC;
+    text-decoration: none;
+    
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.footer-form-link:hover {
+    color: #ffffff;
+    border-bottom-color: #A8D8DC;
 }
 
 /* ================================
