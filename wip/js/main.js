@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         servicePanel.className = service.details ? 'service-panel clickable' : 'service-panel';
         servicePanel.innerHTML = `
             <h3>${service.title}</h3>
-            <p>${service.summary}</p>
+            <div class="service-summary" style="display: none;">${service.summary}</div>
             ${service.details ? `<div class="extra-content"><p>${service.details}</p></div>` : ''}
         `;
         return servicePanel;
@@ -150,6 +150,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 event.preventDefault();
                 event.stopPropagation();
 
+                const modalContent = modal.querySelector('.modal-content');
+                modalContent.classList.add('team-modal');
+
                 const imgSrc = link.dataset.image;
                 const name = link.dataset.name;
                 const fullName = link.dataset.fullname;
@@ -177,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modalContent.classList.add('large-modal');
         
         modalBody.innerHTML = `
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScyEI5s1Fjm7_Wglkm1r4yais9ueGvZK8-O7xuTS1Sslpaceg/viewform?embedded=true" 
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-QKApTw1rERnWs0Pw-GLfxRhkpabuSlJUlhN6rbaiEVED0g/viewform?embedded=true" 
                     width="100%" 
                     height="100%" 
                     frameborder="0" 
@@ -196,6 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Reset modal size when closing
             const modalContent = modal.querySelector('.modal-content');
             modalContent.classList.remove('large-modal');
+            modalContent.classList.remove('team-modal');
         });
     }
 
@@ -205,6 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Reset modal size when closing
             const modalContent = modal.querySelector('.modal-content');
             modalContent.classList.remove('large-modal');
+            modalContent.classList.remove('team-modal');
         }
     });
 
