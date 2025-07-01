@@ -2,6 +2,10 @@
    BASE STYLES
    ================================ */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -126,13 +130,33 @@ nav ul li a {
    HERO SECTION
    ================================ */
 
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    border-bottom: none;
+}
+
 .hero-container {
-    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
 }
 
 .hero-image {
-    max-width: 100%;
+    max-width: 90vw; /* Allow it to use most of viewport width */
+    max-height: 90vh; /* Allow it to use most of viewport height */
+    width: auto;
     height: auto;
+    object-fit: contain; /* Maintain aspect ratio while maximizing size */
 }
 
 /* ================================
@@ -144,6 +168,20 @@ section {
     margin: 20px auto;
     padding: 40px 20px;
     border-bottom: 1px solid #ddd;
+    min-height: 100vh; /* Each section fills at least full viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Hero section overrides */
+section#home {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+    height: 100vh; /* Hero stays exactly 100vh */
+    min-height: auto; /* Override the min-height for hero */
 }
 
 section h2,
@@ -167,10 +205,15 @@ section h3 {
    TEAM SECTION
    ================================ */
 
+#about {
+    justify-content: center; /* Center all content vertically in viewport */
+}
+
 .team-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 30px; /* Reasonable gap after "Meet the Team" */
+    align-items: flex-start; /* Align team members to top of their container */
 }
 
 .team-member {
@@ -178,9 +221,22 @@ section h3 {
     width: 30%;
 }
 
+.team-member .image-wrapper {
+    max-width: 300px;
+    width: 100%;
+    aspect-ratio: 1; /* Maintains perfect circle */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .team-member img {
     width: 100%;
-    border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
@@ -195,7 +251,7 @@ section h3 {
     text-decoration: none;
 }
 
-.team-member a:hover img {
+.team-member a:hover .image-wrapper {
     transform: scale(1.05);
 }
 
@@ -206,14 +262,14 @@ section h3 {
 /* Team Modal */
 .team-modal-content {
     display: flex;
-    align-items: flex-start;
+    align-items: center; /* Center image vertically with text */
     gap: 20px;
 }
 
 .team-modal-img {
-    flex: 0 0 150px;
-    width: 150px;
-    height: 150px;
+    flex: 0 0 300px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
 }
 
@@ -235,11 +291,50 @@ section h3 {
    SERVICES SECTION
    ================================ */
 
+#services {
+    justify-content: flex-start; /* Start content at top */
+}
+
 .services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
     gap: 20px;
+    grid-template-columns: 1fr; /* Default to 1 column for mobile */
+    flex: 1; /* Take up remaining space in the section */
+    align-content: start; /* Align grid content to start */
+}
+
+/* 2 columns on medium screens */
+@media (min-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* 3 columns on wide screens */
+@media (min-width: 1200px) {
+    .services-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.service-row {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr; /* Default to 1 column for mobile */
+}
+
+/* 2 columns on medium screens */
+@media (min-width: 768px) {
+    .service-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* 3 columns on wide screens */
+@media (min-width: 1200px) {
+    .service-row {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .service-column {
@@ -253,6 +348,24 @@ section h3 {
     background-color: #EAE0D5;
     padding: 20px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.service-panel.clickable {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-panel.clickable:hover {
+    background-color: #DDD4C8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-panel:not(.clickable) {
+    cursor: default;
 }
 
 .extra-content {
@@ -267,22 +380,32 @@ section h3 {
    CONTACT SECTION
    ================================ */
 
+#contact {
+    justify-content: flex-start; /* Start content at top instead of center */
+    padding: 80px 20px 40px 20px; /* More top padding to position better */
+}
+
 .contact-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+    align-items: flex-start;
+    width: 100%; /* Ensure full width usage */
+    max-width: none; /* Remove any max-width constraints */
 }
 
 .contact-form,
 .contact-right-column {
-    flex: 1 1 100%;
+    flex: 1 1 45%; /* Give them more specific sizing */
+    min-width: 300px; /* Minimum width for readability */
 }
 
 .contact-right-column {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: fit-content; /* Adjust height to content */
 }
 
 .contact-form,
@@ -294,15 +417,23 @@ section h3 {
 }
 
 .map-panel {
+    background-color: #EAE0D5;
     padding: 0;
     overflow: hidden;
     height: 300px;
+    border-radius: 15px;
+    min-height: 300px; /* Ensure minimum height */
+    position: relative; /* Help with iframe positioning */
 }
 
 .map-panel iframe {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
     border: 0;
+    display: block; /* Ensure iframe displays */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* Contact Form */
@@ -405,30 +536,68 @@ section h3 {
    ================================ */
 
 footer {
-    background-color: #EAE0D5;
-    padding: 20px 0;
+    background-color: #294D3B;
+    color: white;
+    padding: 40px 0 20px 0;
     border-top: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* First column twice as wide as others */
+    gap: 40px;
+    margin-bottom: 30px;
 }
 
-.footer-links ul {
+.footer-about h3,
+.footer-policies h3,
+.footer-navigation h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 8px;
+}
+
+.footer-about p {
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95em;
+}
+
+.footer-policies ul,
+.footer-navigation ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.footer-links ul li {
-    margin-bottom: 10px;
+.footer-policies ul li,
+.footer-navigation ul li {
+    margin-bottom: 8px;
 }
 
-.footer-links ul li a {
+.footer-policies ul li a,
+.footer-navigation ul li a {
     text-decoration: none;
-    color: #294D3B;
+    color: rgba(255, 255, 255, 0.9);
+    transition: color 0.3s ease;
+    font-size: 0.9em;
+}
+
+.footer-policies ul li a:hover,
+.footer-navigation ul li a:hover {
+    color: #EAE0D5;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85em;
 }
 
 /* ================================
@@ -500,6 +669,68 @@ footer {
         margin: 15px 0;
     }
 
+    /* Hero Section */
+    .hero-image {
+        max-width: 85vw; /* Slightly smaller on mobile for better margins */
+        max-height: 80vh; /* Still large but leave room for navigation */
+    }
+
+    /* Team Section */
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .team-member {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Only hide images on very small screens */
+    @media screen and (max-width: 480px) {
+        .team-member .image-wrapper {
+            display: none;
+        }
+
+        .team-name {
+            margin-top: 0;
+            font-size: 1.1em;
+            padding: 10px;
+            background-color: #EAE0D5;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .team-member a:hover .team-name {
+            background-color: #DDD4C8;
+        }
+    }
+
+    /* Team Modal - Mobile Layout ONLY */
+    .modal .team-modal-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .modal .team-modal-img {
+        flex: none;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .modal .team-modal-text {
+        width: 100%;
+    }
+
+    .modal .team-modal-text h3,
+    .modal .team-modal-text h4 {
+        text-align: center;
+    }
+
     /* Contact Info */
     .contact-link .text {
         display: none;
@@ -508,6 +739,40 @@ footer {
     .contact-link .icon {
         display: inline;
         font-size: 1.2em;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        gap: 30px;
+        text-align: left;
+    }
+
+    .footer-about,
+    .footer-policies,
+    .footer-navigation {
+        width: 100%;
+    }
+
+    .footer-policies ul,
+    .footer-navigation ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .footer-policies ul li,
+    .footer-navigation ul li {
+        margin-bottom: 5px;
+        flex: 0 0 calc(50% - 7.5px); /* Two columns on mobile for links */
+    }
+}
+
+/* Medium screens - tablets */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    /* Team Section */
+    .team-member .image-wrapper {
+        max-width: 200px; /* Smaller on tablets */
     }
 }
 
