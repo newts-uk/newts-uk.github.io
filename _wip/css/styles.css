@@ -1,0 +1,500 @@
+/* ================================
+   BASE STYLES
+   ================================ */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAF6E9;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #294D3B;
+}
+
+a:visited {
+    color: #294D3B;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ================================
+   HEADER
+   ================================ */
+
+header {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+}
+
+header.hidden {
+    transform: translateY(-100%);
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #294D3B;
+    margin-left: 15px;
+}
+
+.contact-link .icon {
+    margin-right: 5px;
+}
+
+/* ================================
+   NAVIGATION
+   ================================ */
+
+nav {
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    background-color: #FAF6E9;
+    z-index: 1000;
+}
+
+nav .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #294D3B;
+    font-weight: bold;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger.active {
+    transform: rotate(90deg);
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+}
+
+/* ================================
+   HERO SECTION
+   ================================ */
+
+.hero-container {
+    padding-top: 20px;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================================
+   SECTIONS
+   ================================ */
+
+section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 40px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2,
+section h3 {
+    text-align: center;
+
+}
+
+/* ================================
+   TEAM SECTION
+   ================================ */
+
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+    width: 30%;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team-member a {
+    text-decoration: none;
+    color: #294D3B;
+    font-weight: bold;
+}
+
+/* Team Modal */
+.team-modal-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.team-modal-img {
+    flex: 0 0 150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.team-modal-text h3 {
+    margin-top: 0;
+    text-align: left;
+}
+
+.team-modal-text h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #666;
+    font-style: italic;
+    font-weight: normal;
+    text-align: left;
+}
+
+/* ================================
+   SERVICES SECTION
+   ================================ */
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.service-column {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-panel {
+    background-color: #EAE0D5;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.extra-content {
+    display: none;
+}
+
+.modal .extra-content {
+    display: block;
+}
+
+/* ================================
+   CONTACT SECTION
+   ================================ */
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contact-form,
+.contact-right-column {
+    flex: 1 1 100%;
+}
+
+.contact-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form,
+.contact-details,
+.map-panel {
+    background-color: #EAE0D5;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.map-panel {
+    padding: 0;
+    overflow: hidden;
+    height: 300px;
+}
+
+.map-panel iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Contact Form */
+#contact .contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form {
+    width: 95%;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#contact label {
+    margin-bottom: 10px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact textarea {
+    flex-grow: 1;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #294D3B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-details a {
+    color: #294D3B;
+}
+
+/* ================================
+   MODAL
+   ================================ */
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.modal-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: #EAE0D5;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    background-color: #EAE0D5;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #294D3B;
+}
+
+/* ================================
+   UTILITY CLASSES
+   ================================ */
+
+#map-placeholder {
+    display: none;
+}
+
+.logo-container {
+    text-align: center;
+    color: #294D3B;
+}
+
+.logo-container a {
+    color: #294D3B;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.bottom-link {
+    margin-top: 20px;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    #nav-links {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        background-color: #f2f2f2;
+        flex-direction: column;
+        padding: 60px 20px 20px 20px;
+        text-align: left;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    #nav-links.nav-active {
+        transform: translateX(0);
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 1000;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav > ul:not(#nav-links) {
+        display: none;
+    }
+
+    #nav-links li {
+        margin: 15px 0;
+    }
+
+    /* Contact Info */
+    .contact-link .text {
+        display: none;
+    }
+
+    .contact-link .icon {
+        display: inline;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    /* Services */
+    .service-column {
+        flex: 1;
+    }
+
+    /* Contact */
+    .contact-form,
+    .contact-right-column {
+        flex: 1;
+    }
+}
