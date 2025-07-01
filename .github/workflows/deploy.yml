@@ -1,0 +1,42 @@
+name: Deploy static site from main and wip to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - wip
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up variables
+        id: vars
+        run: |
+          BRANCH="${GITHUB_REF#refs/heads/}"
+          if [ "$BRANCH" = "main" ]; then
+            TARGET_DIR="."
+          else
+            TARGET_DIR="$BRANCH"
+          fi
+          echo "target_dir=$TARGET_DIR" >> $GITHUB_OUTPUT
+
+      - name: Prepare deploy folder
+        run: |
+          mkdir -p deploy/${{ steps.vars.outputs.target_dir }}
+          cp -r * deploy/${{ steps.vars.outputs.target_dir }}/
+          rm -rf deploy/.git deploy/.github  # Avoid pushing workflow code
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./deploy
+          publish_branch: gh-pages
+          keep_files: true  # Do not wipe out other branch content
