@@ -27,11 +27,10 @@ jobs:
           fi
           echo "target_dir=$TARGET_DIR" >> $GITHUB_OUTPUT
 
-      - name: Prepare deploy folder
+      - name: Prepare deploy directory
         run: |
           mkdir -p deploy/${{ steps.vars.outputs.target_dir }}
-          cp -r * deploy/${{ steps.vars.outputs.target_dir }}/
-          rm -rf deploy/.git deploy/.github  # Avoid pushing workflow code
+          rsync -av --exclude 'deploy' --exclude '.git' --exclude '.github' ./ deploy/${{ steps.vars.outputs.target_dir }}/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
@@ -39,4 +38,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./deploy
           publish_branch: gh-pages
-          keep_files: true  # Do not wipe out other branch content
+          keep_files: true
