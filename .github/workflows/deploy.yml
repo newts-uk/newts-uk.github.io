@@ -25,7 +25,7 @@ jobs:
           else
             TARGET_DIR="$BRANCH"
           fi
-          echo "target_dir=$TARGET_DIR" >> $GITHUB_OUTPUT
+          echo "target_dir=_$TARGET_DIR" >> $GITHUB_OUTPUT
 
       - name: Prepare deploy directory
         run: |
