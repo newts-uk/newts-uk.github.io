@@ -4,7 +4,7 @@
       "id": "amy",
       "name": "Amy",
       "fullName": "Amy Coombes",
-      "title": "Specialist Teacher and Assessor",
+      "title": "Education Specialist",
       "image": "images/amy.png",
       "bio": "<p>Amy is a dedicated professional with a passion for education. She has over 10 years of experience in the field.</p>"
     },
@@ -13,16 +13,16 @@
       "name": "Becky",
       "fullName": "Becky Johnson",
       "title": "Business Administrator",
-      "image": "https://placehold.co/150",
-      "bio": "<p>Becky is an expert in teaching services, known for her innovative and effective teaching methods.</p>"
+      "image": "images/becky.png",
+      "bio": "<p>I have been the Business Administrator for over 2 years working with Steph and Amy at the office in Strixton.<br /><br />I have worked in schools for over 13 years, many of which were spent working with learners with Special Educational Needs.<br /><br />I currently work as a Finance Assistant at East Hunsbury Primary School every morning. I am a registered, licenced bookkeeper with the AAT, and gained a Distinction in my Level 3 Diploma in Accounting.<br />I deal with all the finance, emails, bookings, and paperwork.</p>"
     },
     {
       "id": "stephanie",
       "name": "Stephanie", 
       "fullName": "Stephanie Rumney",
-      "title": "Specialist Teacher and Assessor",
+      "title": "Education Specialist",
       "image": "./images/steph.png",
-      "bio": "<p>Stephanie specializes in wellbeing services and has helped countless individuals achieve their potential.</p>"
+      "bio": "<p>As an individual who was diagnosed with dyslexia at 41 years old and has a neuro-diverse family, I fully appreciate how learning differences can significantly impact an individual’s experience of their education and how it can affect their emotional and mental well-being while in education and during their working and home life.<br /><br />School is not the only place an individual can get access to support. Through my role as an assessor for dyslexia and as a Specialist Teacher, my working philosophy is to engage both children and adults, helping them unlock their potential and ensuring they understand any learning differences they may have.<br /><br />Part of this process involves learning about themselves as learners and understanding their Executive Function Skills Profile. Executive function skills are a set of cognitive processes that help people plan, organise, and manage daily tasks and goals. These skills, including working memory, flexible thinking, and self-control, are essential for learning, work, and overall life management. Difficulty with executive function can lead to challenges with maintaining focus, studying, following directions, and regulating emotions.  It is essential to learn how to coexist with them, utilise our strengths to their advantage, and develop strategies to support any identified challenges.<br /><br />I hold an Assessors Practising Certificate (APC); this has to be renewed every three years. During this period, it is expected by the awarding body that I complete up to 30 hours of CPD (5 hours SASC approved) each year.</p>"
     }
   ]
 }
