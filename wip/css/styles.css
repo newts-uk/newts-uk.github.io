@@ -206,15 +206,14 @@ section h3 {
    ================================ */
 
 #about {
-    justify-content: flex-start; /* Start content at top but fill viewport */
+    justify-content: center; /* Center all content vertically in viewport */
 }
 
 .team-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    flex: 1; /* Take up remaining space */
-    align-items: center; /* Center team members vertically in available space */
+    margin-top: 30px; /* Reasonable gap after "Meet the Team" */
+    align-items: flex-start; /* Align team members to top of their container */
 }
 
 .team-member {
@@ -382,7 +381,8 @@ section h3 {
    ================================ */
 
 #contact {
-    justify-content: center; /* Center content vertically in viewport */
+    justify-content: flex-start; /* Start content at top instead of center */
+    padding: 80px 20px 40px 20px; /* More top padding to position better */
 }
 
 .contact-container {
@@ -390,19 +390,22 @@ section h3 {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-    flex: 1; /* Take up available space in the section */
     align-items: flex-start;
+    width: 100%; /* Ensure full width usage */
+    max-width: none; /* Remove any max-width constraints */
 }
 
 .contact-form,
 .contact-right-column {
-    flex: 1 1 100%;
+    flex: 1 1 45%; /* Give them more specific sizing */
+    min-width: 300px; /* Minimum width for readability */
 }
 
 .contact-right-column {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: fit-content; /* Adjust height to content */
 }
 
 .contact-form,
@@ -414,15 +417,23 @@ section h3 {
 }
 
 .map-panel {
+    background-color: #EAE0D5;
     padding: 0;
     overflow: hidden;
     height: 300px;
+    border-radius: 15px;
+    min-height: 300px; /* Ensure minimum height */
+    position: relative; /* Help with iframe positioning */
 }
 
 .map-panel iframe {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
     border: 0;
+    display: block; /* Ensure iframe displays */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* Contact Form */
