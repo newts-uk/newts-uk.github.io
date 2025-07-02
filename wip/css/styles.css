@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FAF6E9;
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -186,6 +186,7 @@ section#home {
 
 section h2,
 section h3 {
+    font-family: "Spectral", serif;
     text-align: center;
     color: #294D3B;;
 }
@@ -261,7 +262,7 @@ section h3 {
 /* Team Modal */
 .team-modal-content {
     display: flex;
-    align-items: center;
+    align-items: center; /* Center image vertically with text */
     gap: 20px;
 }
 
@@ -350,20 +351,6 @@ section h3 {
     display: flex;
     flex-direction: column;
     flex: 1;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    min-height: 200px;
-}
-
-.service-panel h3 {
-    margin: 0 0 10px 0;
-    font-size: 1.5em;
-}
-
-.service-panel p {
-    margin: 0;
-    line-height: 1.4;
 }
 
 .service-panel.clickable {
@@ -387,30 +374,6 @@ section h3 {
 
 .modal .extra-content {
     display: block;
-}
-
-/* Show service summary in modal */
-.modal .service-summary {
-    display: block !important;
-    margin: 10px 0;
-}
-
-/* Reset service panel styling in modal */
-.modal .service-panel {
-    text-align: left;
-    justify-content: flex-start;
-    align-items: stretch;
-    min-height: auto;
-}
-
-.modal .service-panel h3 {
-    text-align: left;
-    margin: 0 0 15px 0;
-}
-
-.modal .service-panel p {
-    text-align: left;
-    margin: 0 0 10px 0;
 }
 
 /* ================================
@@ -554,65 +517,11 @@ section h3 {
     position: relative;
 }
 
-/* Wider modal for team members */
-.modal-content.team-modal {
-    width: 90%;
-    max-width: 800px;
-    margin: 8% auto;
-}
-
-/* Large modal for Google Form */
-.modal-content.large-modal {
-    margin: 1% auto;
-    width: 90vw;
-    max-width: 1200px;
-    height: 95vh;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    background-color: #f8f9fa;
-}
-
-.modal-content.large-modal .close-button {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    z-index: 1001;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    float: none;
-}
-
-.modal-content.large-modal iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 0 0 15px 15px;
-    flex: 1;
-}
-
-.modal-content.large-modal #modal-body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
 .close-button {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-    z-index: 1001;
-    position: relative;
 }
 
 .close-button:hover,
@@ -689,20 +598,6 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.85em;
-}
-
-/* Footer form link styling */
-.footer-form-link {
-    color: #A8D8DC;
-    text-decoration: none;
-    
-    border-bottom: 1px solid transparent;
-    transition: all 0.3s ease;
-}
-
-.footer-form-link:hover {
-    color: #ffffff;
-    border-bottom-color: #A8D8DC;
 }
 
 /* ================================
@@ -810,6 +705,30 @@ footer {
         .team-member a:hover .team-name {
             background-color: #DDD4C8;
         }
+    }
+
+    /* Team Modal - Mobile Layout ONLY */
+    .modal .team-modal-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .modal .team-modal-img {
+        flex: none;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .modal .team-modal-text {
+        width: 100%;
+    }
+
+    .modal .team-modal-text h3,
+    .modal .team-modal-text h4 {
+        text-align: center;
     }
 
     /* Contact Info */
