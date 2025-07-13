@@ -1,0 +1,833 @@
+/* ================================
+   BASE STYLES
+   ================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAF6E9;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #294D3B;
+}
+
+a:visited {
+    color: #294D3B;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ================================
+   HEADER
+   ================================ */
+
+header {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s ease-in-out;
+    background-color: #294D3B;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+}
+
+header.hidden {
+    transform: translateY(-100%);
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.contact-link .icon {
+    margin-right: 5px;
+}
+
+/* ================================
+   NAVIGATION
+   ================================ */
+
+nav {
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    background-color: #EAE0D5;
+    z-index: 1000;
+}
+
+nav .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #294D3B;
+    font-weight: bold;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger.active {
+    transform: rotate(90deg);
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+}
+
+/* ================================
+   HERO SECTION
+   ================================ */
+
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    border-bottom: none;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.hero-image {
+    max-width: 90vw; /* Allow it to use most of viewport width */
+    max-height: 90vh; /* Allow it to use most of viewport height */
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Maintain aspect ratio while maximizing size */
+}
+
+/* ================================
+   SECTIONS
+   ================================ */
+
+section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 40px 20px;
+    border-bottom: 1px solid #ddd;
+    min-height: 100vh; /* Each section fills at least full viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Hero section overrides */
+section#home {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+    height: 100vh; /* Hero stays exactly 100vh */
+    min-height: auto; /* Override the min-height for hero */
+}
+
+section h2,
+section h3 {
+    font-family: "Spectral", serif;
+    text-align: center;
+    color: #294D3B;;
+}
+
+section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* ================================
+   TEAM SECTION
+   ================================ */
+
+#about {
+    justify-content: center; /* Center all content vertically in viewport */
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* Reasonable gap after "Meet the Team" */
+    align-items: flex-start; /* Align team members to top of their container */
+}
+
+.team-member {
+    text-align: center;
+    width: 30%;
+}
+
+.team-member .image-wrapper {
+    max-width: 300px;
+    width: 100%;
+    aspect-ratio: 1; /* Maintains perfect circle */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-member a {
+    text-decoration: none;
+    color: #294D3B;
+    font-weight: bold;
+    display: block;
+}
+
+.team-member a:hover {
+    text-decoration: none;
+}
+
+.team-member a:hover .image-wrapper {
+    transform: scale(1.05);
+}
+
+.team-name {
+    margin-top: 10px;
+}
+
+/* Team Modal */
+.team-modal-content {
+    display: flex;
+    align-items: center; /* Center image vertically with text */
+    gap: 20px;
+}
+
+.team-modal-img {
+    flex: 0 0 300px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.team-modal-text h3 {
+    margin-top: 0;
+    text-align: left;
+}
+
+.team-modal-text h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #666;
+    font-style: italic;
+    font-weight: normal;
+    text-align: left;
+}
+
+/* ================================
+   SERVICES SECTION
+   ================================ */
+
+#services {
+    justify-content: flex-start; /* Start content at top */
+}
+
+.services-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr; /* Default to 1 column for mobile */
+    flex: 1; /* Take up remaining space in the section */
+    align-content: start; /* Align grid content to start */
+}
+
+/* 2 columns on medium screens */
+@media (min-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* 3 columns on wide screens */
+@media (min-width: 1200px) {
+    .services-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.service-row {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr; /* Default to 1 column for mobile */
+}
+
+/* 2 columns on medium screens */
+@media (min-width: 768px) {
+    .service-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* 3 columns on wide screens */
+@media (min-width: 1200px) {
+    .service-row {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.service-column {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-panel {
+    background-color: #EAE0D5;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.service-panel.clickable {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-panel.clickable:hover {
+    background-color: #DDD4C8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-panel:not(.clickable) {
+    cursor: default;
+}
+
+.extra-content {
+    display: none;
+}
+
+.modal .extra-content {
+    display: block;
+}
+
+/* ================================
+   CONTACT SECTION
+   ================================ */
+
+#contact {
+    justify-content: flex-start; /* Start content at top instead of center */
+    padding: 80px 20px 40px 20px; /* More top padding to position better */
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%; /* Ensure full width usage */
+    max-width: none; /* Remove any max-width constraints */
+}
+
+.contact-form,
+.contact-right-column {
+    flex: 1 1 45%; /* Give them more specific sizing */
+    min-width: 300px; /* Minimum width for readability */
+}
+
+.contact-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content; /* Adjust height to content */
+}
+
+.contact-form,
+.contact-details,
+.map-panel {
+    background-color: #EAE0D5;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.map-panel {
+    background-color: #EAE0D5;
+    padding: 0;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 15px;
+    min-height: 300px; /* Ensure minimum height */
+    position: relative; /* Help with iframe positioning */
+}
+
+.map-panel iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: 0;
+    display: block; /* Ensure iframe displays */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Contact Form */
+#contact .contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form {
+    width: 95%;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#contact label {
+    margin-bottom: 10px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact textarea {
+    flex-grow: 1;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #294D3B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-details a {
+    color: #294D3B;
+}
+
+/* ================================
+   MODAL
+   ================================ */
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.modal-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: #EAE0D5;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* Large Modal for Forms */
+.modal-content.large-modal {
+    width: 95%;
+    max-width: 1200px;
+    height: 90vh;
+    margin: 2.5% auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.modal-content.large-modal .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 1001;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.modal-content.large-modal #modal-body {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content.large-modal #modal-body iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    flex: 1;
+    min-height: 0;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    background-color: #294D3B;
+    color: white;
+    padding: 40px 0 20px 0;
+    border-top: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* First column twice as wide as others */
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-about h3,
+.footer-policies h3,
+.footer-navigation h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 8px;
+}
+
+.footer-about p {
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95em;
+}
+
+.footer-policies ul,
+.footer-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-policies ul li,
+.footer-navigation ul li {
+    margin-bottom: 8px;
+}
+
+.footer-policies ul li a,
+.footer-navigation ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    transition: color 0.3s ease;
+    font-size: 0.9em;
+}
+
+.footer-policies ul li a:hover,
+.footer-navigation ul li a:hover {
+    color: #EAE0D5;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85em;
+}
+
+/* ================================
+   UTILITY CLASSES
+   ================================ */
+
+#map-placeholder {
+    display: none;
+}
+
+.logo-container {
+    text-align: center;
+    color: #294D3B;
+}
+
+.logo-container a {
+    color: #294D3B;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.bottom-link {
+    margin-top: 20px;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    #nav-links {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        background-color: #EAE0D5;
+        flex-direction: column;
+        padding: 60px 20px 20px 20px;
+        text-align: left;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    #nav-links.nav-active {
+        transform: translateX(0);
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 1000;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav > ul:not(#nav-links) {
+        display: none;
+    }
+
+    #nav-links li {
+        margin: 15px 0;
+    }
+
+    /* Hero Section */
+    .hero-image {
+        max-width: 85vw; /* Slightly smaller on mobile for better margins */
+        max-height: 80vh; /* Still large but leave room for navigation */
+    }
+
+    /* Team Section */
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .team-member {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Only hide images on very small screens */
+    @media screen and (max-width: 480px) {
+        .team-member .image-wrapper {
+            display: none;
+        }
+
+        .team-name {
+            margin-top: 0;
+            font-size: 1.1em;
+            padding: 10px;
+            background-color: #EAE0D5;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .team-member a:hover .team-name {
+            background-color: #DDD4C8;
+        }
+    }
+
+    /* Team Modal - Mobile Layout ONLY */
+    .modal .team-modal-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .modal .team-modal-img {
+        flex: none;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .modal .team-modal-text {
+        width: 100%;
+    }
+
+    .modal .team-modal-text h3,
+    .modal .team-modal-text h4 {
+        text-align: center;
+    }
+
+    /* Contact Info */
+    .contact-link .text {
+        display: none;
+    }
+
+    .contact-link .icon {
+        display: inline;
+        font-size: 1.2em;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        gap: 30px;
+        text-align: left;
+    }
+
+    .footer-about,
+    .footer-policies,
+    .footer-navigation {
+        width: 100%;
+    }
+
+    .footer-policies ul,
+    .footer-navigation ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .footer-policies ul li,
+    .footer-navigation ul li {
+        margin-bottom: 5px;
+        flex: 0 0 calc(50% - 7.5px); /* Two columns on mobile for links */
+    }
+}
+
+/* Medium screens - tablets */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    /* Team Section */
+    .team-member .image-wrapper {
+        max-width: 200px; /* Smaller on tablets */
+    }
+}
+
+@media screen and (min-width: 769px) {
+    /* Services */
+    .service-column {
+        flex: 1;
+    }
+
+    /* Contact */
+    .contact-form,
+    .contact-right-column {
+        flex: 1;
+    }
+}
