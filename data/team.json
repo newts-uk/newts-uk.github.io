@@ -1,0 +1,28 @@
+{
+  "team": [
+    {
+      "id": "amy",
+      "name": "Amy",
+      "fullName": "Amy Coombes",
+      "title": "Education Specialist",
+      "image": "images/amy.png",
+      "bio": "<p>My aim is to look at the big picture when working with both children and adults to understand the needs and strengths of each individual so that they can be effectively supported within both their home and school/work environment.<br/><br/>I hold an Assessors Practising Certificate (APC), which is renewed every three years. I also complete up to 30 hours of CPD (5 hours SASC approved) each year. .</p>"
+    },
+    {
+      "id": "becky", 
+      "name": "Becky",
+      "fullName": "Becky Johnson",
+      "title": "Business Administrator",
+      "image": "images/becky.png",
+      "bio": "<p>I have been the Business Administrator for over 2 years working with Steph and Amy at the office in Strixton.<br /><br />I have worked in schools for over 13 years, many of which were spent working with learners with Special Educational Needs.<br /><br />I currently work as a Finance Assistant at East Hunsbury Primary School every morning. I am a registered, licenced bookkeeper with the AAT, and gained a Distinction in my Level 3 Diploma in Accounting.<br />I deal with all the finance, emails, bookings, and paperwork.</p>"
+    },
+    {
+      "id": "stephanie",
+      "name": "Stephanie", 
+      "fullName": "Stephanie Rumney",
+      "title": "Education Specialist",
+      "image": "./images/steph.png",
+      "bio": "<p>School is not the only place an individual can get access to support. Through my role as an assessor for dyslexia and as a Specialist Teacher, my working philosophy is to engage both children and adults, ensuring they understand any learning differences they may have and helping them to navigate these. I have over 25 years of experience in education and continue to learn. <br /><br />I hold an Assessors Practising Certificate (APC); this has to be renewed every three years. During this period, it is expected by the awarding body that I complete up to 30 hours of CPD (5 hours SASC approved) each year.</p>"
+    }
+  ]
+}

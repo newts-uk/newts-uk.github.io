@@ -1,0 +1,70 @@
+{
+  "services": [
+    {
+      "id": "service-3",
+      "title": "Access Arrangements Testing",
+      "summary": "Formal assessment of students who may require additional support during exams due to specific learning difficulties or disabilities. £60 per pupil.",
+      "details": "<ul><li>Completion of Part 1 of Form 8 is required prior to the assessment</li><li>A thorough evaluation of the student's needs.</li><li>Completion of Part 2 of Form 8 by assessor.</li></ul>"
+    },
+    {
+      "id": "service-7",
+      "title": "Adult Support",
+      "summary": "Support for individuals studying at a higher level or in the workplace. DSA and Access To Work registered. £60 per hour or 6 hours block booked at £300.",
+      "details": "<ul><li>Registered as a Non-Medical Helper with the DSA.</li><li>Registered support worker with Access To Work.</li><li>Areas of targeted support agreed beforehand such as; study skills, organisation, and planning time.</li><li>Emotional and mental wellbeing support available through the sessions and where it arises.</li></ul>"
+    },
+    {
+      "id": "service-11",
+      "title": "Bespoke Teaching Packages for EOTAS pupils",
+      "summary": "Please contact Becky Johnson for further information at info@newts.uk.",
+      "details": null
+    },
+    {
+      "id": "service-5",
+      "title": "Family and School Support",
+      "summary": "Guidance and recommendations for families and school staff.",
+      "details": "<ul><li>Sometimes support can come in the form of guidance and recommendations to the family/carers and staff supporting the individual in their journey.</li><li>Some examples include study skills, home routines to help improve home-life, and training in specific areas of need.</li></ul>"
+    },
+    {
+      "id": "service-1",
+      "title": "Full Diagnostic Dyslexia Assessment",
+      "summary": "A face-to-face assessment followed by a substantial written report. £525 up to age 16, £550 age 16+.",
+      "details": "<ul><li>Approximately 3 hours, this can only be completed on individuals either age 8+, or those that have already entered year 3.</li><li>Assessment consists of standardised assessments which reflect strengths and challenges across underlying ability and cognitive processing abilities.</li><li>Assessment of attainment in the areas of reading, spelling, and writing.</li><li>Detailed diagnostic written report, including recommendations and any considerations for exam access arrangements.</li><li>This report will travel with the individual for life as I hold an APC.</li><li>For 18 years + we are able to identify characteristics of ADHD as part of a full diagnostic assessment. This involves an additional 2-hour interview at a cost of £120.</li></ul>"
+    },
+    {
+      "id": "service-4",
+      "title": "Pupil Observation",
+      "summary": "In class pupil focussed observation. £60.",
+      "details": "<ul><li>Focus to be decided prior to observation.</li><li>Up to one hour observation in class.</li><li>Includes verbal feedback.</li><li>Optionally, written feedback can be provided for an additional charge.</li></ul>"
+    },
+    {
+      "id": "service-8",
+      "title": "Resilience Coaching",
+      "summary": "Curriculum led education and wellness experience for 9- to 18-year-olds. £POA.",
+      "details": "<ul><li>In small groups or 1:1, children and adolescents aged 9 to 18 will learn through experiential activities, videos, games and dynamic exercises, which take place over 11 interactive sessions.</li><li>Resilience coaching will empower your child to deal with issues such as self-esteem and labels, using social media, hostile behaviour of others, and disagreements and conflicts.</li><li>The Resilience Tutoring package includes the Creating a Resilient Family course for parents.</li><li>Resilience and wellbeing training gives your child the confidence to manage feelings and overcome difficulties.</li><li>Past participants have reported less anxiety, worry, fear and reactive behaviour and improved relationships with parents, siblings and peers.</li></ul>"
+    },
+    {
+      "id": "service-12",
+      "title": "Small Space for Hire",
+      "summary": "Please get in touch if you are looking for a space for individual talking therapies or for groups of up to 8 people. Price available on request.",
+      "details": "<ul><li>We have a small space available for hire in Strixton, Northamptonshire.</li><li>Suitable for individual talking therapies or small groups of up to 8 people.</li><li>Price available on request.</li></ul>"
+    },
+    {
+      "id": "service-2",
+      "title": "Spotlight Assessment",
+      "summary": "A face-to-face assessment followed by a short report. NB This assessment will not diagnose dyslexia. £300.",
+      "details": "<ul><li>Approximately 1.5 hours, this can be completed on children from age 6+</li><li>Cognitive assessments: standardised cognitive assessment and class observation</li><li>Bespoke Spotlight will cover 2 standardised tests of   and one further area of cognitive processing; such as phonological processing or working memory. A word reading and word spelling test will also be administered.</li><li>Detailed short written report, including recommendations.</li><li>Can be accompanied by a pupil focussed observation in class, for an additional fee.</li></ul>"
+    },
+    {
+      "id": "service-10",
+      "title": "Training",
+      "summary": "Bespoke training can be arranged on request. Usually we cover executive function skills, dyslexia and neurodiversity.",
+      "details": "<ul><li>Schools. In school training for SENCOs, Teachers or Teaching Assistants.</li><li>Parents. Online or small face-to-face group training available.</li></ul>"
+    },
+    {
+      "id": "service-9",
+      "title": "Workplace Needs Assessments (coming soon)",
+      "summary": "Specialist evaluation of the employees' working environment, and tasks to identify adjustments needed. These assessments help employers fulfil their legal obligations under The Equality Act 2010, and promote a more inclusive and productive workplace. £450.",
+      "details": "<ul><li>The primary goal is to identify reasonable adjustments, accommodations, or assistive technologies that enable the employee to perform their job duties effective and safely.</li><li>Suitable for individuals with a range of neurodiverse conditions.</li><li>Involves conduction a 1:1 interview with the employee and employer.</li><li>The assessment results in a report with detailed recommendations for adjustments tailored to the individual's needs and workplace context.</li></ul>"
+    }
+  ]
+}
