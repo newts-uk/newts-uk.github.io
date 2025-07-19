@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load services and team from JSON files
     loadServices();
     loadTeam();
+    loadGallery();
 
     // Google Form modal functionality
     const googleFormLink = document.getElementById('google-form-link');
@@ -222,4 +223,73 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         lastScrollY = window.scrollY;
     });
+
+    // Gallery Carousel (dynamic from JSON)
+    async function loadGallery() {
+        const carousel = document.getElementById('gallery-carousel');
+        const track = document.getElementById('gallery-carousel-track');
+        const titleDiv = document.getElementById('gallery-title');
+        if (!carousel || !track || !titleDiv) return;
+        try {
+            const res = await fetch('data/gallery.json');
+            const data = await res.json();
+            track.innerHTML = '';
+            data.gallery.forEach((img, i) => {
+                const el = document.createElement('img');
+                el.src = img.src;
+                el.alt = img.alt || '';
+                el.className = 'carousel-image' + (i === 0 ? ' active' : '');
+                el.setAttribute('data-title', img.title || '');
+                track.appendChild(el);
+            });
+            setupGalleryCarousel(data.gallery.map(img => img.title || ''));
+        } catch (e) {
+            track.innerHTML = '<p>Could not load gallery.</p>';
+        }
+    }
+
+    function setupGalleryCarousel(titles) {
+        const carousel = document.getElementById('gallery-carousel');
+        const images = carousel.querySelectorAll('.carousel-image');
+        const prevBtn = carousel.querySelector('.carousel-btn.prev');
+        const nextBtn = carousel.querySelector('.carousel-btn.next');
+        const titleDiv = document.getElementById('gallery-title');
+        let current = 0;
+        function showImage(idx) {
+            images.forEach((img, i) => {
+                img.classList.toggle('active', i === idx);
+            });
+            if (titles && titles[idx]) {
+                titleDiv.textContent = titles[idx];
+            } else {
+                titleDiv.textContent = '';
+            }
+        }
+        function prevImage() {
+            current = (current - 1 + images.length) % images.length;
+            showImage(current);
+        }
+        function nextImage() {
+            current = (current + 1) % images.length;
+            showImage(current);
+        }
+        prevBtn.addEventListener('click', prevImage);
+        nextBtn.addEventListener('click', nextImage);
+        // Optional: swipe support for mobile
+        let startX = null;
+        carousel.addEventListener('touchstart', e => {
+            startX = e.touches[0].clientX;
+        });
+        carousel.addEventListener('touchend', e => {
+            if (startX === null) return;
+            let endX = e.changedTouches[0].clientX;
+            if (endX - startX > 40) prevImage();
+            else if (startX - endX > 40) nextImage();
+            startX = null;
+        });
+        // Show initial title
+        showImage(current);
+    }
+
+    loadGallery();
 });
