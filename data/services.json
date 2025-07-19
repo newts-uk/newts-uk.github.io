@@ -15,8 +15,8 @@
     {
       "id": "service-11",
       "title": "Bespoke Teaching Packages for EOTAS pupils",
-      "summary": "Please contact Becky Johnson for further information at info@newts.uk.",
-      "details": null
+      "details": "Please contact Becky Johnson for further information at info@newts.uk.",
+      "summary": null
     },
     {
       "id": "service-5",
@@ -28,7 +28,7 @@
       "id": "service-1",
       "title": "Full Diagnostic Dyslexia Assessment",
       "summary": "A face-to-face assessment followed by a substantial written report. £525 up to age 16, £550 age 16+.",
-      "details": "<ul><li>Approximately 3 hours, this can only be completed on individuals either age 8+, or those that have already entered year 3.</li><li>Assessment consists of standardised assessments which reflect strengths and challenges across underlying ability and cognitive processing abilities.</li><li>Assessment of attainment in the areas of reading, spelling, and writing.</li><li>Detailed diagnostic written report, including recommendations and any considerations for exam access arrangements.</li><li>This report will travel with the individual for life as I hold an APC.</li><li>For 18 years + we are able to identify characteristics of ADHD as part of a full diagnostic assessment. This involves an additional 2-hour interview at a cost of £120.</li></ul>"
+      "details": "<ul><li>Approximately 3 hours, this can only be completed on individuals age 8 and over.</li><li>Assessment consists of standardised assessments which reflect strengths and challenges across underlying ability and cognitive processing abilities.</li><li>Assessment of attainment in the areas of reading, spelling, and writing.</li><li>Detailed diagnostic written report, including recommendations and any considerations for exam access arrangements.</li><li>This report will travel with the individual for life as I hold an APC.</li><li>For 18 years + we are able to identify characteristics of ADHD as part of a full diagnostic assessment. This involves an additional 2-hour interview at a cost of £120.</li></ul>"
     },
     {
       "id": "service-4",
@@ -52,7 +52,7 @@
       "id": "service-2",
       "title": "Spotlight Assessment",
       "summary": "A face-to-face assessment followed by a short report. NB This assessment will not diagnose dyslexia. £300.",
-      "details": "<ul><li>Approximately 1.5 hours, this can be completed on children from age 6+</li><li>Cognitive assessments: standardised cognitive assessment and class observation</li><li>Bespoke Spotlight will cover standardised test of underlying ability and one further area of cognitive processing; such as phonological processing or working memory. A word reading and word spelling test will also be administered.</li><li>Detailed short written report, including recommendations.</li><li>Can be accompanied by a pupil focussed observation in class, for an additional fee.</li></ul>"
+      "details": "<ul><li>Approximately 1.5 hours, this can be completed on children from age 6+</li><li>Bespoke Spotlight will cover standardised test of underlying ability and one further area of cognitive processing; such as phonological processing or working memory. A word reading and word spelling test will also be administered.</li><li>Detailed short written report, including recommendations.</li><li>Can be accompanied by a pupil focussed observation in class, for an additional fee.</li></ul>"
     },
     {
       "id": "service-10",
