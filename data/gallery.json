@@ -1,0 +1,13 @@
+{
+  "gallery": [
+    
+    { "src": "images/gallery/DSC_0018.JPG", "alt": "", "title": "Meet the team" },
+    { "src": "images/gallery/DSC_0025.JPG", "alt": "", "title": "Our wellbeing space" },
+    { "src": "images/gallery/DSC_0033.JPG", "alt": "", "title": "Parent waiting room" },
+    { "src": "images/gallery/DSC_0043.JPG", "alt": "", "title": "Learning zone" },
+    
+    { "src": "images/gallery/DSC_0056.JPG", "alt": "", "title": "Additional teaching area" },
+    { "src": "images/gallery/DSC_0067.JPG", "alt": "", "title": "Newts@No9" }
+    
+  ]
+}
