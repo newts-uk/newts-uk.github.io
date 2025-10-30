@@ -1,0 +1,13 @@
+{
+  "name": "newts-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build-services": "node scripts/generate_services.js",
+    "update-localbusiness": "node scripts/update_localbusiness.js",
+    "build": "npm run build-services && npm run update-localbusiness"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}
