@@ -34,132 +34,35 @@
 </script>
 
         <!-- LocalBusiness structured data (helps local search & rich results) -->
-        <!-- LocalBusiness structured data (helps local search & rich results) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "NEWTS",
-  "description": "NEWTS - Dyslexia assessment, teaching and wellbeing services in Northamptonshire.",
-  "url": "https://www.newts.org.uk",
-  "telephone": "01933 255061",
-  "email": "info@newts.uk",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "9 Strixton Manor Business Centre",
-    "addressLocality": "Strixton",
-    "addressRegion": "Northamptonshire",
-    "postalCode": "NN29 7PA",
-    "addressCountry": "GB"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 52.24330416338389,
-    "longitude": -0.6864831077065526
-  },
-  "openingHours": [
-    "Mo-Fr 09:00-17:00"
-  ],
-  "sameAs": [
-    "https://www.facebook.com/NEWTS",
-    "https://www.linkedin.com/company/newts"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "NEWTS Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Access Arrangements Testing",
-          "description": "Formal assessment of students who may require additional support during exams due to specific learning difficulties or disabilities. £60 per pupil."
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "NEWTS",
+            "description": "NEWTS - Dyslexia assessment, teaching and wellbeing services in Northamptonshire.",
+            "url": "https://www.newts.org.uk",
+            "telephone": "01933 255061",
+            "email": "info@newts.uk",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "9 Strixton Manor Business Centre",
+                "addressLocality": "Strixton",
+                "addressRegion": "Northamptonshire",
+                "postalCode": "NN29 7PA",
+                "addressCountry": "GB"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.24330416338389,
+                "longitude": -0.6864831077065526
+            },
+            "openingHours": ["Mo-Fr 09:00-17:00"],
+            "sameAs": [
+                "https://www.facebook.com/NEWTS",
+                "https://www.linkedin.com/company/newts"
+            ]
         }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Adult Support",
-          "description": "Support for individuals studying at a higher level or in the workplace. DSA and Access To Work registered. £60 per hour or 6 hours block booked at £300."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Bespoke Teaching Packages for EOTAS pupils",
-          "description": "Please contact Becky Johnson for further information at info@newts.uk."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Family and School Support",
-          "description": "Guidance and recommendations for families and school staff."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Full Diagnostic Dyslexia Assessment",
-          "description": "A face-to-face assessment followed by a substantial written report. £525 up to age 16, £550 age 16+."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Pupil Observation",
-          "description": "In class pupil focussed observation. £60."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Resilience Coaching",
-          "description": "Curriculum led education and wellness experience for 9- to 18-year-olds. £POA."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Small Space for Hire",
-          "description": "Please get in touch if you are looking for a space for individual talking therapies or for groups of up to 8 people. Price available on request."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Spotlight Assessment",
-          "description": "A face-to-face assessment followed by a short report. NB This assessment will not diagnose dyslexia. £300."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Training",
-          "description": "Bespoke training can be arranged on request. Usually we cover executive function skills, dyslexia and neurodiversity."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Workplace Needs Assessments (coming soon)",
-          "description": "Specialist evaluation of the employees' working environment, and tasks to identify adjustments needed. These assessments help employers fulfil their legal obligations under The Equality Act 2010, and promote a more inclusive and productive workplace. £450."
-        }
-      }
-    ]
-  }
-}
-</script>
+        </script>
 
 </head>
 <body>
@@ -212,8 +115,55 @@
         <section id="services">
             <h2>Services</h2>
             <div class="services-container" id="services-container">
-                <!-- Services will be loaded dynamically -->
-            </div>
+
+<div class="service-panels">
+    <article class="service-panel" id="service-service-3" aria-labelledby="service-service-3-title">
+      <h3 id="service-service-3-title">Access Arrangements Testing</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-7" aria-labelledby="service-service-7-title">
+      <h3 id="service-service-7-title">Adult Support</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-11" aria-labelledby="service-service-11-title">
+      <h3 id="service-service-11-title">Bespoke Teaching Packages for EOTAS pupils</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-5" aria-labelledby="service-service-5-title">
+      <h3 id="service-service-5-title">Family and School Support</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-1" aria-labelledby="service-service-1-title">
+      <h3 id="service-service-1-title">Full Diagnostic Dyslexia Assessment</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-4" aria-labelledby="service-service-4-title">
+      <h3 id="service-service-4-title">Pupil Observation</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-8" aria-labelledby="service-service-8-title">
+      <h3 id="service-service-8-title">Resilience Coaching</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-12" aria-labelledby="service-service-12-title">
+      <h3 id="service-service-12-title">Small Space for Hire</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-2" aria-labelledby="service-service-2-title">
+      <h3 id="service-service-2-title">Spotlight Assessment</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-10" aria-labelledby="service-service-10-title">
+      <h3 id="service-service-10-title">Training</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-9" aria-labelledby="service-service-9-title">
+      <h3 id="service-service-9-title">Workplace Needs Assessments (coming soon)</h3>
+      <p></p>
+    </article>
+</div>
+
+</div>
         </section>
         <section id="gallery">
             <h2>Gallery</h2>

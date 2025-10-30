@@ -34,132 +34,35 @@
 </script>
 
         <!-- LocalBusiness structured data (helps local search & rich results) -->
-        <!-- LocalBusiness structured data (helps local search & rich results) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "NEWTS",
-  "description": "NEWTS - Dyslexia assessment, teaching and wellbeing services in Northamptonshire.",
-  "url": "https://www.newts.org.uk",
-  "telephone": "01933 255061",
-  "email": "info@newts.uk",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "9 Strixton Manor Business Centre",
-    "addressLocality": "Strixton",
-    "addressRegion": "Northamptonshire",
-    "postalCode": "NN29 7PA",
-    "addressCountry": "GB"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 52.24330416338389,
-    "longitude": -0.6864831077065526
-  },
-  "openingHours": [
-    "Mo-Fr 09:00-17:00"
-  ],
-  "sameAs": [
-    "https://www.facebook.com/NEWTS",
-    "https://www.linkedin.com/company/newts"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "NEWTS Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Access Arrangements Testing",
-          "description": "Formal assessment of students who may require additional support during exams due to specific learning difficulties or disabilities. £60 per pupil."
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "NEWTS",
+            "description": "NEWTS - Dyslexia assessment, teaching and wellbeing services in Northamptonshire.",
+            "url": "https://www.newts.org.uk",
+            "telephone": "01933 255061",
+            "email": "info@newts.uk",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "9 Strixton Manor Business Centre",
+                "addressLocality": "Strixton",
+                "addressRegion": "Northamptonshire",
+                "postalCode": "NN29 7PA",
+                "addressCountry": "GB"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.24330416338389,
+                "longitude": -0.6864831077065526
+            },
+            "openingHours": ["Mo-Fr 09:00-17:00"],
+            "sameAs": [
+                "https://www.facebook.com/NEWTS",
+                "https://www.linkedin.com/company/newts"
+            ]
         }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Adult Support",
-          "description": "Support for individuals studying at a higher level or in the workplace. DSA and Access To Work registered. £60 per hour or 6 hours block booked at £300."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Bespoke Teaching Packages for EOTAS pupils",
-          "description": "Please contact Becky Johnson for further information at info@newts.uk."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Family and School Support",
-          "description": "Guidance and recommendations for families and school staff."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Full Diagnostic Dyslexia Assessment",
-          "description": "A face-to-face assessment followed by a substantial written report. £525 up to age 16, £550 age 16+."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Pupil Observation",
-          "description": "In class pupil focussed observation. £60."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Resilience Coaching",
-          "description": "Curriculum led education and wellness experience for 9- to 18-year-olds. £POA."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Small Space for Hire",
-          "description": "Please get in touch if you are looking for a space for individual talking therapies or for groups of up to 8 people. Price available on request."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Spotlight Assessment",
-          "description": "A face-to-face assessment followed by a short report. NB This assessment will not diagnose dyslexia. £300."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Training",
-          "description": "Bespoke training can be arranged on request. Usually we cover executive function skills, dyslexia and neurodiversity."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Workplace Needs Assessments (coming soon)",
-          "description": "Specialist evaluation of the employees' working environment, and tasks to identify adjustments needed. These assessments help employers fulfil their legal obligations under The Equality Act 2010, and promote a more inclusive and productive workplace. £450."
-        }
-      }
-    ]
-  }
-}
-</script>
+        </script>
 
 </head>
 <body>
