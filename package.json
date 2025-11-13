@@ -5,7 +5,8 @@
   "scripts": {
     "build-services": "node scripts/generate_services.js",
     "update-localbusiness": "node scripts/update_localbusiness.js",
-    "build": "npm run build-services && npm run update-localbusiness"
+    "build": "npm run build-services && npm run update-localbusiness",
+    "generate-service-pages": "node scripts/generate_service_pages.js"
   },
   "engines": {
     "node": ">=12"

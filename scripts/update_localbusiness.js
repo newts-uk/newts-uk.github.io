@@ -1,5 +1,5 @@
-// Update the LocalBusiness JSON-LD in index.html to include services from data/services.json
-// Usage: node scripts/update_localbusiness.js
+// Update the ProfessionalService JSON-LD in index.html to include services from data/services.json
+// Usage: node scripts/update_ProfessionalService.js
 
 const fs = require('fs');
 const path = require('path');
@@ -20,10 +20,10 @@ if (!fs.existsSync(indexPath)) {
 const servicesRaw = fs.readFileSync(dataPath, 'utf8');
 const servicesData = JSON.parse(servicesRaw).services || [];
 
-// Build the LocalBusiness object (keep consistent with current site's info)
-const localBusiness = {
+// Build the ProfessionalService object (keep consistent with current site's info)
+const ProfessionalService = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': 'ProfessionalService',
   'name': 'NEWTS',
   'description': 'NEWTS - Dyslexia assessment, teaching and wellbeing services in Northamptonshire.',
   'url': 'https://www.newts.org.uk',
@@ -62,31 +62,31 @@ const itemList = servicesData.map(s => {
 });
 
 if (itemList.length > 0) {
-  localBusiness.hasOfferCatalog = {
+  ProfessionalService.hasOfferCatalog = {
     '@type': 'OfferCatalog',
     'name': 'NEWTS Services',
     'itemListElement': itemList
   };
 }
 
-const jsonld = JSON.stringify(localBusiness, null, 2);
+const jsonld = JSON.stringify(ProfessionalService, null, 2);
 
-// Read index.html and replace the existing LocalBusiness script block
+// Read index.html and replace the existing ProfessionalService script block
 let indexHtml = fs.readFileSync(indexPath, 'utf8');
 
-// More robust: find any <script type="application/ld+json">...</script> that contains the text "LocalBusiness"
-const scriptRegex = /<script[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?LocalBusiness[\s\S]*?<\/script>/i;
+// More robust: find any <script type="application/ld+json">...</script> that contains the text "ProfessionalService"
+const scriptRegex = /<script[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?ProfessionalService[\s\S]*?<\/script>/i;
 
 if (!scriptRegex.test(indexHtml)) {
-  console.error('Could not find existing LocalBusiness JSON-LD block in index.html');
+  console.error('Could not find existing ProfessionalService JSON-LD block in index.html');
   process.exit(1);
 }
 
-const newScript = `<!-- LocalBusiness structured data (helps local search & rich results) -->\n<script type="application/ld+json">\n${jsonld}\n</script>`;
+const newScript = `<!-- ProfessionalService structured data (helps local search & rich results) -->\n<script type="application/ld+json">\n${jsonld}\n</script>`;
 
 const newIndex = indexHtml.replace(scriptRegex, newScript);
 
-fs.writeFileSync(indexPath + '.bak-localbusiness', indexHtml, 'utf8');
+fs.writeFileSync(indexPath + '.bak-ProfessionalService', indexHtml, 'utf8');
 fs.writeFileSync(indexPath, newIndex, 'utf8');
 
-console.log('index.html LocalBusiness JSON-LD updated (backup saved as index.html.bak-localbusiness)');
+console.log('index.html ProfessionalService JSON-LD updated (backup saved as index.html.bak-ProfessionalService)');

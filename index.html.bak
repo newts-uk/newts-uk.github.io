@@ -33,11 +33,11 @@
   gtag('config', 'G-R3K7MH2PHJ');
 </script>
 
-        <!-- LocalBusiness structured data (helps local search & rich results) -->
+        <!-- ProfessionalService structured data (helps local search & rich results) -->
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "LocalBusiness",
+            "@type": "ProfessionalService",
             "name": "NEWTS",
             "description": "NEWTS - Dyslexia assessment, teaching and wellbeing services in Northamptonshire.",
             "url": "https://www.newts.org.uk",
