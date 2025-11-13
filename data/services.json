@@ -9,8 +9,8 @@
     {
       "id": "service-7",
       "title": "Adult Support",
-      "summary": "Support for individuals studying at a higher level or in the workplace. DSA and Access To Work registered. £60 per hour or 6 hours block booked at £300.",
-      "details": "<ul><li>Registered as a Non-Medical Helper with the DSA.</li><li>Registered support worker with Access To Work.</li><li>Areas of targeted support agreed beforehand such as; study skills, organisation, and planning time.</li><li>Emotional and mental wellbeing support available through the sessions and where it arises.</li></ul>"
+      "summary": "Support for individuals studying at a higher level or in the workplace. £60 per hour or 6 hours block booked at £300.",
+      "details": "<ul><li>Areas of targeted support agreed beforehand such as; study skills, organisation, and planning time.</li><li>Emotional and mental wellbeing support available through the sessions and where it arises.</li></ul>"
     },
     {
       "id": "service-11",
@@ -62,8 +62,8 @@
     },
     {
       "id": "service-9",
-      "title": "Workplace Needs Assessments (coming soon)",
-      "summary": "Specialist evaluation of the employees' working environment, and tasks to identify adjustments needed. These assessments help employers fulfil their legal obligations under The Equality Act 2010, and promote a more inclusive and productive workplace. £450.",
+      "title": "Workplace Needs Assessments",
+      "summary": "Specialist evaluation of the employees' working environment, and tasks to identify adjustments needed. These assessments help employers fulfil their legal obligations under The Equality Act 2010, and promote a more inclusive and productive workplace. £540.",
       "details": "<ul><li>The primary goal is to identify reasonable adjustments, accommodations, or assistive technologies that enable the employee to perform their job duties effective and safely.</li><li>Suitable for individuals with a range of neurodiverse conditions.</li><li>Involves conducting a 1:1 interview with the employee and employer.</li><li>The assessment results in a report with detailed recommendations for adjustments tailored to the individual's needs and workplace context.</li></ul>"
     }
   ]
