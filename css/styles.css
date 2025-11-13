@@ -86,8 +86,21 @@ nav {
 
 nav .container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
+}
+
+.service-page nav .container {
+    justify-content: flex-start;
+}
+
+nav .logo {
+    flex-shrink: 0;
+}
+
+nav .logo img {
+    height: 60px;
+    width: auto;
 }
 
 nav ul {
@@ -370,6 +383,20 @@ section h3 {
     cursor: default;
 }
 
+.service-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.service-link:hover {
+    text-decoration: none;
+}
+
+.service-link h3 {
+    margin: 0 0 10px 0;
+}
+
 .extra-content {
     display: none;
 }
@@ -577,6 +604,181 @@ section h3 {
 }
 
 /* ================================
+   SERVICE PAGES
+   ================================ */
+
+.service-page {
+    background-color: #FAF6E9;
+}
+
+.service-hero {
+    background: linear-gradient(135deg, #294D3B 0%, #3a6b51 100%);
+    color: white;
+    padding: 15px 0 !important;
+    text-align: center;
+    margin: 0 !important;
+    width: 100% !important;
+    min-height: auto !important;
+    height: auto !important;
+    border-bottom: none !important;
+    display: block !important;
+}
+
+.service-hero .container {
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.service-hero h1 {
+    font-size: 1.4rem;
+    margin: 0 0 8px 0;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.breadcrumb {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.breadcrumb a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: white;
+}
+
+.service-detail-section {
+    padding: 30px 0 40px;
+    min-height: auto !important;
+    border-bottom: none;
+}
+
+.service-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-summary-box {
+    background-color: #f0f8f4;
+    border-left: 4px solid #294D3B;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.service-summary-box p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.service-details {
+    margin-bottom: 40px;
+}
+
+.service-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-details ul li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.service-details ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #294D3B;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.service-cta {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.service-cta h3 {
+    margin-top: 0;
+    color: #294D3B;
+    font-size: 1.8rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #294D3B;
+    color: white !important;
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #1e3a2b;
+    text-decoration: none;
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    color: #294D3B !important;
+    border: 2px solid #294D3B;
+}
+
+.cta-button.secondary:hover {
+    background-color: #294D3B;
+    color: white !important;
+}
+
+@media (max-width: 768px) {
+    .service-hero {
+        padding: 12px 0;
+    }
+    
+    .service-hero h1 {
+        font-size: 1.2rem;
+        margin-bottom: 6px;
+    }
+    
+    .breadcrumb {
+        font-size: 0.75rem;
+    }
+    
+    .service-content {
+        padding: 25px;
+    }
+    
+    .cta-button {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* ================================
    FOOTER
    ================================ */
 
@@ -627,14 +829,19 @@ footer {
 .footer-policies ul li a,
 .footer-navigation ul li a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9) !important;
     transition: color 0.3s ease;
     font-size: 0.9em;
 }
 
+.footer-policies ul li a:visited,
+.footer-navigation ul li a:visited {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
 .footer-policies ul li a:hover,
 .footer-navigation ul li a:hover {
-    color: #EAE0D5;
+    color: #EAE0D5 !important;
 }
 
 .copyright {
@@ -677,6 +884,10 @@ footer {
 
 @media screen and (max-width: 768px) {
     /* Navigation */
+    nav .logo img {
+        height: 45px;
+    }
+
     #nav-links {
         position: fixed;
         top: 0;

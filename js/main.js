@@ -6,10 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeButton = document.querySelector('.close-button');
     const header = document.querySelector('header');
 
-    // Load services and team from JSON files
-    loadServices();
-    loadTeam();
-    loadGallery();
+    // Load services and team from JSON files (only on main page)
+    if (document.getElementById('services-container')) {
+        loadServices();
+    }
+    if (document.getElementById('team-container')) {
+        loadTeam();
+    }
+    if (document.getElementById('gallery-carousel')) {
+        loadGallery();
+    }
 
     // Google Form modal functionality
     const googleFormLink = document.getElementById('google-form-link');
@@ -76,31 +82,35 @@ document.addEventListener('DOMContentLoaded', () => {
         attachServicePanelListeners();
     }
 
+    function slugify(text) {
+        return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    }
+
     function createServicePanel(service) {
         const servicePanel = document.createElement('div');
-        // Only add clickable class if service has details
+        const slug = slugify(service.title);
         servicePanel.className = service.details ? 'service-panel clickable' : 'service-panel';
-        servicePanel.innerHTML = `
-            <h3>${service.title}</h3>
-            <div class="service-summary" style="display: none;">${service.summary}</div>
-            ${service.details ? `<div class="extra-content"><p>${service.details}</p></div>` : ''}
-        `;
+        
+        if (service.details) {
+            servicePanel.innerHTML = `
+                <a href="${slug}.html" class="service-link" data-service-id="${service.id}">
+                    <h3>${service.title}</h3>
+                    <div class="service-summary" style="display: none;">${service.summary}</div>
+                    <div class="extra-content"><p>${service.details}</p></div>
+                </a>
+            `;
+        } else {
+            servicePanel.innerHTML = `
+                <h3>${service.title}</h3>
+                <div class="service-summary" style="display: none;">${service.summary}</div>
+            `;
+        }
         return servicePanel;
     }
 
     function attachServicePanelListeners() {
-        const servicePanels = document.querySelectorAll('.service-panel.clickable');
-        servicePanels.forEach(panel => {
-            panel.addEventListener('click', event => {
-                event.preventDefault();
-                const panelContent = panel.cloneNode(true);
-                panelContent.classList.remove('clickable'); // Remove the clickable class for modal
-
-                modalBody.innerHTML = '';
-                modalBody.appendChild(panelContent);
-                modal.classList.add('modal-visible');
-            });
-        });
+        // Service links now navigate to dedicated pages instead of opening modals
+        // No event listeners needed - let the links work naturally
     }
 
     async function loadTeam() {
@@ -177,7 +187,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function openGoogleFormModal() {
+        if (!modal) return;
         const modalContent = modal.querySelector('.modal-content');
+        if (!modalContent) return;
         modalContent.classList.add('large-modal');
         
         modalBody.innerHTML = `
