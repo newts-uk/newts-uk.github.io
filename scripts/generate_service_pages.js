@@ -15,7 +15,7 @@ const template = (service, slug) => `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${service.title} | NEWTS - Northamptonshire Education, Wellbeing and Teaching Services</title>
+  <title>NEWTS - ${service.title}</title>
   <meta name="description" content="${service.summary || service.title}">
   <meta name="keywords" content="${service.title}, NEWTS, Dyslexia Assessment, Northampton, Wellingborough, Northamptonshire, Education, Wellbeing">
   <link rel="canonical" href="https://newts.uk/${slug}.html">
