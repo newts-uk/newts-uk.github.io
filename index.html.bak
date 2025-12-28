@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>NEWTS - Dyslexia Assessment, Teaching and Wellbeing Services in Northamptonshire
+    <description>Full diagnostic dyslexia assessments for children and adults in Northamptonshire. APC-qualified assessors. Book a consultation.</description>
+  </title>
     <meta charset="UTF-8">
+    <link rel="canonical" href="https://newts.uk/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta property="og:title" content="NEWTS - Northamptonshire Education, Wellbeing and Teaching Services">
     <meta property="og:description" content="NEWTS provides dyslexia-assessment, educational, wellbeing, and teaching services in Northamptonshire.">
     <meta property="og:image" content="images/logo.png">
-    <meta property="og:url" content="https://www.newts.org.uk">
+    <meta property="og:url" content="https://newts.uk">
     <meta property="og:type" content="website">
     <meta name="description" content="NEWTS - Northamptonshire Education, Wellbeing and Teaching Services">
     <meta name="keywords" content="NEWTS, Dyslexia assessment, Steph Rumney, Amy Coombes, Specialist Teaching, Access Arrangements, Northamptonshire, Education, Wellbeing, Teaching Services">
@@ -19,6 +23,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dyslexia Assessor Northampton | NEWTS">
+<meta name="twitter:description" content="Full diagnostic dyslexia assessments for children and adults in Northamptonshire.">
+<meta name="twitter:image" content="https://newts.uk/images/logo.png">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
           <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -34,35 +42,199 @@
 </script>
 
         <!-- ProfessionalService structured data (helps local search & rich results) -->
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            "name": "NEWTS",
-            "description": "NEWTS - Dyslexia assessment, teaching and wellbeing services in Northamptonshire.",
-            "url": "https://www.newts.org.uk",
-            "telephone": "01933 255061",
-            "email": "info@newts.uk",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "9 Strixton Manor Business Centre",
-                "addressLocality": "Strixton",
-                "addressRegion": "Northamptonshire",
-                "postalCode": "NN29 7PA",
-                "addressCountry": "GB"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 52.24330416338389,
-                "longitude": -0.6864831077065526
-            },
-            "openingHours": ["Mo-Fr 09:00-17:00"],
-            "sameAs": [
-                "https://www.facebook.com/NEWTS",
-                "https://www.linkedin.com/company/newts"
-            ]
+        <!-- ProfessionalService structured data (helps local search & rich results) -->
+<!-- ProfessionalService structured data (helps local search & rich results) -->
+<!-- ProfessionalService structured data (helps local search & rich results) -->
+<!-- ProfessionalService structured data (helps local search & rich results) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "NEWTS",
+  "description": "NEWTS - Dyslexia assessment, teaching and wellbeing services in Northamptonshire.",
+  "url": "https://www.newts.org.uk",
+  "telephone": "01933 255061",
+  "email": "info@newts.uk",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "9 Strixton Manor Business Centre",
+    "addressLocality": "Strixton",
+    "addressRegion": "Northamptonshire",
+    "postalCode": "NN29 7PA",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.24330416338389,
+    "longitude": -0.6864831077065526
+  },
+  "openingHours": [
+    "Mo-Fr 09:00-17:00"
+  ],
+  "sameAs": [
+    "https://www.facebook.com/NEWTS",
+    "https://www.linkedin.com/company/newts"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "NEWTS Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Access Arrangements Testing",
+          "description": "Formal assessment of students who may require additional support during exams due to specific learning difficulties or disabilities. £60 per pupil."
         }
-        </script>
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Adult Support",
+          "description": "Support for individuals studying at a higher level or in the workplace. £60 per hour or 6 hours block booked at £300."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Bespoke Speech and Language Support",
+          "description": "Training and/or consultation for speech and language needs. £100 per hour or £530 for a 6 hour block."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Bespoke Teaching Packages for EOTAS pupils",
+          "description": ""
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Development Training",
+          "description": "Staff training via Zoom or in person. £150 per hour."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Developmental Interventions",
+          "description": "Tailored developmental interventions carried out 1:1 as a half day. £150."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Early Years Development Play assessment",
+          "description": "Early years development assessment lasting 4-5 hrs. £230."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Family and School Support",
+          "description": "Guidance and recommendations for families and school staff."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Foundation Stage Project",
+          "description": "Foundation stage project reception year. 13-14 hours. £700."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Full Developmental Assessment",
+          "description": "A full developmental assessment yr 1 upwards. 5-6 hour assessment with a detailed report. £270."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Full Diagnostic Dyslexia Assessment",
+          "description": "A face-to-face assessment followed by a substantial written report. £525 up to age 16, £550 age 16+."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Full Speech and Language Assessment",
+          "description": "A full speech and language assessment for children and adults lasting up to 6 hours. £370."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pupil Observation",
+          "description": "In class pupil focused observation. £60."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Resilience Coaching",
+          "description": "Curriculum led education and wellness experience for 9- to 18-year-olds. £POA."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Small Group SEND Observation",
+          "description": "Observation and advice for small group of early years children with SEND and developmental needs. 2.5-3 hour session. £150 per child."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Small Space for Hire",
+          "description": "Please get in touch if you are looking for a space for individual talking therapies or for groups of up to 8 people. Price available on request."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Spotlight Assessment",
+          "description": "A face-to-face assessment followed by a short report. NB This assessment will not diagnose dyslexia. £300."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Training",
+          "description": "Bespoke training can be arranged on request. Usually we cover executive function skills, dyslexia and neurodiversity."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Workplace Needs Assessments",
+          "description": "Specialist evaluation of the employees' working environment, and tasks to identify adjustments needed. These assessments help employers fulfil their legal obligations under The Equality Act 2010, and promote a more inclusive and productive workplace. £540."
+        }
+      }
+    ]
+  }
+}
+</script>
 
 </head>
 <body>
@@ -105,7 +277,7 @@
         </section>
         <section id="about">
             <h2>About Us</h2>
-            <p>NEWTS is a leading provider of educational, wellbeing, and teaching services in Northamptonshire. Our mission is to support schools, families, and individuals to achieve their full potential. We are a team of dedicated professionals with a passion for education and a commitment to making a positive impact in our community.</p>
+            <p>NEWTS is a leading provider of educational, wellbeing, and teaching services in Northamptonshire. Our mission is to support schools, families, and individuals to achieve their full potential. <br />We are a team of dedicated professionals with a passion for education and a commitment to making a positive impact in our community.</p>
             
             <h3>Meet the Team</h3>
             <div class="team-container" id="team-container">
@@ -115,8 +287,72 @@
         <section id="services">
             <h2>Services</h2>
             <div class="services-container" id="services-container">
-                <!-- Services will be loaded dynamically -->
-            </div>
+
+    <article class="service-panel clickable category-panel" id="category-assessments" aria-labelledby="assessments-title">
+      <a href="services/categories/assessments.html" class="category-link" data-category-id="assessments">
+        <h3 id="assessments-title">Assessments</h3>
+        <p class="category-summary">Assessments for dyslexia and other specific learning difficulties.</p>
+        <p class="service-count">4 services</p>
+      </a>
+    </article>
+    <article class="service-panel clickable category-panel" id="category-early-years" aria-labelledby="early-years-title">
+      <a href="services/categories/early-years.html" class="category-link" data-category-id="early-years">
+        <h3 id="early-years-title">Early Years</h3>
+        <p class="category-summary">Services for early years children (0-5 years).</p>
+        <p class="service-count">5 services</p>
+      </a>
+    </article>
+    <article class="service-panel clickable category-panel" id="category-post-16" aria-labelledby="post-16-title">
+      <a href="services/categories/post-16-and-adults.html" class="category-link" data-category-id="post-16">
+        <h3 id="post-16-title">Post 16 and Adults</h3>
+        <p class="category-summary">Services for post 16 students and adults.</p>
+        <p class="service-count">2 services</p>
+      </a>
+    </article>
+    <article class="service-panel clickable category-panel" id="category-specialist-teaching" aria-labelledby="specialist-teaching-title">
+      <a href="services/categories/specialist-teaching.html" class="category-link" data-category-id="specialist-teaching">
+        <h3 id="specialist-teaching-title">Specialist Teaching</h3>
+        <p class="category-summary">Specialist teaching for children and young people with additional needs.</p>
+        <p class="service-count">2 services</p>
+      </a>
+    </article>
+    <article class="service-panel clickable category-panel" id="category-speech-and-language-therapy" aria-labelledby="speech-and-language-therapy-title">
+      <a href="services/categories/speech-and-language.html" class="category-link" data-category-id="speech-and-language-therapy">
+        <h3 id="speech-and-language-therapy-title">Speech and Language</h3>
+        <p class="category-summary">Speech and language therapy services.</p>
+        <p class="service-count">2 services</p>
+      </a>
+    </article>
+    <article class="service-panel clickable category-panel" id="category-training-and-development" aria-labelledby="training-and-development-title">
+      <a href="services/categories/training-and-development.html" class="category-link" data-category-id="training-and-development">
+        <h3 id="training-and-development-title">Training and Development</h3>
+        <p class="category-summary">Training and development for staff, parents and carers.</p>
+        <p class="service-count">3 services</p>
+      </a>
+    </article>
+    <article class="service-panel clickable category-panel" id="category-other" aria-labelledby="other-title">
+      <a href="services/categories/other-services.html" class="category-link" data-category-id="other">
+        <h3 id="other-title">Other Services</h3>
+        <p class="category-summary">Other services we provide.</p>
+        <p class="service-count">2 services</p>
+      </a>
+    </article>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
         </section>
         <section id="gallery">
             <h2>Gallery</h2>
@@ -157,14 +393,21 @@
                 </div>
                 <div class="contact-right-column">
                     <div class="contact-details">
-                        <h3>Our Address</h3>
-                        <p class="mb-0 font-weight-bold">Address</p>
-                        <p class="mb-4">9 Strixton Manor Business Centre<br />Strixton<br />
-                        Northants<br />NN29 7PA</p>
-                        <p class="mb-0 font-weight-bold">Phone</p>
-                        <p class="mb-4"><a href="#">01933 255061</a></p>
-                        <p class="mb-0 font-weight-bold">Email Address</p>
-                        <p class="mb-0"><a href="#">info@newts.uk</a></p>
+                      
+                        <table style="border: none; width: 100%;">
+                            <tr>
+                                <td style="border: none; padding: 8px 16px 8px 0; vertical-align: top; font-weight: bold;">Address</td>
+                                <td style="border: none; padding: 8px 0;">9 Strixton Manor Business Centre<br />Strixton<br />Northants<br />NN29 7PA</td>
+                            </tr>
+                            <tr>
+                                <td style="border: none; padding: 8px 16px 8px 0; vertical-align: top; font-weight: bold;">Phone</td>
+                                <td style="border: none; padding: 8px 0;"><a href="tel:01933255061">01933 255061</a></td>
+                            </tr>
+                            <tr>
+                                <td style="border: none; padding: 8px 16px 8px 0; vertical-align: top; font-weight: bold;">Email</td>
+                                <td style="border: none; padding: 8px 0;"><a href="mailto:info@newts.uk">info@newts.uk</a></td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="map-panel">
                         <iframe
@@ -186,14 +429,15 @@
                 <div class="footer-policies">
                     <h3>Policies & Information</h3>
                     <ul>
-                        <li><a href="#">Code of Ethics</a></li>
-                        <li><a href="#">Complaints</a></li>
-                        <li><a href="#">Equality and Diversity</a></li>
-                        <li><a href="#">Health and Safety</a></li>
-                        <li><a href="#">Lone Working</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Professional Boundaries</a></li>
-                        <li><a href="#">Safeguarding and Child Protection</a></li>
+                        <!-- <li><a href="#">Code of Ethics</a></li> -->
+                        <li><a href="assets/policies/complaints.pdf" target="_blank">Complaints</a></li>
+                        <!-- <li><a href="#">Equality and Diversity</a></li> -->
+                        <!-- <li><a href="#">Health and Safety</a></li> -->
+                        <!-- <li><a href="#">Lone Working</a></li> -->
+                        <li><a href="assets/policies/privacy.pdf" target="_blank">Privacy</a></li>
+                        <!-- <li><a href="#">Professional Boundaries</a></li> -->
+                        <li><a href="assets/policies/safeguarding.pdf" target="_blank">Safeguarding and Child Protection</a></li>
+                        <li><a href="assets/policies/recruitment.pdf" target="_blank">Recruitment</a></li>
                     </ul>
                 </div>
                 <div class="footer-navigation">

@@ -6,10 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeButton = document.querySelector('.close-button');
     const header = document.querySelector('header');
 
-    // Load services and team from JSON files (only on main page)
-    if (document.getElementById('services-container')) {
-        loadServices();
-    }
+    // Load team and gallery from JSON files (only on main page)
+    // Categories are now pre-rendered in index.html for better SEO
     if (document.getElementById('team-container')) {
         loadTeam();
     }
@@ -58,59 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    async function loadServices() {
-        try {
-            const response = await fetch('data/services.json');
-            const data = await response.json();
-            renderServices(data.services);
-        } catch (error) {
-            console.error('Error loading services:', error);
-            // Fallback content if JSON fails to load
-            document.getElementById('services-container').innerHTML = '<p>Services information is currently unavailable.</p>';
-        }
-    }
-
-    function renderServices(services) {
-        const container = document.getElementById('services-container');
-        
-        services.forEach(service => {
-            const servicePanel = createServicePanel(service);
-            container.appendChild(servicePanel);
-        });
-
-        // Re-attach event listeners for the clickable panels
-        attachServicePanelListeners();
-    }
-
     function slugify(text) {
         return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-    }
-
-    function createServicePanel(service) {
-        const servicePanel = document.createElement('div');
-        const slug = slugify(service.title);
-        servicePanel.className = service.details ? 'service-panel clickable' : 'service-panel';
-        
-        if (service.details) {
-            servicePanel.innerHTML = `
-                <a href="${slug}.html" class="service-link" data-service-id="${service.id}">
-                    <h3>${service.title}</h3>
-                    <div class="service-summary" style="display: none;">${service.summary}</div>
-                    <div class="extra-content"><p>${service.details}</p></div>
-                </a>
-            `;
-        } else {
-            servicePanel.innerHTML = `
-                <h3>${service.title}</h3>
-                <div class="service-summary" style="display: none;">${service.summary}</div>
-            `;
-        }
-        return servicePanel;
-    }
-
-    function attachServicePanelListeners() {
-        // Service links now navigate to dedicated pages instead of opening modals
-        // No event listeners needed - let the links work naturally
     }
 
     async function loadTeam() {
