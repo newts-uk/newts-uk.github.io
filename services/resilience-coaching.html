@@ -1,34 +1,22 @@
-const fs = require('fs');
-const path = require('path');
-
-const services = require('../data/services.json').services;
-
-function slugify(text) {
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
-}
-
-const template = (service, slug) => `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NEWTS - ${service.title}</title>
-  <meta name="description" content="${service.summary || service.title}">
-  <meta name="keywords" content="${service.title}, NEWTS, Dyslexia Assessment, Northampton, Wellingborough, Northamptonshire, Education, Wellbeing">
-  <link rel="canonical" href="https://newts.uk/services/${slug}.html">
+  <title>NEWTS - Resilience Coaching</title>
+  <meta name="description" content="Curriculum led education and wellness experience for 9- to 18-year-olds with Steph.">
+  <meta name="keywords" content="Resilience Coaching, NEWTS, Dyslexia Assessment, Northampton, Wellingborough, Northamptonshire, Education, Wellbeing">
+  <link rel="canonical" href="https://newts.uk/services/resilience-coaching.html">
   
-  <meta property="og:title" content="${service.title} | NEWTS">
-  <meta property="og:description" content="${service.summary || service.title}">
-  <meta property="og:url" content="https://newts.uk/services/${slug}.html">
+  <meta property="og:title" content="Resilience Coaching | NEWTS">
+  <meta property="og:description" content="Curriculum led education and wellness experience for 9- to 18-year-olds with Steph.">
+  <meta property="og:url" content="https://newts.uk/services/resilience-coaching.html">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://newts.uk/images/logo.png">
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="${service.title} | NEWTS">
-  <meta name="twitter:description" content="${service.summary || service.title}">
+  <meta name="twitter:title" content="Resilience Coaching | NEWTS">
+  <meta name="twitter:description" content="Curriculum led education and wellness experience for 9- to 18-year-olds with Steph.">
   <meta name="twitter:image" content="https://newts.uk/images/logo.png">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -50,7 +38,7 @@ const template = (service, slug) => `<!DOCTYPE html>
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "${service.title}",
+    "serviceType": "Resilience Coaching",
     "provider": {
       "@type": "ProfessionalService",
       "name": "NEWTS",
@@ -70,7 +58,7 @@ const template = (service, slug) => `<!DOCTYPE html>
       "@type": "Place",
       "name": "Northamptonshire, UK"
     },
-    "description": "${service.summary || service.title}"
+    "description": "Curriculum led education and wellness experience for 9- to 18-year-olds with Steph."
   }
   </script>
 </head>
@@ -110,9 +98,9 @@ const template = (service, slug) => `<!DOCTYPE html>
   <main class="service-page">
     <section class="hero-section service-hero">
       <div class="container">
-        <h1>${service.title}</h1>
+        <h1>Resilience Coaching</h1>
         <nav class="breadcrumb">
-          <a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / <span>${service.title}</span>
+          <a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / <span>Resilience Coaching</span>
         </nav>
       </div>
     </section>
@@ -120,13 +108,9 @@ const template = (service, slug) => `<!DOCTYPE html>
     <section class="service-detail-section">
       <div class="container">
         <div class="service-content">
-          ${service.summary ? `<div class="service-summary-box"><p><strong>${service.summary}</strong></p></div>` : ''}
+          <div class="service-summary-box"><p><strong>Curriculum led education and wellness experience for 9- to 18-year-olds with Steph.</strong></p></div>
           
-          ${service.details ? `<div class="service-details">${
-            Array.isArray(service.details) 
-              ? '<ul>' + service.details.map(detail => `<li>${detail}</li>`).join('') + '</ul>'
-              : service.details
-          }</div>` : ''}
+          <div class="service-details"><ul><li>In small groups or 1:1, children and adolescents aged 9 to 18 will learn through experiential activities, videos, games and dynamic exercises, which take place over 11 interactive sessions.</li><li>Resilience coaching will empower your child to deal with issues such as self-esteem and labels, using social media, hostile behaviour of others, and disagreements and conflicts.</li><li>The Resilience Tutoring package includes the Creating a Resilient Family course for parents.</li><li>Resilience and wellbeing training gives your child the confidence to manage feelings and overcome difficulties.</li><li>Past participants have reported less anxiety, worry, fear and reactive behaviour and improved relationships with parents, siblings and peers.</li></ul></div>
           
           <div class="service-cta">
             <h3>Ready to get started?</h3>
@@ -171,7 +155,7 @@ const template = (service, slug) => `<!DOCTYPE html>
         </div>
       </div>
       <div class="copyright">
-        <p>&copy; ${new Date().getFullYear()} NEWTS. All rights reserved.</p>
+        <p>&copy; 2025 NEWTS. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -185,15 +169,4 @@ const template = (service, slug) => `<!DOCTYPE html>
 
   <script src="../js/main.js"></script>
 </body>
-</html>`;
-
-services.forEach(service => {
-  const slug = slugify(service.title);
-  const html = template(service, slug);
-  const filePath = path.join(__dirname, '..', 'services', `${slug}.html`);
-  fs.writeFileSync(filePath, html, 'utf8');
-  console.log(`Generated: services/${slug}.html`);
-});
-
-console.log('Service page generation complete!');
-
+</html>

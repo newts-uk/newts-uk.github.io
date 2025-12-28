@@ -1,70 +1,271 @@
 {
+  "categores": [
+    {
+      "id": "assessments",
+      "title": "Assessments",
+      "summary": "Assessments for dyslexia and other specific learning difficulties."
+    },
+    {
+      "id": "early-years",
+      "title": "Early Years",
+      "summary": "Services for early years children (0-5 years)."
+
+    },
+    {
+      "id": "post-16",
+      "title": "Post 16 and Adults",
+      "summary": "Services for post 16 students and adults."
+    },
+    {
+      "id": "specialist-teaching",
+      "title": "Specialist Teaching",
+      "summary": "Specialist teaching for children and young people with additional needs."
+    },
+    {
+      "id": "speech-and-language-therapy",
+      "title": "Speech and Language",
+      "summary": "Speech and language therapy services."
+    },
+    {
+      "id": "training-and-development",
+      "title": "Training and Development",
+      "summary": "Training and development for staff, parents and carers."
+    },
+    {
+      "id": "other",
+      "title": "Other Services",
+      "summary": "Other services we provide."
+    }
+  ],
   "services": [
     {
-      "id": "service-3",
-      "title": "Access Arrangements Testing",
-      "summary": "Formal assessment of students who may require additional support during exams due to specific learning difficulties or disabilities. £60 per pupil.",
-      "details": "<ul><li>Completion of Part 1 of Form 8 is required prior to the assessment</li><li>A thorough evaluation of the student's needs.</li><li>Completion of Part 2 of Form 8 by assessor.</li></ul>"
-    },
-    {
-      "id": "service-7",
-      "title": "Adult Support",
-      "summary": "Support for individuals studying at a higher level or in the workplace. £60 per hour or 6 hours block booked at £300.",
-      "details": "<ul><li>Areas of targeted support agreed beforehand such as; study skills, organisation, and planning time.</li><li>Emotional and mental wellbeing support available through the sessions and where it arises.</li></ul>"
-    },
-    {
-      "id": "service-11",
-      "title": "Bespoke Teaching Packages for EOTAS pupils",
-      "details": "Please contact Becky Johnson for further information at info@newts.uk.",
-      "summary": null
-    },
-    {
-      "id": "service-5",
-      "title": "Family and School Support",
-      "summary": "Guidance and recommendations for families and school staff.",
-      "details": "<ul><li>Sometimes support can come in the form of guidance and recommendations to the family/carers and staff supporting the individual in their journey.</li><li>Some examples include study skills, home routines to help improve home-life, and training in specific areas of need.</li></ul>"
-    },
-    {
       "id": "service-1",
-      "title": "Full Diagnostic Dyslexia Assessment",
-      "summary": "A face-to-face assessment followed by a substantial written report. £525 up to age 16, £550 age 16+.",
-      "details": "<ul><li>Approximately 3 hours, this can only be completed on individuals age 8 and over.</li><li>Assessment consists of standardised assessments which reflect strengths and challenges across underlying ability and cognitive processing abilities.</li><li>Assessment of attainment in the areas of reading, spelling, and writing.</li><li>Detailed diagnostic written report, including recommendations and any considerations for exam access arrangements.</li><li>This report will travel with the individual for life as I hold an APC.</li><li>For 18 years + we are able to identify characteristics of ADHD as part of a full diagnostic assessment. This involves an additional 2-hour interview at a cost of £120.</li></ul>"
-    },
-    {
-      "id": "service-4",
-      "title": "Pupil Observation",
-      "summary": "In class pupil focussed observation. £60.",
-      "details": "<ul><li>Focus to be decided prior to observation.</li><li>Up to one hour observation in class.</li><li>Includes verbal feedback.</li><li>Optionally, written feedback can be provided for an additional charge.</li></ul>"
-    },
-    {
-      "id": "service-8",
-      "title": "Resilience Coaching",
-      "summary": "Curriculum led education and wellness experience for 9- to 18-year-olds. £POA.",
-      "details": "<ul><li>In small groups or 1:1, children and adolescents aged 9 to 18 will learn through experiential activities, videos, games and dynamic exercises, which take place over 11 interactive sessions.</li><li>Resilience coaching will empower your child to deal with issues such as self-esteem and labels, using social media, hostile behaviour of others, and disagreements and conflicts.</li><li>The Resilience Tutoring package includes the Creating a Resilient Family course for parents.</li><li>Resilience and wellbeing training gives your child the confidence to manage feelings and overcome difficulties.</li><li>Past participants have reported less anxiety, worry, fear and reactive behaviour and improved relationships with parents, siblings and peers.</li></ul>"
-    },
-    {
-      "id": "service-12",
-      "title": "Small Space for Hire",
-      "summary": "Please get in touch if you are looking for a space for individual talking therapies or for groups of up to 8 people. Price available on request.",
-      "details": "<ul><li>We have a small space available for hire in Strixton, Northamptonshire.</li><li>Suitable for individual talking therapies or small groups of up to 8 people.</li><li>Price available on request.</li></ul>"
+      "title": "Access Arrangements Testing",
+      "category": "assessments",
+      "summary": "Formal assessment of students who may require additional support during exams due to specific learning difficulties or disabilities. £60 per pupil.",
+      "details": [
+        "Completion of Part 1 of Form 8 is required prior to the assessment",
+        "A thorough evaluation of the student's needs.",
+        "Completion of Part 2 of Form 8 by assessor."
+      ]
     },
     {
       "id": "service-2",
-      "title": "Spotlight Assessment",
-      "summary": "A face-to-face assessment followed by a short report. NB This assessment will not diagnose dyslexia. £300.",
-      "details": "<ul><li>Approximately 1.5 hours, this can be completed on children from age 6+</li><li>Bespoke Spotlight will cover standardised test of underlying ability and one further area of cognitive processing; such as phonological processing or working memory. A word reading and word spelling test will also be administered.</li><li>Detailed short written report, including recommendations.</li><li>Can be accompanied by a pupil focussed observation in class, for an additional fee.</li></ul>"
+      "title": "Adult Support",
+      "category": "post-16",
+      "summary": "Support for individuals studying at a higher level or in the workplace. £60 per hour or 6 hours block booked at £300.",
+      "details": [
+        "Areas of targeted support agreed beforehand such as; study skills, organisation, and planning time.",
+        "Emotional and mental wellbeing support available through the sessions and where it arises."
+      ]
     },
     {
-      "id": "service-10",
-      "title": "Training",
-      "summary": "Bespoke training can be arranged on request. Usually we cover executive function skills, dyslexia and neurodiversity.",
-      "details": "<ul><li>Schools. In school training for SENCOs, Teachers or Teaching Assistants.</li><li>Parents. Online or small face-to-face group training available.</li></ul>"
+      "id": "service-3",
+      "title": "Bespoke Speech and Language Support",
+      "category": "speech-and-language-therapy",
+      "summary": "Training and/or consultation for speech and language needs. £100 per hour or £530 for a 6 hour block.",
+      "details": [
+        "Speech and language screenings",
+        "Bespoke support focused on the setting priorities (e.g. staff training in Word Aware Vocabulary or Colourful Semantics)",
+        "SENCo consultation and planning support",
+        "1:1 demonstrations and in-class modelling of strategies",
+        "Assessment led therapy (without a full written report), where appropriate"
+      ]
+    },
+    {
+      "id": "service-4",
+      "title": "Bespoke Teaching Packages for EOTAS Pupils",
+      "category": "specialist-teaching",
+      "details": "Please contact Becky Johnson for further information at becky@newts.uk.",
+      "summary": "1:1 and small group provision for EOTAS pupils. Price available on request."
+    },
+    {
+      "id": "service-5",
+      "title": "Development Training",
+      "category": "training-and-development",
+      "summary": "Staff training via Zoom or in person with Ellie. £150 per hour.",
+      "details": [
+        "Range of SEND and development related subjects."
+      ]
+    },
+    {
+      "id": "service-6",
+      "title": "Developmental Interventions",
+      "category": "early-years",
+      "summary": "Tailored developmental interventions carried out 1:1 as a half day. £150.",
+      "details": [
+        "Initial in person assessment and discussion with staff/family",
+        "Block of planned developmental play sessions",
+        "End of unit report"
+      ]
+    },
+    {
+      "id": "service-7",
+      "title": "Early Years Development Play Assessment",
+      "category": "early-years",
+      "summary": "Early years development assessment lasting 4-5 hrs. £230.",
+      "details": [
+        "Discussion with family or setting staff, and observation time if at an Early Years setting",
+        "In person play and interaction based assessment",
+        "Mid length report, feedback and advice"
+      ]
+    },
+    {
+      "id": "service-8",
+      "title": "Family and School Support",
+      "category": "other",
+      "summary": "Guidance and recommendations for families and school staff.",
+      "details": [
+        "Sometimes support can come in the form of guidance and recommendations to the family/carers and staff supporting the individual in their journey.",
+        "Some examples include study skills, home routines to help improve home-life, and training in specific areas of need."
+      ]
     },
     {
       "id": "service-9",
+      "title": "Foundation Stage Project",
+      "category": "early-years",
+      "summary": "Foundation stage project reception year. 13-14 hours. £700.",
+      "details": [
+        "Meeting with staff to plan via zoom",
+        "Two mornings on site with staff carrying out whole cohort play based assessment",
+        "Detailed long report",
+        "Follow up meeting to support planning for cohort development key needs",
+        "Two twilight trainings on topics related to key needs"
+      ]
+    },
+    {
+      "id": "service-10",
+      "title": "Full Developmental Assessment",
+      "category": "early-years",
+      "summary": "A full developmental assessment for year 1 onwards. 5-6 hour assessment with a detailed report. £270.",
+      "details": [
+        "Preliminary conversation with family and/or school staff",
+        "In person developmental assessment",
+        "Long written report, feedback and advice"
+      ]
+    },
+    {
+      "id": "service-11",
+      "title": "Full Diagnostic Dyslexia Assessment",
+      "category": "assessments",
+      "summary": "A face-to-face assessment followed by a substantial written report. Age 8 to end of year 11 £525, age 16+ £550.",
+      "details": [
+        "Approximately 3 hours, this can only be completed on individuals age 8 and over.",
+        "Assessment consists of standardised assessments which reflect strengths and challenges across underlying ability and cognitive processing abilities.",
+        "Assessment of attainment in the areas of reading, spelling, and writing.",
+        "Detailed diagnostic written report, including recommendations and any considerations for exam access arrangements.",
+        "This report will travel with the individual for life as I hold an APC.",
+        "For 18 years + we are able to identify characteristics of ADHD as part of a full diagnostic assessment. This involves an additional 2-hour interview at a cost of £120."
+      ]
+    },
+    {
+      "id": "service-12",
+      "title": "Full Speech and Language Assessment",
+      "category": "speech-and-language-therapy",
+      "summary": "A full speech and language assessment for children and adults lasting up to 6 hours. £370.",
+      "details": [
+        "An initial discussion with parents/carers and school staff",
+        "Liaison with relevant professionals, if appropriate",
+        "A comprehensive assessment of speech, language and communication skills",
+        "Observations of communcation in everyday activities and play", 
+        "Interpretation of assessment findings",
+        "A clear, detailed written report",
+        "Feeback with practical, personalised recommendations"
+      ]
+    },
+    {
+      "id": "service-13",
+      "title": "Pupil Observation",
+      "category": "assessments",
+      "summary": "In class pupil focused observation. £60.",
+      "details": [
+        "Focus to be decided prior to observation.",
+        "Up to one hour observation in class.",
+        "Includes verbal feedback.",
+        "Optionally, written feedback can be provided for an additional charge."
+      ]
+    },
+    {
+      "id": "service-14",
+      "title": "Resilience Coaching",
+      "category": "training-and-development",
+      "summary": "Curriculum led education and wellness experience for 9- to 18-year-olds with Steph.",
+      "details": [
+        "In small groups or 1:1, children and adolescents aged 9 to 18 will learn through experiential activities, videos, games and dynamic exercises, which take place over 11 interactive sessions.",
+        "Resilience coaching will empower your child to deal with issues such as self-esteem and labels, using social media, hostile behaviour of others, and disagreements and conflicts.",
+        "The Resilience Tutoring package includes the Creating a Resilient Family course for parents.",
+        "Resilience and wellbeing training gives your child the confidence to manage feelings and overcome difficulties.",
+        "Past participants have reported less anxiety, worry, fear and reactive behaviour and improved relationships with parents, siblings and peers."
+      ]
+    },
+    {
+      "id": "service-15",
+      "title": "Small Group SEND Observation",
+      "category": "early-years",
+      "summary": "Observation and advice for small group of early years children with SEND and developmental needs. 2.5-3 hour session. £150 per child.",
+      "details": [
+        "Observation, discussion with staff and play with identified children at setting with parental permission",
+        "Verbal advice",
+        "Short report and suggested next steps and activities"
+      ]
+    },
+    {
+      "id": "service-16",
+      "title": "Small Space for Hire",
+      "category": "other",
+      "summary": "Please get in touch if you are looking for a space for individual talking therapies or for groups of up to 8 people. Price available on request.",
+      "details": [
+        "We have a small space available for hire in Strixton, Northamptonshire.",
+        "Suitable for individual talking therapies or small groups of up to 8 people.",
+        "Price available on request."
+      ]
+    },
+    {
+      "id": "service-17",
+      "title": "Spotlight Assessment",
+      "category": "assessments",
+      "summary": "A face-to-face assessment followed by a short report. NB This assessment will not diagnose dyslexia. £300.",
+      "details": [
+        "Approximately 1.5 hours, this can be completed on children from age 6+",
+        "Bespoke Spotlight will cover standardised test of underlying ability and one further area of cognitive processing; such as phonological processing or working memory. A word reading and word spelling test will also be administered.",
+        "Detailed short written report, including recommendations.",
+        "Can be accompanied by a pupil focussed observation in class, for an additional fee."
+      ]
+    },
+    {
+      "id": "service-18",
+      "title": "Training",
+      "category": "training-and-development",
+      "summary": "Bespoke training can be arranged on request. Usually we cover executive function skills, dyslexia and neurodiversity.",
+      "details": [
+        "Schools. In school training for SENCOs, Teachers or Teaching Assistants.",
+        "Parents. Online or small face-to-face group training available."
+      ]
+    },
+    {
+      "id": "service-19",
+      "title": "Specialist Teaching for Children with SEND",
+      "category": "specialist-teaching",
+      "summary": "1:1 and small group specialist teaching for children with SEND. £60 per hour or £300 for a block of 6 hours.",
+      "details": [
+      "Some individuals may benefit from specialist teaching to support their learning and development. This can be delivered at the Strixton centre.",
+      "Specialist teaching can focus on areas such as literacy, numeracy, executive function skills, social skills, and emotional regulation.",
+      "Sessions are tailored to the individual's needs and learning style.",
+      "Progress is regularly reviewed and feedback is provided to parents and carers.",
+      "Six week blocks are available at a discounted rate."
+      ]
+    },
+    {
+      "id": "service-20",
       "title": "Workplace Needs Assessments",
+      "category": "post-16",
       "summary": "Specialist evaluation of the employees' working environment, and tasks to identify adjustments needed. These assessments help employers fulfil their legal obligations under The Equality Act 2010, and promote a more inclusive and productive workplace. £540.",
-      "details": "<ul><li>The primary goal is to identify reasonable adjustments, accommodations, or assistive technologies that enable the employee to perform their job duties effective and safely.</li><li>Suitable for individuals with a range of neurodiverse conditions.</li><li>Involves conducting a 1:1 interview with the employee and employer.</li><li>The assessment results in a report with detailed recommendations for adjustments tailored to the individual's needs and workplace context.</li></ul>"
+      "details": [
+        "The primary goal is to identify reasonable adjustments, accommodations, or assistive technologies that enable the employee to perform their job duties effective and safely.",
+        "Suitable for individuals with a range of neurodiverse conditions.",
+        "Involves conducting a 1:1 interview with the employee and employer.",
+        "The assessment results in a report with detailed recommendations for adjustments tailored to the individual's needs and workplace context."
+      ]
     }
   ]
 }
