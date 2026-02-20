@@ -267,6 +267,32 @@ section h3 {
     grid-column: 4 / 6; /* Positioned between 2nd and 3rd of top row */
 }
 
+/* For exactly 7 team members (remainder 1), center the last one */
+.team-container:has(.team-member:nth-child(7):last-child) {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.team-container:has(.team-member:nth-child(7):last-child) .team-member:nth-child(7) {
+    grid-column: 2 / 3; /* Place in middle column */
+}
+
+/* For exactly 8 team members (remainder 2), center last two */
+.team-container:has(.team-member:nth-child(8):last-child) {
+    grid-template-columns: repeat(6, 1fr); /* Use 6 columns for precise positioning */
+}
+
+.team-container:has(.team-member:nth-child(8):last-child) .team-member:nth-child(-n+6) {
+    grid-column: span 2; /* First 6 span 2 columns each = 3 per row */
+}
+
+.team-container:has(.team-member:nth-child(8):last-child) .team-member:nth-child(7) {
+    grid-column: 2 / 4; /* Positioned between 1st and 2nd of top row */
+}
+
+.team-container:has(.team-member:nth-child(8):last-child) .team-member:nth-child(8) {
+    grid-column: 4 / 6; /* Positioned between 2nd and 3rd of top row */
+}
+
 /* Medium screens - 2 columns max */
 @media screen and (max-width: 768px) {
     .team-container {
@@ -274,21 +300,18 @@ section h3 {
         max-width: 600px; /* Smaller container for medium screens */
     }
 
-    /* Override 3-column rules for medium screens */
+    /* Override positioning rules for medium screens */
     .team-container:has(.team-member:nth-child(4):last-child),
-    .team-container:has(.team-member:nth-child(5):last-child) {
+    .team-container:has(.team-member:nth-child(5):last-child),
+    .team-container:has(.team-member:nth-child(7):last-child),
+    .team-container:has(.team-member:nth-child(8):last-child) {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .team-container:has(.team-member:nth-child(4):last-child) .team-member:nth-child(4) {
-        grid-column: auto; /* Let it flow naturally in 2-column layout */
-    }
-
-    .team-container:has(.team-member:nth-child(5):last-child) .team-member:nth-child(1),
-    .team-container:has(.team-member:nth-child(5):last-child) .team-member:nth-child(2),
-    .team-container:has(.team-member:nth-child(5):last-child) .team-member:nth-child(3),
-    .team-container:has(.team-member:nth-child(5):last-child) .team-member:nth-child(4),
-    .team-container:has(.team-member:nth-child(5):last-child) .team-member:nth-child(5) {
+    .team-container:has(.team-member:nth-child(4):last-child) .team-member,
+    .team-container:has(.team-member:nth-child(5):last-child) .team-member,
+    .team-container:has(.team-member:nth-child(7):last-child) .team-member,
+    .team-container:has(.team-member:nth-child(8):last-child) .team-member {
         grid-column: auto; /* Let them flow naturally in 2-column layout */
     }
 }
@@ -341,22 +364,27 @@ section h3 {
 /* Team Modal */
 .team-modal-content {
     display: flex;
-    align-items: center; /* Center image vertically with text */
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
 .team-modal-img {
-    flex: 0 0 200px;
+    flex: none;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    object-fit:cover;
+    object-fit: cover;
     background: #fff;
+}
+
+.team-modal-text {
+    width: 100%;
 }
 
 .team-modal-text h3 {
     margin-top: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .team-modal-text h4 {
@@ -365,7 +393,7 @@ section h3 {
     color: #666;
     font-style: italic;
     font-weight: normal;
-    text-align: left;
+    text-align: center;
 }
 
 /* ================================
@@ -1366,19 +1394,16 @@ footer {
 
     /* Override the specific positioning rules for mobile */
     .team-container:has(.team-member:nth-child(4):last-child),
-    .team-container:has(.team-member:nth-child(5):last-child) {
+    .team-container:has(.team-member:nth-child(5):last-child),
+    .team-container:has(.team-member:nth-child(7):last-child),
+    .team-container:has(.team-member:nth-child(8):last-child) {
         grid-template-columns: 1fr;
     }
 
-    .team-container:has(.team-member:nth-child(4):last-child) .team-member:nth-child(4) {
-        grid-column: 1 / 2; /* Reset to single column */
-    }
-
-    .team-container:has(.team-member:nth-child(5):last-child) .team-member:nth-child(1),
-    .team-container:has(.team-member:nth-child(5):last-child) .team-member:nth-child(2),
-    .team-container:has(.team-member:nth-child(5):last-child) .team-member:nth-child(3),
-    .team-container:has(.team-member:nth-child(5):last-child) .team-member:nth-child(4),
-    .team-container:has(.team-member:nth-child(5):last-child) .team-member:nth-child(5) {
+    .team-container:has(.team-member:nth-child(4):last-child) .team-member,
+    .team-container:has(.team-member:nth-child(5):last-child) .team-member,
+    .team-container:has(.team-member:nth-child(7):last-child) .team-member,
+    .team-container:has(.team-member:nth-child(8):last-child) .team-member {
         grid-column: 1 / 2; /* Reset to single column */
     }
 
