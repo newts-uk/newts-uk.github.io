@@ -47,6 +47,7 @@
 <!-- ProfessionalService structured data (helps local search & rich results) -->
 <!-- ProfessionalService structured data (helps local search & rich results) -->
 <!-- ProfessionalService structured data (helps local search & rich results) -->
+<!-- ProfessionalService structured data (helps local search & rich results) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -239,6 +240,54 @@
           "name": "Workplace Needs Assessments",
           "description": "Specialist evaluation of the employees' working environment, and tasks to identify adjustments needed. These assessments help employers fulfil their legal obligations under The Equality Act 2010, and promote a more inclusive and productive workplace. £540."
         }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Drawing and Talking",
+          "description": "A therapeutic intervention using drawing and talking techniques for children and young people."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Zones of Regulation",
+          "description": "A programme to teach emotional literacy and self-regulation strategies."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Lego-based Therapy",
+          "description": "A programme designed to support children with social communication difficulties."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Emotional Support",
+          "description": "Targeted interventions to support children's emotional wellbeing, including self-esteem, resilience, anxiety, anger and bereavement."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Maths and English Tutoring",
+          "description": "Tutoring in maths and English for primary age children."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Hypnotherapy, NLP and EMDR",
+          "description": "Therapeutic support using hypnotherapy, neuro-linguistic programming (NLP) and eye movement desensitisation and reprocessing (EMDR) techniques."
+        }
       }
     ]
   }
@@ -419,6 +468,8 @@
 </div>
 
 </div>
+
+</div>
         </section>
         <section id="gallery">
             <h2>Gallery</h2>
@@ -503,7 +554,7 @@
                         <li><a href="assets/policies/privacy.pdf" target="_blank">Privacy</a></li>
                         <!-- <li><a href="#">Professional Boundaries</a></li> -->
                         <li><a href="assets/policies/safeguarding.pdf" target="_blank">Safeguarding and Child Protection</a></li>
-                        <li><a href="assets/policies/recruitment.pdf" target="_blank">Recruitment</a></li>
+                        <li><a href="assets/policies/recruitment.pdf" target="_blank">Safer Recruitment</a></li>
                     </ul>
                 </div>
                 <div class="footer-navigation">
