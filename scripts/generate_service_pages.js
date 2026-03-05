@@ -1,7 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const services = require('../data/services.json').services;
+const data = require('../data/services.json');
+const services = data.services;
+const categories = data.categories;
 
 function slugify(text) {
   return text
@@ -10,7 +12,7 @@ function slugify(text) {
     .replace(/^-+|-+$/g, '');
 }
 
-const template = (service, slug) => `<!DOCTYPE html>
+const template = (service, slug, category) => `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -112,7 +114,7 @@ const template = (service, slug) => `<!DOCTYPE html>
       <div class="container">
         <h1>${service.title}</h1>
         <nav class="breadcrumb">
-          <a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / <span>${service.title}</span>
+          <a href="../index.html">Home</a> / <a href="../index.html#services">Services</a>${category ? ` / <a href="categories/${slugify(category.title)}.html">${category.title}</a>` : ''} / <span>${service.title}</span>
         </nav>
       </div>
     </section>
@@ -189,7 +191,8 @@ const template = (service, slug) => `<!DOCTYPE html>
 
 services.forEach(service => {
   const slug = slugify(service.title);
-  const html = template(service, slug);
+  const category = categories.find(c => c.id === service.category);
+  const html = template(service, slug, category);
   const filePath = path.join(__dirname, '..', 'services', `${slug}.html`);
   fs.writeFileSync(filePath, html, 'utf8');
   console.log(`Generated: services/${slug}.html`);

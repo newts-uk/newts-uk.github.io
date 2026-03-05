@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const data = require('../data/services.json');
-const categories = data.categores; // Note: there's a typo in the JSON "categores" instead of "categories"
+const categories = data.categories;
 const services = data.services;
 
 function slugify(text) {

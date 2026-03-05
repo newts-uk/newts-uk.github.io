@@ -46,6 +46,7 @@
 <!-- ProfessionalService structured data (helps local search & rich results) -->
 <!-- ProfessionalService structured data (helps local search & rich results) -->
 <!-- ProfessionalService structured data (helps local search & rich results) -->
+<!-- ProfessionalService structured data (helps local search & rich results) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -107,8 +108,8 @@
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Bespoke Teaching Packages for EOTAS pupils",
-          "description": ""
+          "name": "Bespoke Teaching Packages for EOTAS Pupils",
+          "description": "1:1 and small group provision for EOTAS pupils. Price available on request."
         }
       },
       {
@@ -116,7 +117,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Development Training",
-          "description": "Staff training via Zoom or in person. £150 per hour."
+          "description": "Staff training via Zoom or in person with Ellie. £150 per hour."
         }
       },
       {
@@ -131,7 +132,7 @@
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Early Years Development Play assessment",
+          "name": "Early Years Development Play Assessment",
           "description": "Early years development assessment lasting 4-5 hrs. £230."
         }
       },
@@ -156,7 +157,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Full Developmental Assessment",
-          "description": "A full developmental assessment yr 1 upwards. 5-6 hour assessment with a detailed report. £270."
+          "description": "A full developmental assessment for year 1 onwards. 5-6 hour assessment with a detailed report. £270."
         }
       },
       {
@@ -164,7 +165,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Full Diagnostic Dyslexia Assessment",
-          "description": "A face-to-face assessment followed by a substantial written report. £525 up to age 16, £550 age 16+."
+          "description": "A face-to-face assessment followed by a substantial written report. Age 8 to end of year 11 £525, age 16+ £550."
         }
       },
       {
@@ -188,7 +189,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Resilience Coaching",
-          "description": "Curriculum led education and wellness experience for 9- to 18-year-olds. £POA."
+          "description": "Curriculum led education and wellness experience for 9- to 18-year-olds with Steph."
         }
       },
       {
@@ -221,6 +222,14 @@
           "@type": "Service",
           "name": "Training",
           "description": "Bespoke training can be arranged on request. Usually we cover executive function skills, dyslexia and neurodiversity."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Specialist Teaching for Children with SEND",
+          "description": "1:1 and small group specialist teaching for children with SEND. £60 per hour or £300 for a block of 6 hours."
         }
       },
       {
@@ -265,7 +274,7 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#" id="google-form-link">EOTAS Referral Form</a></li>
+                <li><a href="https://forms.newts.uk/forms/referral-form">EOTAS Referral Form</a></li>
             </ul>
         </div>
     </nav>
@@ -288,55 +297,112 @@
             <h2>Services</h2>
             <div class="services-container" id="services-container">
 
-    <article class="service-panel clickable category-panel" id="category-assessments" aria-labelledby="assessments-title">
-      <a href="services/categories/assessments.html" class="category-link" data-category-id="assessments">
-        <h3 id="assessments-title">Assessments</h3>
-        <p class="category-summary">Assessments for dyslexia and other specific learning difficulties.</p>
-        <p class="service-count">4 services</p>
-      </a>
+<div class="service-panels">
+    <article class="service-panel" id="service-service-1" aria-labelledby="service-service-1-title">
+      <h3 id="service-service-1-title">Access Arrangements Testing</h3>
+      <p></p>
     </article>
-    <article class="service-panel clickable category-panel" id="category-early-years" aria-labelledby="early-years-title">
-      <a href="services/categories/early-years.html" class="category-link" data-category-id="early-years">
-        <h3 id="early-years-title">Early Years</h3>
-        <p class="category-summary">Services for early years children (0-5 years).</p>
-        <p class="service-count">5 services</p>
-      </a>
+    <article class="service-panel" id="service-service-2" aria-labelledby="service-service-2-title">
+      <h3 id="service-service-2-title">Adult Support</h3>
+      <p></p>
     </article>
-    <article class="service-panel clickable category-panel" id="category-post-16" aria-labelledby="post-16-title">
-      <a href="services/categories/post-16-and-adults.html" class="category-link" data-category-id="post-16">
-        <h3 id="post-16-title">Post 16 and Adults</h3>
-        <p class="category-summary">Services for post 16 students and adults.</p>
-        <p class="service-count">2 services</p>
-      </a>
+    <article class="service-panel" id="service-service-3" aria-labelledby="service-service-3-title">
+      <h3 id="service-service-3-title">Bespoke Speech and Language Support</h3>
+      <p></p>
     </article>
-    <article class="service-panel clickable category-panel" id="category-specialist-teaching" aria-labelledby="specialist-teaching-title">
-      <a href="services/categories/specialist-teaching.html" class="category-link" data-category-id="specialist-teaching">
-        <h3 id="specialist-teaching-title">Specialist Teaching</h3>
-        <p class="category-summary">Specialist teaching for children and young people with additional needs.</p>
-        <p class="service-count">2 services</p>
-      </a>
+    <article class="service-panel" id="service-service-4" aria-labelledby="service-service-4-title">
+      <h3 id="service-service-4-title">Bespoke Teaching Packages for EOTAS Pupils</h3>
+      <p></p>
     </article>
-    <article class="service-panel clickable category-panel" id="category-speech-and-language-therapy" aria-labelledby="speech-and-language-therapy-title">
-      <a href="services/categories/speech-and-language.html" class="category-link" data-category-id="speech-and-language-therapy">
-        <h3 id="speech-and-language-therapy-title">Speech and Language</h3>
-        <p class="category-summary">Speech and language therapy services.</p>
-        <p class="service-count">2 services</p>
-      </a>
+    <article class="service-panel" id="service-service-5" aria-labelledby="service-service-5-title">
+      <h3 id="service-service-5-title">Development Training</h3>
+      <p></p>
     </article>
-    <article class="service-panel clickable category-panel" id="category-training-and-development" aria-labelledby="training-and-development-title">
-      <a href="services/categories/training-and-development.html" class="category-link" data-category-id="training-and-development">
-        <h3 id="training-and-development-title">Training and Development</h3>
-        <p class="category-summary">Training and development for staff, parents and carers.</p>
-        <p class="service-count">3 services</p>
-      </a>
+    <article class="service-panel" id="service-service-6" aria-labelledby="service-service-6-title">
+      <h3 id="service-service-6-title">Developmental Interventions</h3>
+      <p></p>
     </article>
-    <article class="service-panel clickable category-panel" id="category-other" aria-labelledby="other-title">
-      <a href="services/categories/other-services.html" class="category-link" data-category-id="other">
-        <h3 id="other-title">Other Services</h3>
-        <p class="category-summary">Other services we provide.</p>
-        <p class="service-count">2 services</p>
-      </a>
+    <article class="service-panel" id="service-service-7" aria-labelledby="service-service-7-title">
+      <h3 id="service-service-7-title">Early Years Development Play Assessment</h3>
+      <p></p>
     </article>
+    <article class="service-panel" id="service-service-8" aria-labelledby="service-service-8-title">
+      <h3 id="service-service-8-title">Family and School Support</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-9" aria-labelledby="service-service-9-title">
+      <h3 id="service-service-9-title">Foundation Stage Project</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-10" aria-labelledby="service-service-10-title">
+      <h3 id="service-service-10-title">Full Developmental Assessment</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-11" aria-labelledby="service-service-11-title">
+      <h3 id="service-service-11-title">Full Diagnostic Dyslexia Assessment</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-12" aria-labelledby="service-service-12-title">
+      <h3 id="service-service-12-title">Full Speech and Language Assessment</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-13" aria-labelledby="service-service-13-title">
+      <h3 id="service-service-13-title">Pupil Observation</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-14" aria-labelledby="service-service-14-title">
+      <h3 id="service-service-14-title">Resilience Coaching</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-15" aria-labelledby="service-service-15-title">
+      <h3 id="service-service-15-title">Small Group SEND Observation</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-16" aria-labelledby="service-service-16-title">
+      <h3 id="service-service-16-title">Small Space for Hire</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-17" aria-labelledby="service-service-17-title">
+      <h3 id="service-service-17-title">Spotlight Assessment</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-18" aria-labelledby="service-service-18-title">
+      <h3 id="service-service-18-title">Training</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-19" aria-labelledby="service-service-19-title">
+      <h3 id="service-service-19-title">Specialist Teaching for Children with SEND</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-20" aria-labelledby="service-service-20-title">
+      <h3 id="service-service-20-title">Workplace Needs Assessments</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-21" aria-labelledby="service-service-21-title">
+      <h3 id="service-service-21-title">Drawing and Talking</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-22" aria-labelledby="service-service-22-title">
+      <h3 id="service-service-22-title">Zones of Regulation</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-23" aria-labelledby="service-service-23-title">
+      <h3 id="service-service-23-title">Lego-based Therapy</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-24" aria-labelledby="service-service-24-title">
+      <h3 id="service-service-24-title">Emotional Support</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-25" aria-labelledby="service-service-25-title">
+      <h3 id="service-service-25-title">Maths and English Tutoring</h3>
+      <p></p>
+    </article>
+    <article class="service-panel" id="service-service-26" aria-labelledby="service-service-26-title">
+      <h3 id="service-service-26-title">Hypnotherapy, NLP and EMDR</h3>
+      <p></p>
+    </article>
+</div>
 
 </div>
 

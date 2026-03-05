@@ -36,7 +36,7 @@ async function main() {
 
   const raw = fs.readFileSync(dataPath, 'utf8');
   const data = JSON.parse(raw);
-  const categories = data.categores || []; // Note: there's a typo in the JSON "categores"
+  const categories = data.categories || [];
   const services = data.services || [];
 
   const panels = categories.map(category => {
