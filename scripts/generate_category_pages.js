@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const data = require('../data/services.json');
-const categories = data.categores; // Note: there's a typo in the JSON "categores" instead of "categories"
+const categories = data.categories;
 const services = data.services;
 
 function slugify(text) {
@@ -76,7 +76,7 @@ const categoryTemplate = (category, categoryServices) => `<!DOCTYPE html>
         <li><a href="../../index.html#services">Services</a></li>
         <li><a href="../../index.html#gallery">Gallery</a></li>
         <li><a href="../../index.html#contact">Contact</a></li>
-        <li><a href="#" id="google-form-link">EOTAS Referral Form</a></li>
+        <li><a href="https://forms.newts.uk/forms/referral-form">Referral Form</a></li>
       </ul>
     </div>
   </nav>
@@ -122,14 +122,10 @@ const categoryTemplate = (category, categoryServices) => `<!DOCTYPE html>
         <div class="footer-policies">
           <h3>Policies & Information</h3>
           <ul>
-            <li><a href="../../index.html#">Code of Ethics</a></li>
-            <li><a href="../../index.html#">Complaints</a></li>
-            <li><a href="../../index.html#">Equality and Diversity</a></li>
-            <li><a href="../../index.html#">Health and Safety</a></li>
-            <li><a href="../../index.html#">Lone Working</a></li>
-            <li><a href="../../index.html#">Privacy</a></li>
-            <li><a href="../../index.html#">Professional Boundaries</a></li>
-            <li><a href="../../index.html#">Safeguarding and Child Protection</a></li>
+            <li><a href="../../assets/policies/complaints.pdf" target="_blank">Complaints</a></li>
+            <li><a href="../../assets/policies/privacy.pdf" target="_blank">Privacy</a></li>
+            <li><a href="../../assets/policies/safeguarding.pdf" target="_blank">Safeguarding and Child Protection</a></li>
+            <li><a href="../../assets/policies/recruitment.pdf" target="_blank">Safer Recruitment</a></li>
           </ul>
         </div>
         <div class="footer-navigation">
@@ -139,7 +135,7 @@ const categoryTemplate = (category, categoryServices) => `<!DOCTYPE html>
             <li><a href="../../index.html#about">About Us</a></li>
             <li><a href="../../index.html#services">Services</a></li>
             <li><a href="../../index.html#contact">Contact</a></li>
-            <li><a href="#" id="google-form-link">EOTAS Referral Form</a></li>
+            <li><a href="https://forms.newts.uk/forms/referral-form">Referral Form</a></li>
           </ul>
         </div>
       </div>

@@ -46,6 +46,8 @@
 <!-- ProfessionalService structured data (helps local search & rich results) -->
 <!-- ProfessionalService structured data (helps local search & rich results) -->
 <!-- ProfessionalService structured data (helps local search & rich results) -->
+<!-- ProfessionalService structured data (helps local search & rich results) -->
+<!-- ProfessionalService structured data (helps local search & rich results) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -107,8 +109,8 @@
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Bespoke Teaching Packages for EOTAS pupils",
-          "description": ""
+          "name": "Bespoke Teaching Packages for EOTAS Pupils",
+          "description": "1:1 and small group provision for EOTAS pupils. Price available on request."
         }
       },
       {
@@ -116,7 +118,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Development Training",
-          "description": "Staff training via Zoom or in person. £150 per hour."
+          "description": "Staff training via Zoom or in person with Ellie. £150 per hour."
         }
       },
       {
@@ -131,7 +133,7 @@
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Early Years Development Play assessment",
+          "name": "Early Years Development Play Assessment",
           "description": "Early years development assessment lasting 4-5 hrs. £230."
         }
       },
@@ -156,7 +158,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Full Developmental Assessment",
-          "description": "A full developmental assessment yr 1 upwards. 5-6 hour assessment with a detailed report. £270."
+          "description": "A full developmental assessment for year 1 onwards. 5-6 hour assessment with a detailed report. £270."
         }
       },
       {
@@ -164,7 +166,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Full Diagnostic Dyslexia Assessment",
-          "description": "A face-to-face assessment followed by a substantial written report. £525 up to age 16, £550 age 16+."
+          "description": "A face-to-face assessment followed by a substantial written report. Age 8 to end of year 11 £525, age 16+ £550."
         }
       },
       {
@@ -188,7 +190,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Resilience Coaching",
-          "description": "Curriculum led education and wellness experience for 9- to 18-year-olds. £POA."
+          "description": "Curriculum led education and wellness experience for 9- to 18-year-olds with Steph."
         }
       },
       {
@@ -227,8 +229,64 @@
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
+          "name": "Specialist Teaching for Children with SEND",
+          "description": "1:1 and small group specialist teaching for children with SEND. £60 per hour or £300 for a block of 6 hours."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
           "name": "Workplace Needs Assessments",
           "description": "Specialist evaluation of the employees' working environment, and tasks to identify adjustments needed. These assessments help employers fulfil their legal obligations under The Equality Act 2010, and promote a more inclusive and productive workplace. £540."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Drawing and Talking",
+          "description": "A therapeutic intervention using drawing and talking techniques for children and young people."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Zones of Regulation",
+          "description": "A programme to teach emotional literacy and self-regulation strategies."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Lego-based Therapy",
+          "description": "A programme designed to support children with social communication difficulties."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Emotional Support",
+          "description": "Targeted interventions to support children's emotional wellbeing, including self-esteem, resilience, anxiety, anger and bereavement."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Maths and English Tutoring",
+          "description": "Tutoring in maths and English for primary age children."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Hypnotherapy, NLP and EMDR",
+          "description": "Therapeutic support using hypnotherapy, neuro-linguistic programming (NLP) and eye movement desensitisation and reprocessing (EMDR) techniques."
         }
       }
     ]
@@ -265,7 +323,7 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#" id="google-form-link">EOTAS Referral Form</a></li>
+                <li><a href="https://forms.newts.uk/forms/referral-form">EOTAS Referral Form</a></li>
             </ul>
         </div>
     </nav>
@@ -313,7 +371,7 @@
       <a href="services/categories/specialist-teaching.html" class="category-link" data-category-id="specialist-teaching">
         <h3 id="specialist-teaching-title">Specialist Teaching</h3>
         <p class="category-summary">Specialist teaching for children and young people with additional needs.</p>
-        <p class="service-count">2 services</p>
+        <p class="service-count">3 services</p>
       </a>
     </article>
     <article class="service-panel clickable category-panel" id="category-speech-and-language-therapy" aria-labelledby="speech-and-language-therapy-title">
@@ -327,7 +385,14 @@
       <a href="services/categories/training-and-development.html" class="category-link" data-category-id="training-and-development">
         <h3 id="training-and-development-title">Training and Development</h3>
         <p class="category-summary">Training and development for staff, parents and carers.</p>
-        <p class="service-count">3 services</p>
+        <p class="service-count">2 services</p>
+      </a>
+    </article>
+    <article class="service-panel clickable category-panel" id="category-wellbeing-therapy" aria-labelledby="wellbeing-therapy-title">
+      <a href="services/categories/wellbeing-therapy.html" class="category-link" data-category-id="wellbeing-therapy">
+        <h3 id="wellbeing-therapy-title">Wellbeing Therapy</h3>
+        <p class="category-summary">Wellbeing and therapy services.</p>
+        <p class="service-count">6 services</p>
       </a>
     </article>
     <article class="service-panel clickable category-panel" id="category-other" aria-labelledby="other-title">
@@ -337,6 +402,10 @@
         <p class="service-count">2 services</p>
       </a>
     </article>
+
+</div>
+
+</div>
 
 </div>
 
@@ -437,7 +506,7 @@
                         <li><a href="assets/policies/privacy.pdf" target="_blank">Privacy</a></li>
                         <!-- <li><a href="#">Professional Boundaries</a></li> -->
                         <li><a href="assets/policies/safeguarding.pdf" target="_blank">Safeguarding and Child Protection</a></li>
-                        <li><a href="assets/policies/recruitment.pdf" target="_blank">Recruitment</a></li>
+                        <li><a href="assets/policies/recruitment.pdf" target="_blank">Safer Recruitment</a></li>
                     </ul>
                 </div>
                 <div class="footer-navigation">

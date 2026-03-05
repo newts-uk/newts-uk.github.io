@@ -15,15 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         loadGallery();
     }
 
-    // Google Form modal functionality
-    const googleFormLink = document.getElementById('google-form-link');
-    if (googleFormLink) {
-        googleFormLink.addEventListener('click', (e) => {
-            e.preventDefault();
-            openGoogleFormModal();
-        });
-    }
-
     // Hamburger menu functionality
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('nav-active');
@@ -131,26 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 modal.classList.add('modal-visible');
             });
         });
-    }
-
-    function openGoogleFormModal() {
-        if (!modal) return;
-        const modalContent = modal.querySelector('.modal-content');
-        if (!modalContent) return;
-        modalContent.classList.add('large-modal');
-        
-        modalBody.innerHTML = `
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-QKApTw1rERnWs0Pw-GLfxRhkpabuSlJUlhN6rbaiEVED0g/viewform?embedded=true" 
-                    width="100%" 
-                    height="100%" 
-                    frameborder="0" 
-                    marginheight="0" 
-                    marginwidth="0">
-                Loading…
-            </iframe>
-        `;
-        
-        modal.classList.add('modal-visible');
     }
 
     if (closeButton) {

@@ -1,7 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const services = require('../data/services.json').services;
+const data = require('../data/services.json');
+const services = data.services;
+const categories = data.categories;
 
 function slugify(text) {
   return text
@@ -10,7 +12,7 @@ function slugify(text) {
     .replace(/^-+|-+$/g, '');
 }
 
-const template = (service, slug) => `<!DOCTYPE html>
+const template = (service, slug, category) => `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -102,7 +104,7 @@ const template = (service, slug) => `<!DOCTYPE html>
         <li><a href="../index.html#services">Services</a></li>
         <li><a href="../index.html#gallery">Gallery</a></li>
         <li><a href="../index.html#contact">Contact</a></li>
-        <li><a href="#" id="google-form-link">EOTAS Referral Form</a></li>
+        <li><a href="https://forms.newts.uk/forms/referral-form">Referral Form</a></li>
       </ul>
     </div>
   </nav>
@@ -112,7 +114,7 @@ const template = (service, slug) => `<!DOCTYPE html>
       <div class="container">
         <h1>${service.title}</h1>
         <nav class="breadcrumb">
-          <a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / <span>${service.title}</span>
+          <a href="../index.html">Home</a> / <a href="../index.html#services">Services</a>${category ? ` / <a href="categories/${slugify(category.title)}.html">${category.title}</a>` : ''} / <span>${service.title}</span>
         </nav>
       </div>
     </section>
@@ -149,14 +151,10 @@ const template = (service, slug) => `<!DOCTYPE html>
         <div class="footer-policies">
           <h3>Policies & Information</h3>
           <ul>
-            <li><a href="../index.html#">Code of Ethics</a></li>
-            <li><a href="../index.html#">Complaints</a></li>
-            <li><a href="../index.html#">Equality and Diversity</a></li>
-            <li><a href="../index.html#">Health and Safety</a></li>
-            <li><a href="../index.html#">Lone Working</a></li>
-            <li><a href="../index.html#">Privacy</a></li>
-            <li><a href="../index.html#">Professional Boundaries</a></li>
-            <li><a href="../index.html#">Safeguarding and Child Protection</a></li>
+            <li><a href="../assets/policies/complaints.pdf" target="_blank">Complaints</a></li>
+            <li><a href="../assets/policies/privacy.pdf" target="_blank">Privacy</a></li>
+            <li><a href="../assets/policies/safeguarding.pdf" target="_blank">Safeguarding and Child Protection</a></li>
+            <li><a href="../assets/policies/recruitment.pdf" target="_blank">Safer Recruitment</a></li>
           </ul>
         </div>
         <div class="footer-navigation">
@@ -166,7 +164,7 @@ const template = (service, slug) => `<!DOCTYPE html>
             <li><a href="../index.html#about">About Us</a></li>
             <li><a href="../index.html#services">Services</a></li>
             <li><a href="../index.html#contact">Contact</a></li>
-                            <li><a href="#" id="google-form-link">EOTAS Referral Form</a></li>
+                            <li><a href="https://forms.newts.uk/forms/referral-form">Referral Form</a></li>
           </ul>
         </div>
       </div>
@@ -189,7 +187,8 @@ const template = (service, slug) => `<!DOCTYPE html>
 
 services.forEach(service => {
   const slug = slugify(service.title);
-  const html = template(service, slug);
+  const category = categories.find(c => c.id === service.category);
+  const html = template(service, slug, category);
   const filePath = path.join(__dirname, '..', 'services', `${slug}.html`);
   fs.writeFileSync(filePath, html, 'utf8');
   console.log(`Generated: services/${slug}.html`);

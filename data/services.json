@@ -1,5 +1,5 @@
 {
-  "categores": [
+  "categories": [
     {
       "id": "assessments",
       "title": "Assessments",
@@ -30,6 +30,11 @@
       "id": "training-and-development",
       "title": "Training and Development",
       "summary": "Training and development for staff, parents and carers."
+    },
+    {
+      "id": "wellbeing-therapy",
+      "title": "Wellbeing Therapy",
+      "summary": "Wellbeing and therapy services."
     },
     {
       "id": "other",
@@ -136,7 +141,7 @@
     {
       "id": "service-10",
       "title": "Full Developmental Assessment",
-      "category": "early-years",
+      "category": "assessments",
       "summary": "A full developmental assessment for year 1 onwards. 5-6 hour assessment with a detailed report. £270.",
       "details": [
         "Preliminary conversation with family and/or school staff",
@@ -188,7 +193,7 @@
     {
       "id": "service-14",
       "title": "Resilience Coaching",
-      "category": "training-and-development",
+      "category": "wellbeing-therapy",
       "summary": "Curriculum led education and wellness experience for 9- to 18-year-olds with Steph.",
       "details": [
         "In small groups or 1:1, children and adolescents aged 9 to 18 will learn through experiential activities, videos, games and dynamic exercises, which take place over 11 interactive sessions.",
@@ -265,6 +270,75 @@
         "Suitable for individuals with a range of neurodiverse conditions.",
         "Involves conducting a 1:1 interview with the employee and employer.",
         "The assessment results in a report with detailed recommendations for adjustments tailored to the individual's needs and workplace context."
+      ]
+    },
+    {
+      "id": "service-21",
+      "title": "Drawing and Talking",
+      "category": "wellbeing-therapy",
+      "summary": "A therapeutic intervention using drawing and talking techniques for children and young people.",
+      "details": [
+        "Initial chat and getting to know you session – 30-60 mins",
+        "12 weeks, 1-hour sessions",
+        "Drawing & Talking for Year 2 upwards",
+        "Sand-play EYFS and under"
+      ]
+    },
+    {
+      "id": "service-22",
+      "title": "Zones of Regulation",
+      "category": "wellbeing-therapy",
+      "summary": "A programme to teach emotional literacy and self-regulation strategies.",
+      "details": [
+        "Initial chat and getting to know you session – 30-60 mins",
+        "Approximately 12 weeks, 1-hour sessions",
+        "Programme to teach emotional literacy and strategies.",
+        "Supporting families and carers to implement the programme at home to reinforce learning and progress."
+      ]
+    },
+    {
+      "id": "service-23",
+      "title": "Lego-based Therapy",
+      "category": "wellbeing-therapy",
+      "summary": "A programme designed to support children with social communication difficulties.",
+      "details": [
+        "Initial chat and getting to know you session – 30-60 mins",
+        "Approximately 8-12 weeks, 1-hour sessions",
+        "Programme is designed to support children with social communication difficulties. It encourages turn taking, sharing, listening, team-work and problem solving.",
+        "Parents/carers or an additional sibling can be involved in the course if required (at no additional cost)."
+      ]
+    },
+    {
+      "id": "service-24",
+      "title": "Emotional Support",
+      "category": "wellbeing-therapy",
+      "summary": "Targeted interventions to support children's emotional wellbeing, including self-esteem, resilience, anxiety, anger and bereavement.",
+      "details": [
+        "Initial chat and getting to know you session – 30-60 mins",
+        "Approximately 12 weeks, 1-hour sessions",
+        "Sessions can support: self-esteem and resilience, social skills, anxiety, anger, and bereavement.",
+        "Supporting families and carers to implement the programme at home to reinforce learning and progress.",
+        "This support can be delivered through a range of targeted interventions, including: The Hidden Chimp, Starving the Anger Gremlin CBT, Starving the Anxiety Gremlin CBT, and Stop, Think, Do."
+      ]
+    },
+    {
+      "id": "service-25",
+      "title": "Maths and English Tutoring",
+      "category": "specialist-teaching",
+      "summary": "Tutoring in maths and English for primary age children.",
+      "details": [
+        "Initial chat and getting to know you session – 30-60 mins",
+        "Primary age only",
+        "Supporting families and carers to implement the programme at home to reinforce learning and progress."
+      ]
+    },
+    {
+      "id": "service-26",
+      "title": "Hypnotherapy, NLP and EMDR",
+      "category": "wellbeing-therapy",
+      "summary": "Therapeutic support using hypnotherapy, neuro-linguistic programming (NLP) and eye movement desensitisation and reprocessing (EMDR) techniques.",
+      "details": [
+        "Details to follow."
       ]
     }
   ]
