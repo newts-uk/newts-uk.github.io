@@ -95,10 +95,10 @@ const categoryTemplate = (category, categoryServices) => `<!DOCTYPE html>
       <div class="container">
         <div class="services-grid">
           ${categoryServices.map(service => `
-            <div class="service-card">
-              <h3><a href="../${slugify(service.title)}.html">${service.title}</a></h3>
+            <a href="../${slugify(service.title)}.html" class="service-card">
+              <h3>${service.title}</h3>
               ${service.summary ? `<p class="service-summary">${service.summary}</p>` : ''}
-            </div>
+            </a>
           `).join('')}
         </div>
         
