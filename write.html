@@ -2,99 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <title>Writing Space</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-
-        html, body {
-            height: 100%;
-            background: #fdf6e3;
-            color: #2b2b2b;
-            font-family: 'Lexend', 'Comic Sans MS', 'Trebuchet MS', sans-serif;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-        }
-
-        #editor {
-            flex: 1;
-            width: 100%;
-            border: none;
-            outline: none;
-            resize: none;
-            background: transparent;
-            color: inherit;
-            font-family: inherit;
-            font-size: 1.5rem;
-            line-height: 1.8;
-            letter-spacing: 0.02em;
-            word-spacing: 0.08em;
-            padding: 3rem clamp(1rem, 8vw, 6rem);
-        }
-
-        #status {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.75rem 1.5rem;
-            background: #eee8d5;
-            border-top: 2px solid #d8d2bf;
-            font-size: 1rem;
-            font-family: inherit;
-            color: #555;
-        }
-
-        #status .label { font-weight: 500; }
-
-        button {
-            font-family: inherit;
-            font-size: 0.95rem;
-            background: #d8d2bf;
-            border: none;
-            padding: 0.4rem 0.9rem;
-            border-radius: 6px;
-            cursor: pointer;
-            color: #2b2b2b;
-        }
-
-        button:hover { background: #cdc6ad; }
-    </style>
+    <meta http-equiv="refresh" content="0; url=/write/">
+    <link rel="canonical" href="/write/">
+    <title>Redirecting...</title>
 </head>
 <body>
-    <textarea id="editor" placeholder="Start typing..." autofocus spellcheck="false"></textarea>
-    <div id="status">
-        <span><span class="label">Words:</span> <span id="word-count">0</span></span>
-        <span><span class="label">Characters:</span> <span id="char-count">0</span></span>
-        <button id="clear">Clear</button>
-    </div>
-
-    <script>
-        const editor = document.getElementById('editor');
-        const wordCount = document.getElementById('word-count');
-        const charCount = document.getElementById('char-count');
-        const clearBtn = document.getElementById('clear');
-
-        function update() {
-            const text = editor.value;
-            const words = text.trim() ? text.trim().split(/\s+/).length : 0;
-            wordCount.textContent = words;
-            charCount.textContent = text.length;
-        }
-
-        editor.addEventListener('input', update);
-        clearBtn.addEventListener('click', () => {
-            if (editor.value && !confirm('Clear all text?')) return;
-            editor.value = '';
-            editor.focus();
-            update();
-        });
-    </script>
+    <p>Redirecting to <a href="/write/">/write/</a>...</p>
+    <script>location.replace('/write/');</script>
 </body>
 </html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Writing Space</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html, body {
+            height: 100%;
+            background: #fdf6e3;
+            color: #2b2b2b;
+            font-family: 'Lexend', 'Comic Sans MS', 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #editor {
+            flex: 1;
+            width: 100%;
+            border: none;
+            outline: none;
+            resize: none;
+            background: transparent;
+            color: inherit;
+            font-family: inherit;
+            font-size: 1.5rem;
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+            word-spacing: 0.08em;
+            padding: 3rem clamp(1rem, 8vw, 6rem);
+        }
+
+        #status {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            background: #eee8d5;
+            border-top: 2px solid #d8d2bf;
+            font-size: 1rem;
+            font-family: inherit;
+            color: #555;
+        }
+
+        #status .label { font-weight: 500; }
+
+        button {
+            font-family: inherit;
+            font-size: 0.95rem;
+            background: #d8d2bf;
+            border: none;
+            padding: 0.4rem 0.9rem;
+            border-radius: 6px;
+            cursor: pointer;
+            color: #2b2b2b;
+        }
+
+        button:hover { background: #cdc6ad; }
+
+        #print-area {
+            display: none;
+            font-family: inherit;
+            color: #000;
+        }
+
+        #print-header {
+            font-size: 11pt;
+            color: #555;
+            border-bottom: 1px solid #999;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        #print-header span strong {
+            color: #000;
+            font-weight: 500;
+            margin-left: 0.25rem;
+        }
+
+        #print-body {
+            white-space: pre-wrap;
+            font-size: 14pt;
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+            word-spacing: 0.08em;
+        }
+
+        @media print {
+            @page { margin: 2cm; }
+            html, body {
+                height: auto !important;
+                background: #fff !important;
+                display: block !important;
+                overflow: visible !important;
+            }
+            #editor, #status { display: none !important; }
+            #print-area {
+                display: block !important;
+                position: static !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <textarea id="editor" placeholder="Start typing..." autofocus spellcheck="false"></textarea>
+    <div id="print-area" aria-hidden="true">
+        <div id="print-header">
+            <span>Words: <strong id="print-words">0</strong></span>
+            <span>Characters: <strong id="print-chars">0</strong></span>
+            <span>Time taken: <strong id="print-time">—</strong></span>
+        </div>
+        <div id="print-body"></div>
+    </div>
+    <div id="status">
+        <span><span class="label">Words:</span> <span id="word-count">0</span></span>
+        <span><span class="label">Characters:</span> <span id="char-count">0</span></span>
+        <span style="display: flex; gap: 0.5rem;">
+            <button id="print">Print</button>
+            <button id="clear">Clear</button>
+        </span>
+    </div>
+
+    <script>
+        const editor = document.getElementById('editor');
+        const wordCount = document.getElementById('word-count');
+        const charCount = document.getElementById('char-count');
+        const clearBtn = document.getElementById('clear');
+        const printBtn = document.getElementById('print');
+
+        const printBody = document.getElementById('print-body');
+        const printWords = document.getElementById('print-words');
+        const printChars = document.getElementById('print-chars');
+        const printTime = document.getElementById('print-time');
+
+        let startTime = null;
+        let endTime = null;
+
+        function update() {
+            const text = editor.value;
+            const words = text.trim() ? text.trim().split(/\s+/).length : 0;
+            wordCount.textContent = words;
+            charCount.textContent = text.length;
+            if (text.length > 0) {
+                if (startTime === null) startTime = Date.now();
+                endTime = Date.now();
+            } else {
+                startTime = null;
+                endTime = null;
+            }
+        }
+
+        function formatDuration(ms) {
+            if (ms == null || ms < 0) return '—';
+            const totalSec = Math.round(ms / 1000);
+            const h = Math.floor(totalSec / 3600);
+            const m = Math.floor((totalSec % 3600) / 60);
+            const s = totalSec % 60;
+            const parts = [];
+            if (h) parts.push(h + (h === 1 ? ' hour' : ' hours'));
+            if (m) parts.push(m + (m === 1 ? ' minute' : ' minutes'));
+            if (s || parts.length === 0) parts.push(s + (s === 1 ? ' second' : ' seconds'));
+            return parts.join(' ');
+        }
+
+        editor.addEventListener('input', update);
+
+        printBtn.addEventListener('click', () => {
+            if (!editor.value.trim()) return;
+            printBody.textContent = editor.value;
+            printWords.textContent = wordCount.textContent;
+            printChars.textContent = charCount.textContent;
+            printTime.textContent = (startTime && endTime)
+                ? formatDuration(endTime - startTime)
+                : '—';
+            window.scrollTo(0, 0);
+            editor.scrollTop = 0;
+            window.print();
+        });
+
+        clearBtn.addEventListener('click', () => {
+            if (editor.value && !confirm('Clear all text?')) return;
+            editor.value = '';
+            startTime = null;
+            endTime = null;
+            editor.focus();
+            update();
+        });
+    </script>
+</body>
+</html>
