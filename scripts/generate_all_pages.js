@@ -23,4 +23,8 @@ require('./generate_category_pages.js');
 console.log('\n4. Updating LocalBusiness structured data...');
 require('./update_localbusiness.js');
 
+// Update footer policy links in index.html
+console.log('\n5. Updating footer policy links...');
+require('./generate_policies.js');
+
 console.log('\nAll pages and structured data generated successfully!');

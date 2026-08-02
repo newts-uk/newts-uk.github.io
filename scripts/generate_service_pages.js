@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const data = require('../data/services.json');
+const { policyLinks } = require('./policy_links.js');
 const services = data.services;
 const categories = data.categories;
 
@@ -151,10 +152,7 @@ const template = (service, slug, category) => `<!DOCTYPE html>
         <div class="footer-policies">
           <h3>Policies & Information</h3>
           <ul>
-            <li><a href="../assets/policies/complaints.pdf" target="_blank">Complaints</a></li>
-            <li><a href="../assets/policies/privacy.pdf" target="_blank">Privacy</a></li>
-            <li><a href="../assets/policies/safeguarding.pdf" target="_blank">Safeguarding and Child Protection</a></li>
-            <li><a href="../assets/policies/recruitment.pdf" target="_blank">Safer Recruitment</a></li>
+            ${policyLinks('../')}
           </ul>
         </div>
         <div class="footer-navigation">
