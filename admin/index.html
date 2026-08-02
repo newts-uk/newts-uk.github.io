@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>NEWTS Content Manager</title>
+  <style>
+    /* NEWTS branding over Decap's default chrome. Selectors rely on Decap's
+       emotion class labels — safe while decap-cms stays pinned in the script
+       tag below; re-check after any version bump. */
+    :root {
+      --newts-green: #294D3B;
+      --newts-green-dark: #1e3a2c;
+      --newts-cream: #FAF6E9;
+      --newts-beige: #EAE0D5;
+    }
+    body { background-color: var(--newts-cream) !important; }
+    [class*="AppHeader"] { background-color: var(--newts-green) !important; }
+    [class*="AppHeader"] a,
+    [class*="AppHeader"] button,
+    [class*="AppHeader"] span { color: #fff !important; }
+    [class*="AppHeader"] svg { fill: #fff !important; }
+    a[class*="CollectionTopNewButton"],
+    button[class*="button-default-gray"] {
+      background-color: var(--newts-green) !important;
+      color: #fff !important;
+    }
+    a[class*="CollectionTopNewButton"]:hover,
+    button[class*="button-default-gray"]:hover {
+      background-color: var(--newts-green-dark) !important;
+    }
+    .sidebar-active,
+    .sidebar-active * { color: var(--newts-green) !important; fill: var(--newts-green) !important; }
+    a.sidebar-active {
+      background-color: var(--newts-beige) !important;
+      border-left: 4px solid var(--newts-green) !important;
+    }
+    a[class*="SidebarNavLink"]:not(.sidebar-active) {
+      background-color: transparent !important;
+      border-left: 4px solid transparent !important;
+    }
+    [class*="ViewControls"] svg,
+    [class*="SortButton"] svg { fill: var(--newts-green) !important; }
+    [class*="AuthenticationPage"] { background-color: var(--newts-cream) !important; }
+  </style>
+</head>
+<body>
+  <script src="https://unpkg.com/decap-cms@3.3.3/dist/decap-cms.js"></script>
+  <script>
+    // Style the preview pane with the site's own stylesheet
+    CMS.registerPreviewStyle('../css/styles.css');
+  </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Contact Us</title>
+        
+            <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FAF6E9;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        .logo-container {
+            text-align: center;
+            color: #294D3B;
+        }
+
+        .logo-container a {
+            color: #294D3B
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    </head>
+    <body>
+          <form
+      action="https://formspree.io/f/mrbqjqoj"
+      method="POST"
+      style="
+        background: #fff;
+        padding: 2rem 2.5rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 16px rgba(41,77,59,0.08);
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        min-width: 320px;
+        max-width: 400px;
+        width: 100%;
+      "
+    >
+      <label style="display: flex; flex-direction: column; font-weight: 500; color: #294D3B; gap: 0.4rem;">
+        Your name:
+        <input type="name" name="name" style="padding: 0.5rem; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem;" required>
+      </label>
+      <label style="display: flex; flex-direction: column; font-weight: 500; color: #294D3B; gap: 0.4rem;">
+        Your email:
+        <input type="email" name="email" style="padding: 0.5rem; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem;" required>
+      </label>
+      <label style="display: flex; flex-direction: column; font-weight: 500; color: #294D3B; gap: 0.4rem;">
+        Your message:
+        <textarea name="message" style="padding: 0.5rem; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; min-height: 80px; resize: vertical;" required></textarea>
+      </label>
+      <button type="submit" style="
+        background: #294D3B;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s;
+      "
+      onmouseover="this.style.background='#294D3B'" onmouseout="this.style.background='#294D3B'"
+      >Send</button>
+    </form>
+    </body>
+</html>

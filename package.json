@@ -1,0 +1,20 @@
+{
+  "name": "newts-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build-services": "node scripts/generate_services.js",
+    "update-localbusiness": "node scripts/update_localbusiness.js",
+    "generate-service-pages": "node scripts/generate_service_pages.js",
+    "generate-category-pages": "node scripts/generate_category_pages.js",
+    "generate-categories": "node scripts/generate_categories.js",
+    "generate-all-pages": "node scripts/generate_all_pages.js",
+    "build": "npm run generate-all-pages"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "dependencies": {
+    "marked": "^18.0.7"
+  }
+}

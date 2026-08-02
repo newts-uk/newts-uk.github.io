@@ -1,0 +1,228 @@
+{
+  "categories": [
+    {
+      "id": "assessments",
+      "title": "Assessments",
+      "summary": "Assessments for dyslexia and other specific learning difficulties."
+    },
+    {
+      "id": "early-years",
+      "title": "Early Years",
+      "summary": "Services for early years children (0-5 years)."
+    },
+    {
+      "id": "post-16",
+      "title": "Post 16 and Adults",
+      "summary": "Services for post 16 students and adults."
+    },
+    {
+      "id": "specialist-teaching",
+      "title": "Specialist Teaching",
+      "summary": "Specialist teaching for children and young people with additional needs."
+    },
+    {
+      "id": "speech-and-language-therapy",
+      "title": "Speech and Language",
+      "summary": "Speech and language therapy services."
+    },
+    {
+      "id": "training-and-development",
+      "title": "Training and Development",
+      "summary": "Training and development for staff, parents and carers."
+    },
+    {
+      "id": "wellbeing-therapy",
+      "title": "Wellbeing Therapy",
+      "summary": "Wellbeing and therapy services."
+    },
+    {
+      "id": "other",
+      "title": "Other Services",
+      "summary": "Other services we provide."
+    }
+  ],
+  "services": [
+    {
+      "id": "access-arrangements-testing",
+      "title": "Access Arrangements Testing",
+      "category": "assessments",
+      "summary": "Formal assessment of students who may require additional support during exams due to specific learning difficulties or disabilities. £60 per pupil.",
+      "details": "<ul>\n<li>Completion of Part 1 of Form 8 is required prior to the assessment</li>\n<li>A thorough evaluation of the student&#39;s needs.</li>\n<li>Completion of Part 2 of Form 8 by assessor.</li>\n</ul>"
+    },
+    {
+      "id": "adult-support",
+      "title": "Adult Support",
+      "category": "post-16",
+      "summary": "Support for individuals studying at a higher level or in the workplace. £60 per hour or 6 hours block booked at £300.",
+      "details": "<ul>\n<li>Areas of targeted support agreed beforehand such as; study skills, organisation, and planning time.</li>\n<li>Emotional and mental wellbeing support available through the sessions and where it arises.</li>\n</ul>"
+    },
+    {
+      "id": "bespoke-speech-and-language-support",
+      "title": "Bespoke Speech and Language Support",
+      "category": "speech-and-language-therapy",
+      "summary": "Training and/or consultation for speech and language needs. £100 per hour or £530 for a 6 hour block.",
+      "details": "<ul>\n<li>Speech and language screenings</li>\n<li>Bespoke support focused on the setting priorities (e.g. staff training in Word Aware Vocabulary or Colourful Semantics)</li>\n<li>SENCo consultation and planning support</li>\n<li>1:1 demonstrations and in-class modelling of strategies</li>\n<li>Assessment led therapy (without a full written report), where appropriate</li>\n</ul>"
+    },
+    {
+      "id": "bespoke-teaching-packages-for-eotas-pupils",
+      "title": "Bespoke Teaching Packages for EOTAS Pupils",
+      "category": "specialist-teaching",
+      "summary": "1:1 and small group provision for EOTAS pupils. Price available on request.",
+      "details": "<ul>\n<li>Please contact Becky Johnson for further information at <a href=\"mailto:becky@newts.uk\">becky@newts.uk</a>.</li>\n</ul>"
+    },
+    {
+      "id": "development-training",
+      "title": "Development Training",
+      "category": "training-and-development",
+      "summary": "Staff training via Zoom or in person with Ellie. £150 per hour.",
+      "details": "<ul>\n<li>Range of SEND and development related subjects.</li>\n</ul>"
+    },
+    {
+      "id": "developmental-interventions",
+      "title": "Developmental Interventions",
+      "category": "early-years",
+      "summary": "Tailored developmental interventions carried out 1:1 as a half day. £150.",
+      "details": "<ul>\n<li>Initial in person assessment and discussion with staff/family</li>\n<li>Block of planned developmental play sessions</li>\n<li>End of unit report</li>\n</ul>"
+    },
+    {
+      "id": "early-years-development-play-assessment",
+      "title": "Early Years Development Play Assessment",
+      "category": "early-years",
+      "summary": "Early years development assessment lasting 4-5 hrs. £230.",
+      "details": "<ul>\n<li>Discussion with family or setting staff, and observation time if at an Early Years setting</li>\n<li>In person play and interaction based assessment</li>\n<li>Mid length report, feedback and advice</li>\n</ul>"
+    },
+    {
+      "id": "family-and-school-support",
+      "title": "Family and School Support",
+      "category": "other",
+      "summary": "Guidance and recommendations for families and school staff.",
+      "details": "<ul>\n<li>Sometimes support can come in the form of guidance and recommendations to the family/carers and staff supporting the individual in their journey.</li>\n<li>Some examples include study skills, home routines to help improve home-life, and training in specific areas of need.</li>\n</ul>"
+    },
+    {
+      "id": "foundation-stage-project",
+      "title": "Foundation Stage Project",
+      "category": "early-years",
+      "summary": "Foundation stage project reception year. 13-14 hours. £700.",
+      "details": "<ul>\n<li>Meeting with staff to plan via zoom</li>\n<li>Two mornings on site with staff carrying out whole cohort play based assessment</li>\n<li>Detailed long report</li>\n<li>Follow up meeting to support planning for cohort development key needs</li>\n<li>Two twilight trainings on topics related to key needs</li>\n</ul>"
+    },
+    {
+      "id": "full-developmental-assessment",
+      "title": "Full Developmental Assessment",
+      "category": "assessments",
+      "summary": "A full developmental assessment for year 1 onwards. 5-6 hour assessment with a detailed report. £270.",
+      "details": "<ul>\n<li>Preliminary conversation with family and/or school staff</li>\n<li>In person developmental assessment</li>\n<li>Long written report, feedback and advice</li>\n</ul>"
+    },
+    {
+      "id": "full-diagnostic-dyslexia-assessment",
+      "title": "Full Diagnostic Dyslexia Assessment",
+      "category": "assessments",
+      "summary": "A face-to-face assessment followed by a substantial written report. Age 8 to end of year 11 £525, age 16+ £550.",
+      "details": "<ul>\n<li>Approximately 3 hours, this can only be completed on individuals age 8 and over.</li>\n<li>Assessment consists of standardised assessments which reflect strengths and challenges across underlying ability and cognitive processing abilities.</li>\n<li>Assessment of attainment in the areas of reading, spelling, and writing.</li>\n<li>Detailed diagnostic written report, including recommendations and any considerations for exam access arrangements.</li>\n<li>This report will travel with the individual for life as I hold an APC.</li>\n<li>For 18 years + we are able to identify characteristics of ADHD as part of a full diagnostic assessment. This involves an additional 2-hour interview at a cost of £120.</li>\n</ul>"
+    },
+    {
+      "id": "full-speech-and-language-assessment",
+      "title": "Full Speech and Language Assessment",
+      "category": "speech-and-language-therapy",
+      "summary": "A full speech and language assessment for children and adults lasting up to 6 hours. £370.",
+      "details": "<ul>\n<li>An initial discussion with parents/carers and school staff</li>\n<li>Liaison with relevant professionals, if appropriate</li>\n<li>A comprehensive assessment of speech, language and communication skills</li>\n<li>Observations of communcation in everyday activities and play</li>\n<li>Interpretation of assessment findings</li>\n<li>A clear, detailed written report</li>\n<li>Feeback with practical, personalised recommendations</li>\n</ul>"
+    },
+    {
+      "id": "pupil-observation",
+      "title": "Pupil Observation",
+      "category": "assessments",
+      "summary": "In class pupil focused observation. £60.",
+      "details": "<ul>\n<li>Focus to be decided prior to observation.</li>\n<li>Up to one hour observation in class.</li>\n<li>Includes verbal feedback.</li>\n<li>Optionally, written feedback can be provided for an additional charge.</li>\n</ul>"
+    },
+    {
+      "id": "resilience-coaching",
+      "title": "Resilience Coaching",
+      "category": "wellbeing-therapy",
+      "summary": "Curriculum led education and wellness experience for 9- to 18-year-olds with Steph.",
+      "details": "<ul>\n<li>In small groups or 1:1, children and adolescents aged 9 to 18 will learn through experiential activities, videos, games and dynamic exercises, which take place over 11 interactive sessions.</li>\n<li>Resilience coaching will empower your child to deal with issues such as self-esteem and labels, using social media, hostile behaviour of others, and disagreements and conflicts.</li>\n<li>The Resilience Tutoring package includes the Creating a Resilient Family course for parents.</li>\n<li>Resilience and wellbeing training gives your child the confidence to manage feelings and overcome difficulties.</li>\n<li>Past participants have reported less anxiety, worry, fear and reactive behaviour and improved relationships with parents, siblings and peers.</li>\n</ul>"
+    },
+    {
+      "id": "small-group-send-observation",
+      "title": "Small Group SEND Observation",
+      "category": "early-years",
+      "summary": "Observation and advice for small group of early years children with SEND and developmental needs. 2.5-3 hour session. £150 per child.",
+      "details": "<ul>\n<li>Observation, discussion with staff and play with identified children at setting with parental permission</li>\n<li>Verbal advice</li>\n<li>Short report and suggested next steps and activities</li>\n</ul>"
+    },
+    {
+      "id": "small-space-for-hire",
+      "title": "Small Space for Hire",
+      "category": "other",
+      "summary": "Please get in touch if you are looking for a space for individual talking therapies or for groups of up to 8 people. Price available on request.",
+      "details": "<ul>\n<li>We have a small space available for hire in Strixton, Northamptonshire.</li>\n<li>Suitable for individual talking therapies or small groups of up to 8 people.</li>\n<li>Price available on request.</li>\n</ul>"
+    },
+    {
+      "id": "spotlight-assessment",
+      "title": "Spotlight Assessment",
+      "category": "assessments",
+      "summary": "A face-to-face assessment followed by a short report. NB This assessment will not diagnose dyslexia. £300.",
+      "details": "<ul>\n<li>Approximately 1.5 hours, this can be completed on children from age 6+</li>\n<li>Bespoke Spotlight will cover standardised test of underlying ability and one further area of cognitive processing; such as phonological processing or working memory. A word reading and word spelling test will also be administered.</li>\n<li>Detailed short written report, including recommendations.</li>\n<li>Can be accompanied by a pupil focussed observation in class, for an additional fee.</li>\n</ul>"
+    },
+    {
+      "id": "training",
+      "title": "Training",
+      "category": "training-and-development",
+      "summary": "Bespoke training can be arranged on request. Usually we cover executive function skills, dyslexia and neurodiversity.",
+      "details": "<ul>\n<li>Schools. In school training for SENCOs, Teachers or Teaching Assistants.</li>\n<li>Parents. Online or small face-to-face group training available.</li>\n</ul>"
+    },
+    {
+      "id": "specialist-teaching-for-children-with-send",
+      "title": "Specialist Teaching for Children with SEND",
+      "category": "specialist-teaching",
+      "summary": "1:1 and small group specialist teaching for children with SEND. £60 per hour or £300 for a block of 6 hours.",
+      "details": "<ul>\n<li>Some individuals may benefit from specialist teaching to support their learning and development. This can be delivered at the Strixton centre.</li>\n<li>Specialist teaching can focus on areas such as literacy, numeracy, executive function skills, social skills, and emotional regulation.</li>\n<li>Sessions are tailored to the individual&#39;s needs and learning style.</li>\n<li>Progress is regularly reviewed and feedback is provided to parents and carers.</li>\n<li>Six week blocks are available at a discounted rate.</li>\n</ul>"
+    },
+    {
+      "id": "workplace-needs-assessments",
+      "title": "Workplace Needs Assessments",
+      "category": "post-16",
+      "summary": "Specialist evaluation of the employees' working environment, and tasks to identify adjustments needed. These assessments help employers fulfil their legal obligations under The Equality Act 2010, and promote a more inclusive and productive workplace. £540.",
+      "details": "<ul>\n<li>The primary goal is to identify reasonable adjustments, accommodations, or assistive technologies that enable the employee to perform their job duties effective and safely.</li>\n<li>Suitable for individuals with a range of neurodiverse conditions.</li>\n<li>Involves conducting a 1:1 interview with the employee and employer.</li>\n<li>The assessment results in a report with detailed recommendations for adjustments tailored to the individual&#39;s needs and workplace context.</li>\n</ul>"
+    },
+    {
+      "id": "drawing-and-talking",
+      "title": "Drawing and Talking",
+      "category": "wellbeing-therapy",
+      "summary": "A therapeutic intervention using drawing and talking techniques for children and young people.",
+      "details": "<ul>\n<li>Initial chat and getting to know you session – 30-60 mins</li>\n<li>12 weeks, 1-hour sessions</li>\n<li>Drawing &amp; Talking for Year 2 upwards</li>\n<li>Sand-play EYFS and under</li>\n</ul>"
+    },
+    {
+      "id": "zones-of-regulation",
+      "title": "Zones of Regulation",
+      "category": "wellbeing-therapy",
+      "summary": "A programme to teach emotional literacy and self-regulation strategies.",
+      "details": "<ul>\n<li>Initial chat and getting to know you session – 30-60 mins</li>\n<li>Approximately 12 weeks, 1-hour sessions</li>\n<li>Programme to teach emotional literacy and strategies.</li>\n<li>Supporting families and carers to implement the programme at home to reinforce learning and progress.</li>\n</ul>"
+    },
+    {
+      "id": "lego-based-therapy",
+      "title": "Lego-based Therapy",
+      "category": "wellbeing-therapy",
+      "summary": "A programme designed to support children with social communication difficulties.",
+      "details": "<ul>\n<li>Initial chat and getting to know you session – 30-60 mins</li>\n<li>Approximately 8-12 weeks, 1-hour sessions</li>\n<li>Programme is designed to support children with social communication difficulties. It encourages turn taking, sharing, listening, team-work and problem solving.</li>\n<li>Parents/carers or an additional sibling can be involved in the course if required (at no additional cost).</li>\n</ul>"
+    },
+    {
+      "id": "emotional-support",
+      "title": "Emotional Support",
+      "category": "wellbeing-therapy",
+      "summary": "Targeted interventions to support children's emotional wellbeing, including self-esteem, resilience, anxiety, anger and bereavement.",
+      "details": "<ul>\n<li>Initial chat and getting to know you session – 30-60 mins</li>\n<li>Approximately 12 weeks, 1-hour sessions</li>\n<li>Sessions can support: self-esteem and resilience, social skills, anxiety, anger, and bereavement.</li>\n<li>Supporting families and carers to implement the programme at home to reinforce learning and progress.</li>\n<li>This support can be delivered through a range of targeted interventions, including: The Hidden Chimp, Starving the Anger Gremlin CBT, Starving the Anxiety Gremlin CBT, and Stop, Think, Do.</li>\n</ul>"
+    },
+    {
+      "id": "maths-and-english-tutoring",
+      "title": "Maths and English Tutoring",
+      "category": "specialist-teaching",
+      "summary": "Tutoring in maths and English for primary age children.",
+      "details": "<ul>\n<li>Initial chat and getting to know you session – 30-60 mins</li>\n<li>Primary age only</li>\n<li>Supporting families and carers to implement the programme at home to reinforce learning and progress.</li>\n</ul>"
+    },
+    {
+      "id": "hypnotherapy-nlp-and-emdr",
+      "title": "Hypnotherapy, NLP and EMDR",
+      "category": "wellbeing-therapy",
+      "summary": "Therapeutic support using hypnotherapy, neuro-linguistic programming (NLP) and eye movement desensitisation and reprocessing (EMDR) techniques.",
+      "details": "<ul>\n<li>Initial chat and getting to know you session - 30- 60 mins.</li>\n<li>A combination of Hypnotherapy, NLP and EMDR  can be used in a session based on  individual needs. Helps with fears, phobias, anger, anxiety, confidence, depression, trauma and other issues that have an impact on daily life.</li>\n<li>Supports  positive changes and emotional regulation, teaches practical strategies to use outside sessions.</li>\n<li>Addresses subconcious patterns to reshape thinking and behaviour.</li>\n<li>Sessions are also available for adults.</li>\n</ul>"
+    }
+  ]
+}
