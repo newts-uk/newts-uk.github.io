@@ -82,11 +82,10 @@ if (!scriptRegex.test(indexHtml)) {
   process.exit(1);
 }
 
-const newScript = `<!-- ProfessionalService structured data (helps local search & rich results) -->\n<script type="application/ld+json">\n${jsonld}\n</script>`;
+const newScript = `<script type="application/ld+json">\n${jsonld}\n</script>`;
 
 const newIndex = indexHtml.replace(scriptRegex, newScript);
 
-fs.writeFileSync(indexPath + '.bak-ProfessionalService', indexHtml, 'utf8');
 fs.writeFileSync(indexPath, newIndex, 'utf8');
 
-console.log('index.html ProfessionalService JSON-LD updated (backup saved as index.html.bak-ProfessionalService)');
+console.log('index.html ProfessionalService JSON-LD updated');

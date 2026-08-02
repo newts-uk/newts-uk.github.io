@@ -79,11 +79,9 @@ async function main() {
 
   const newIndex = before + '\n' + htmlFragment + '\n' + '</div>' + after;
 
-  // Backup original
-  fs.writeFileSync(indexPath + '.bak', indexHtml, 'utf8');
   fs.writeFileSync(indexPath, newIndex, 'utf8');
 
-  console.log('index.html updated with pre-rendered services (backup written to index.html.bak)');
+  console.log('index.html updated with pre-rendered services');
 }
 
 main().catch(err => { console.error(err); process.exit(1); });

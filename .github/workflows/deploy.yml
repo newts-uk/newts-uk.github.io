@@ -1,10 +1,9 @@
-name: Deploy static site from main and wip to GitHub Pages
+name: Build and deploy site to GitHub Pages
 
 on:
   push:
     branches:
       - main
-      - wip
 
 jobs:
   deploy:
@@ -16,21 +15,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up variables
-        id: vars
-        run: |
-          BRANCH="${GITHUB_REF#refs/heads/}"
-          if [ "$BRANCH" = "main" ]; then
-            TARGET_DIR="."
-          else
-            TARGET_DIR="$BRANCH"
-          fi
-          echo "target_dir=$TARGET_DIR" >> $GITHUB_OUTPUT
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site from CMS data
+        run: npm run build
 
       - name: Prepare deploy directory
         run: |
-          mkdir -p deploy/${{ steps.vars.outputs.target_dir }}
-          rsync -av --exclude 'deploy' --exclude '.git' --exclude '.github' ./ deploy/${{ steps.vars.outputs.target_dir }}/
+          mkdir -p deploy
+          rsync -av --exclude 'deploy' --exclude '.git' --exclude '.github' \
+            --exclude 'node_modules' --exclude 'scripts' ./ deploy/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
@@ -38,4 +39,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./deploy
           publish_branch: gh-pages
-          keep_files: true
+          keep_files: false

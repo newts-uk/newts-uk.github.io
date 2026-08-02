@@ -3,6 +3,10 @@ const path = require('path');
 
 console.log('Regenerating all service and category pages...');
 
+// Merge per-entry CMS files into data/services.json and data/team.json
+console.log('\n0. Merging CMS data files...');
+require('./merge_data.js');
+
 // Generate categories in index.html
 console.log('\n1. Generating categories in index.html...');
 require('./generate_categories.js');
