@@ -4,6 +4,7 @@ backend:
   name: github
   repo: newts-uk/newts-uk.github.io
   branch: main
+  base_url: https://newts-uk-login.owen-da5.workers.dev
 
 logo_url: /images/logo-no-bg.png
 
