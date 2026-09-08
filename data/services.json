@@ -225,18 +225,18 @@
       "details": "<ul>\n<li>Initial chat and getting to know you session - 30- 60 mins.</li>\n<li>A combination of Hypnotherapy, NLP and EMDR  can be used in a session based on  individual needs. Helps with fears, phobias, anger, anxiety, confidence, depression, trauma and other issues that have an impact on daily life.</li>\n<li>Supports  positive changes and emotional regulation, teaches practical strategies to use outside sessions.</li>\n<li>Addresses subconcious patterns to reshape thinking and behaviour.</li>\n<li>Sessions are also available for adults.</li>\n</ul>"
     },
     {
-      "id": "adhd-child-evaluation",
-      "title": "ADHD Child Evaluation",
-      "category": "assessments",
-      "summary": "Following a full diagnostic dyslexia assessment or a spotlight assessment, we offer an additional interview which can help highlight the core characteristics of ADHD.",
-      "details": "<ul>\n<li>Available for ages 5-17 years</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis of ADHD</li>\n<li>£120</li>\n</ul>"
-    },
-    {
       "id": "adhd-adult-interview",
       "title": "ADHD Adult Interview",
       "category": "assessments",
       "summary": "As part of a Full Diagnostic Assessment, we offer an additional interview which can help highlight the core characteristics of ADHD.",
       "details": "<ul>\n<li>Suitable for Age 18+</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis</li>\n<li>£120</li>\n</ul>"
+    },
+    {
+      "id": "adhd-child-evaluation",
+      "title": "ADHD Child Evaluation",
+      "category": "assessments",
+      "summary": "Following a full diagnostic dyslexia assessment or a spotlight assessment, we offer an additional interview which can help highlight the core characteristics of ADHD.",
+      "details": "<ul>\n<li>Available for ages 5-17 years</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis of ADHD</li>\n<li>£120</li>\n</ul>"
     }
   ]
 }
