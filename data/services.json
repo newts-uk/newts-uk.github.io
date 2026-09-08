@@ -239,6 +239,13 @@
       "details": "<ul>\n<li>Suitable for Age 18+</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis</li>\n<li>£120</li>\n</ul>"
     },
     {
+      "id": "developmental-coordination-disorder-interview-adult",
+      "title": "Developmental Coordination Disorder Interview - adult",
+      "category": "assessments",
+      "summary": "As part of a full diagnostic assessment, we offer a DCD interview which will focus on early motor skill difficulties and identify characteristics associated with DCD. £120.",
+      "details": "<ul>\n<li>Support onward referral</li>\n<li>Suitable for ages 16+</li>\n<li>Not a diagnosis</li>\n<li>£120</li>\n</ul>"
+    },
+    {
       "id": "adhd-child-evaluation",
       "title": "ADHD Child Evaluation",
       "category": "assessments",
