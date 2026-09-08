@@ -183,13 +183,6 @@
       "details": "<ul>\n<li>Some individuals may benefit from specialist teaching to support their learning and development. This can be delivered at the Strixton centre.</li>\n<li>Specialist teaching can focus on areas such as literacy, numeracy, executive function skills, social skills, and emotional regulation.</li>\n<li>Sessions are tailored to the individual&#39;s needs and learning style.</li>\n<li>Progress is regularly reviewed and feedback is provided to parents and carers.</li>\n<li>Six week blocks are available at a discounted rate.</li>\n</ul>"
     },
     {
-      "id": "adhd-adult-interview",
-      "title": "ADHD Adult Interview",
-      "category": "assessments",
-      "summary": "As part of a Full Diagnostic Assessment, we offer an additional interview which can help highlight the core characteristics of ADHD.",
-      "details": "<ul>\n<li>Suitable for Age 18+</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis</li>\n<li>£120</li>\n</ul>"
-    },
-    {
       "id": "workplace-needs-assessments",
       "title": "Workplace Needs Assessments",
       "category": "post-16",
@@ -237,6 +230,13 @@
       "category": "wellbeing-therapy",
       "summary": "Therapeutic support using hypnotherapy, neuro-linguistic programming (NLP) and eye movement desensitisation and reprocessing (EMDR) techniques.",
       "details": "<ul>\n<li>Initial chat and getting to know you session - 30- 60 mins.</li>\n<li>A combination of Hypnotherapy, NLP and EMDR  can be used in a session based on  individual needs. Helps with fears, phobias, anger, anxiety, confidence, depression, trauma and other issues that have an impact on daily life.</li>\n<li>Supports  positive changes and emotional regulation, teaches practical strategies to use outside sessions.</li>\n<li>Addresses subconcious patterns to reshape thinking and behaviour.</li>\n<li>Sessions are also available for adults.</li>\n</ul>"
+    },
+    {
+      "id": "adhd-adult-interview",
+      "title": "ADHD Adult Interview",
+      "category": "assessments",
+      "summary": "As part of a Full Diagnostic Assessment, we offer an additional interview which can help highlight the core characteristics of ADHD.",
+      "details": "<ul>\n<li>Suitable for Age 18+</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis</li>\n<li>£120</li>\n</ul>"
     }
   ]
 }
