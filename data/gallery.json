@@ -1,10 +1,34 @@
 {
   "gallery": [
-    { "src": "images/gallery/DSC_0018.JPG", "alt": "Meet our founders", "title": "Meet our founders" },
-    { "src": "images/gallery/DSC_0025.JPG", "alt": "Our wellbeing space", "title": "Our wellbeing space" },
-    { "src": "images/gallery/DSC_0033.JPG", "alt": "Parent waiting room", "title": "Parent waiting room" },
-    { "src": "images/gallery/DSC_0043.JPG", "alt": "Learning zone", "title": "Learning zone" },
-    { "src": "images/gallery/DSC_0056.JPG", "alt": "Additional teaching area", "title": "Additional teaching area" },
-    { "src": "images/gallery/DSC_0067.JPG", "alt": "Newts@No9", "title": "Newts@No9" }
+    {
+      "src": "images/gallery/DSC_0018.JPG",
+      "alt": "Meet our founders",
+      "title": "Meet our founders"
+    },
+    {
+      "src": "images/gallery/DSC_0025.JPG",
+      "alt": "Our wellbeing space",
+      "title": "Our wellbeing space"
+    },
+    {
+      "src": "images/gallery/DSC_0033.JPG",
+      "alt": "Parent waiting room",
+      "title": "Parent waiting room"
+    },
+    {
+      "src": "images/gallery/DSC_0043.JPG",
+      "alt": "Learning zone",
+      "title": "Learning zone"
+    },
+    {
+      "src": "images/gallery/DSC_0056.JPG",
+      "alt": "Additional teaching area",
+      "title": "Additional teaching area"
+    },
+    {
+      "src": "/images/9 Strixton Manor with car park.jpg",
+      "alt": "Newts@No9",
+      "title": "Newts@No9"
+    }
   ]
 }
