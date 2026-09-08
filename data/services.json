@@ -113,6 +113,13 @@
       "details": "<ul>\n<li>Preliminary conversation with family and/or school staff</li>\n<li>In person developmental assessment</li>\n<li>Long written report, feedback and advice</li>\n</ul>"
     },
     {
+      "id": "senco-consultation",
+      "title": "SENCO Consultation",
+      "category": "speech-and-language-therapy",
+      "summary": "Up to one hour meeting with a fully qualified speech and language therapist. £100.",
+      "details": "<ul>\n<li>SaLT queries around universal or targeted provisions in school</li>\n<li>Recommendations</li>\n<li>Advice</li>\n<li>Problem-solving</li>\n</ul>"
+    },
+    {
       "id": "full-diagnostic-dyslexia-assessment",
       "title": "Full Diagnostic Dyslexia Assessment",
       "category": "assessments",
