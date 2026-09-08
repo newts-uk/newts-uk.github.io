@@ -106,6 +106,13 @@
       "details": "<ul>\n<li>Meeting with staff to plan via zoom</li>\n<li>Two mornings on site with staff carrying out whole cohort play based assessment</li>\n<li>Detailed long report</li>\n<li>Follow up meeting to support planning for cohort development key needs</li>\n<li>Two twilight trainings on topics related to key needs</li>\n</ul>"
     },
     {
+      "id": "developmental-language-disorder",
+      "title": "Developmental Language Disorder",
+      "category": "speech-and-language-therapy",
+      "summary": "Following a full diagnostic assessment, we offer a Developmental Language Disorder (DLD) direct assessment with a qualified speech and language therapist. £450.",
+      "details": "<ul>\n<li>DLD full assessment by a qualified Speech and Language Therapist</li>\n<li>Written feedback and personalised recommendations</li>\n<li>£450</li>\n</ul>"
+    },
+    {
       "id": "full-developmental-assessment",
       "title": "Full Developmental Assessment",
       "category": "assessments",
