@@ -50,13 +50,6 @@
       "details": "<ul>\n<li>Completion of Part 1 of Form 8 is required prior to the assessment</li>\n<li>A thorough evaluation of the student&#39;s needs.</li>\n<li>Completion of Part 2 of Form 8 by assessor.</li>\n</ul>"
     },
     {
-      "id": "adhd-adult-interview",
-      "title": "ADHD Adult Interview",
-      "category": "assessments",
-      "summary": "As part of a Full Diagnostic Assessment, we offer an additional interview which can help highlight the core characteristics of ADHD.",
-      "details": "<ul>\n<li>Suitable for Age 18+</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis</li>\n<li>£120</li>\n</ul>"
-    },
-    {
       "id": "adhd-child-evaluation",
       "title": "ADHD Child Evaluation",
       "category": "assessments",
@@ -174,6 +167,13 @@
       "category": "assessments",
       "summary": "A face-to-face assessment followed by a short report. NB This assessment will not diagnose dyslexia. £300.",
       "details": "<ul>\n<li>Approximately 1.5 hours, this can be completed on children from age 6+</li>\n<li>Bespoke Spotlight will cover standardised test of underlying ability and one further area of cognitive processing; such as phonological processing or working memory. A word reading and word spelling test will also be administered.</li>\n<li>Detailed short written report, including recommendations.</li>\n<li>Can be accompanied by a pupil focussed observation in class, for an additional fee.</li>\n</ul>"
+    },
+    {
+      "id": "adhd-adult-interview",
+      "title": "ADHD Adult Interview",
+      "category": "assessments",
+      "summary": "As part of a Full Diagnostic Assessment, we offer an additional interview which can help highlight the core characteristics of ADHD.",
+      "details": "<ul>\n<li>Suitable for Age 18+</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis</li>\n<li>£120</li>\n</ul>"
     },
     {
       "id": "training",
