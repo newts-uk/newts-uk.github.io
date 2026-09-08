@@ -1,5 +1,5 @@
-// Rebuild data/services.json and data/team.json from the per-entry files
-// that the CMS edits (data/categories/, data/services/, data/team/).
+// Rebuild data/services.json, data/team.json and data/testimonials.json from
+// the per-entry files that the CMS edits under data/.
 // Runs as step 0 of generate_all_pages.js — the combined files are build
 // artifacts consumed by the other generators and by js/main.js.
 
@@ -73,6 +73,15 @@ const team = readDir('data/team')
     bio: marked.parse(m.bio || '', { async: false }).trim(),
   }));
 
+const testimonials = readDir('data/testimonials')
+  .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+  .map(t => ({
+    statement: t.statement,
+    from: t.from,
+    enabled: t.enabled !== false,
+    date: t.date,
+  }));
+
 fs.writeFileSync(
   path.join(root, 'data/services.json'),
   JSON.stringify({ categories, services }, null, 2) + '\n'
@@ -82,4 +91,11 @@ fs.writeFileSync(
   JSON.stringify({ team }, null, 2) + '\n'
 );
 
-console.log(`Merged ${categories.length} categories, ${services.length} services, ${team.length} team members.`);
+fs.writeFileSync(
+  path.join(root, 'data/testimonials.json'),
+  JSON.stringify({ testimonials }, null, 2) + '\n'
+);
+
+console.log(
+  `Merged ${categories.length} categories, ${services.length} services, ${team.length} team members, ${testimonials.length} testimonials.`
+);

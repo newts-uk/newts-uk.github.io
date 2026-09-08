@@ -57,11 +57,11 @@
       "details": "<ul>\n<li>Areas of targeted support agreed beforehand such as; study skills, organisation, and planning time.</li>\n<li>Emotional and mental wellbeing support available through the sessions and where it arises.</li>\n</ul>"
     },
     {
-      "id": "bespoke-speech-and-language-support",
-      "title": "Bespoke Speech and Language Support",
+      "id": "speech-and-language-therapy",
+      "title": "Speech and Language Therapy",
       "category": "speech-and-language-therapy",
-      "summary": "Training and/or consultation for speech and language needs. £100 per hour or £530 for a 6 hour block.",
-      "details": "<ul>\n<li>Speech and language screenings</li>\n<li>Bespoke support focused on the setting priorities (e.g. staff training in Word Aware Vocabulary or Colourful Semantics)</li>\n<li>SENCo consultation and planning support</li>\n<li>1:1 demonstrations and in-class modelling of strategies</li>\n<li>Assessment led therapy (without a full written report), where appropriate</li>\n</ul>"
+      "summary": "Following on from a SALT assessment, we offer school aged children 6 x direct therapy sessions of 50 minutes, goal setting and review along with a short written summary with advice on next steps. £700.",
+      "details": "<ul>\n<li>6 in-person therapy sessions</li>\n<li>Goal setting and review</li>\n<li>Short written summary with advice on best next steps</li>\n</ul>"
     },
     {
       "id": "bespoke-teaching-packages-for-eotas-pupils",
@@ -99,11 +99,25 @@
       "details": "<ul>\n<li>Sometimes support can come in the form of guidance and recommendations to the family/carers and staff supporting the individual in their journey.</li>\n<li>Some examples include study skills, home routines to help improve home-life, and training in specific areas of need.</li>\n</ul>"
     },
     {
+      "id": "setting-up-as-a-practitioner",
+      "title": "Setting up as a Practitioner",
+      "category": "other",
+      "summary": "Support in setting up your own business, either as a sole trader or limited company. 1-hour face to face meeting with email support for 3 months. £60.",
+      "details": "<ul>\n<li>Invoicing</li>\n<li>Accounting records</li>\n<li>Terms and Conditions</li>\n<li>Privacy Notice</li>\n<li>£60</li>\n</ul>"
+    },
+    {
       "id": "foundation-stage-project",
       "title": "Foundation Stage Project",
       "category": "early-years",
       "summary": "Foundation stage project reception year. 13-14 hours. £700.",
       "details": "<ul>\n<li>Meeting with staff to plan via zoom</li>\n<li>Two mornings on site with staff carrying out whole cohort play based assessment</li>\n<li>Detailed long report</li>\n<li>Follow up meeting to support planning for cohort development key needs</li>\n<li>Two twilight trainings on topics related to key needs</li>\n</ul>"
+    },
+    {
+      "id": "developmental-language-disorder",
+      "title": "Developmental Language Disorder",
+      "category": "speech-and-language-therapy",
+      "summary": "Following a full diagnostic assessment, we offer a Developmental Language Disorder (DLD) direct assessment with a qualified speech and language therapist. £450.",
+      "details": "<ul>\n<li>DLD full assessment by a qualified Speech and Language Therapist</li>\n<li>Written feedback and personalised recommendations</li>\n<li>£450</li>\n</ul>"
     },
     {
       "id": "full-developmental-assessment",
@@ -113,17 +127,24 @@
       "details": "<ul>\n<li>Preliminary conversation with family and/or school staff</li>\n<li>In person developmental assessment</li>\n<li>Long written report, feedback and advice</li>\n</ul>"
     },
     {
+      "id": "senco-consultation",
+      "title": "SENCO Consultation",
+      "category": "speech-and-language-therapy",
+      "summary": "Up to one hour meeting with a fully qualified speech and language therapist. £100.",
+      "details": "<ul>\n<li>SaLT queries around universal or targeted provisions in school</li>\n<li>Recommendations</li>\n<li>Advice</li>\n<li>Problem-solving</li>\n</ul>"
+    },
+    {
       "id": "full-diagnostic-dyslexia-assessment",
       "title": "Full Diagnostic Dyslexia Assessment",
       "category": "assessments",
-      "summary": "A face-to-face assessment followed by a substantial written report. Age 8 to end of year 11 £525, age 16+ £550.",
+      "summary": "A face-to-face assessment followed by a substantial written report. Age 8 upwards. £550.",
       "details": "<ul>\n<li>Approximately 3 hours, this can only be completed on individuals age 8 and over.</li>\n<li>Assessment consists of standardised assessments which reflect strengths and challenges across underlying ability and cognitive processing abilities.</li>\n<li>Assessment of attainment in the areas of reading, spelling, and writing.</li>\n<li>Detailed diagnostic written report, including recommendations and any considerations for exam access arrangements.</li>\n<li>This report will travel with the individual for life as I hold an APC.</li>\n<li>For 18 years + we are able to identify characteristics of ADHD as part of a full diagnostic assessment. This involves an additional 2-hour interview at a cost of £120.</li>\n</ul>"
     },
     {
       "id": "full-speech-and-language-assessment",
       "title": "Full Speech and Language Assessment",
       "category": "speech-and-language-therapy",
-      "summary": "A full speech and language assessment for children and adults lasting up to 6 hours. £370.",
+      "summary": "A full speech and language assessment for children and adults lasting up to 6 hours. £450.",
       "details": "<ul>\n<li>An initial discussion with parents/carers and school staff</li>\n<li>Liaison with relevant professionals, if appropriate</li>\n<li>A comprehensive assessment of speech, language and communication skills</li>\n<li>Observations of communcation in everyday activities and play</li>\n<li>Interpretation of assessment findings</li>\n<li>A clear, detailed written report</li>\n<li>Feeback with practical, personalised recommendations</li>\n</ul>"
     },
     {
@@ -223,6 +244,34 @@
       "category": "wellbeing-therapy",
       "summary": "Therapeutic support using hypnotherapy, neuro-linguistic programming (NLP) and eye movement desensitisation and reprocessing (EMDR) techniques.",
       "details": "<ul>\n<li>Initial chat and getting to know you session - 30- 60 mins.</li>\n<li>A combination of Hypnotherapy, NLP and EMDR  can be used in a session based on  individual needs. Helps with fears, phobias, anger, anxiety, confidence, depression, trauma and other issues that have an impact on daily life.</li>\n<li>Supports  positive changes and emotional regulation, teaches practical strategies to use outside sessions.</li>\n<li>Addresses subconcious patterns to reshape thinking and behaviour.</li>\n<li>Sessions are also available for adults.</li>\n</ul>"
+    },
+    {
+      "id": "developmental-coordination-disorder-questionnaire-child",
+      "title": "Developmental Coordination Disorder questionnaire - child",
+      "category": "assessments",
+      "summary": "As part of a full diagnostic assessment we offer a DCD questionnaire which will focus on early motor skill difficulties. £60.",
+      "details": "<ul>\n<li>Support onward referral</li>\n<li>Suitable for ages up to 16 years old</li>\n<li>Not a diagnosis</li>\n<li>£60</li>\n</ul>"
+    },
+    {
+      "id": "adhd-adult-interview",
+      "title": "ADHD Adult Interview",
+      "category": "assessments",
+      "summary": "As part of a Full Diagnostic Assessment, we offer an additional interview which can help highlight the core characteristics of ADHD. £120.",
+      "details": "<ul>\n<li>Suitable for Age 18+</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis</li>\n<li>£120</li>\n</ul>"
+    },
+    {
+      "id": "developmental-coordination-disorder-interview-adult",
+      "title": "Developmental Coordination Disorder Interview - adult",
+      "category": "assessments",
+      "summary": "As part of a full diagnostic assessment, we offer a DCD interview which will focus on early motor skill difficulties and identify characteristics associated with DCD. £120.",
+      "details": "<ul>\n<li>Support onward referral</li>\n<li>Suitable for ages 16+</li>\n<li>Not a diagnosis</li>\n<li>£120</li>\n</ul>"
+    },
+    {
+      "id": "adhd-child-evaluation",
+      "title": "ADHD Child Evaluation",
+      "category": "assessments",
+      "summary": "Following a full diagnostic dyslexia assessment or a spotlight assessment, we offer an additional interview which can help highlight the core characteristics of ADHD. £120.",
+      "details": "<ul>\n<li>Available for ages 5-17 years</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis of ADHD</li>\n<li>£120</li>\n</ul>"
     }
   ]
 }

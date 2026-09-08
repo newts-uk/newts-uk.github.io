@@ -95,8 +95,8 @@
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Bespoke Speech and Language Support",
-          "description": "Training and/or consultation for speech and language needs. £100 per hour or £530 for a 6 hour block."
+          "name": "Speech and Language Therapy",
+          "description": "Following on from a SALT assessment, we offer school aged children 6 x direct therapy sessions of 50 minutes, goal setting and review along with a short written summary with advice on next steps. £700."
         }
       },
       {
@@ -143,8 +143,24 @@
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
+          "name": "Setting up as a Practitioner",
+          "description": "Support in setting up your own business, either as a sole trader or limited company. 1-hour face to face meeting with email support for 3 months. £60."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
           "name": "Foundation Stage Project",
           "description": "Foundation stage project reception year. 13-14 hours. £700."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Developmental Language Disorder",
+          "description": "Following a full diagnostic assessment, we offer a Developmental Language Disorder (DLD) direct assessment with a qualified speech and language therapist. £450."
         }
       },
       {
@@ -159,8 +175,16 @@
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
+          "name": "SENCO Consultation",
+          "description": "Up to one hour meeting with a fully qualified speech and language therapist. £100."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
           "name": "Full Diagnostic Dyslexia Assessment",
-          "description": "A face-to-face assessment followed by a substantial written report. Age 8 to end of year 11 £525, age 16+ £550."
+          "description": "A face-to-face assessment followed by a substantial written report. Age 8 upwards. £550."
         }
       },
       {
@@ -168,7 +192,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Full Speech and Language Assessment",
-          "description": "A full speech and language assessment for children and adults lasting up to 6 hours. £370."
+          "description": "A full speech and language assessment for children and adults lasting up to 6 hours. £450."
         }
       },
       {
@@ -282,6 +306,38 @@
           "name": "Hypnotherapy, NLP and EMDR",
           "description": "Therapeutic support using hypnotherapy, neuro-linguistic programming (NLP) and eye movement desensitisation and reprocessing (EMDR) techniques."
         }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Developmental Coordination Disorder questionnaire - child",
+          "description": "As part of a full diagnostic assessment we offer a DCD questionnaire which will focus on early motor skill difficulties. £60."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "ADHD Adult Interview",
+          "description": "As part of a Full Diagnostic Assessment, we offer an additional interview which can help highlight the core characteristics of ADHD. £120."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Developmental Coordination Disorder Interview - adult",
+          "description": "As part of a full diagnostic assessment, we offer a DCD interview which will focus on early motor skill difficulties and identify characteristics associated with DCD. £120."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "ADHD Child Evaluation",
+          "description": "Following a full diagnostic dyslexia assessment or a spotlight assessment, we offer an additional interview which can help highlight the core characteristics of ADHD. £120."
+        }
       }
     ]
   }
@@ -316,6 +372,7 @@
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="https://forms.newts.uk/forms/referral-form">Referral Form</a></li>
             </ul>
@@ -344,7 +401,7 @@
       <a href="services/categories/assessments.html" class="category-link" data-category-id="assessments">
         <h3 id="assessments-title">Assessments</h3>
         <p class="category-summary">Assessments for dyslexia and other specific learning difficulties.</p>
-        <p class="service-count">5 services</p>
+        <p class="service-count">9 services</p>
       </a>
     </article>
     <article class="service-panel clickable category-panel" id="category-early-years" aria-labelledby="early-years-title">
@@ -372,7 +429,7 @@
       <a href="services/categories/speech-and-language.html" class="category-link" data-category-id="speech-and-language-therapy">
         <h3 id="speech-and-language-therapy-title">Speech and Language</h3>
         <p class="category-summary">Speech and language therapy services.</p>
-        <p class="service-count">2 services</p>
+        <p class="service-count">4 services</p>
       </a>
     </article>
     <article class="service-panel clickable category-panel" id="category-training-and-development" aria-labelledby="training-and-development-title">
@@ -393,7 +450,7 @@
       <a href="services/categories/other-services.html" class="category-link" data-category-id="other">
         <h3 id="other-title">Other Services</h3>
         <p class="category-summary">Other services we provide.</p>
-        <p class="service-count">2 services</p>
+        <p class="service-count">3 services</p>
       </a>
     </article>
 
@@ -427,6 +484,17 @@
                 <button class="carousel-btn next" aria-label="Next image">&#10095;</button>
             </div>
             <div class="gallery-title" id="gallery-title"></div>
+        </section>
+        <section id="testimonials">
+            <h2>What People Say</h2>
+            <div class="testimonial-carousel" id="testimonial-carousel">
+                <button class="carousel-btn prev" aria-label="Previous testimonial">&#10094;</button>
+                <div class="testimonial-track" id="testimonial-track">
+                    <!-- Testimonials are loaded dynamically -->
+                </div>
+                <button class="carousel-btn next" aria-label="Next testimonial">&#10095;</button>
+            </div>
+            <div class="testimonial-dots" id="testimonial-dots"></div>
         </section>
         <section id="contact">
             <h2>Contact Us</h2>

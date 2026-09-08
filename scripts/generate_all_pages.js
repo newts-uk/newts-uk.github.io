@@ -27,4 +27,8 @@ require('./update_localbusiness.js');
 console.log('\n5. Updating footer policy links...');
 require('./generate_policies.js');
 
+// Regenerate sitemap.xml
+console.log('\n6. Generating sitemap.xml...');
+require('./generate_sitemap.js');
+
 console.log('\nAll pages and structured data generated successfully!');

@@ -104,6 +104,7 @@ const template = (service, slug, category) => `<!DOCTYPE html>
         <li><a href="../index.html#about">About</a></li>
         <li><a href="../index.html#services">Services</a></li>
         <li><a href="../index.html#gallery">Gallery</a></li>
+        <li><a href="../index.html#testimonials">Testimonials</a></li>
         <li><a href="../index.html#contact">Contact</a></li>
         <li><a href="https://forms.newts.uk/forms/referral-form">Referral Form</a></li>
       </ul>
