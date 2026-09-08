@@ -1659,3 +1659,106 @@ footer {
         max-height: 200px;
     }
 }
+/* Testimonial Carousel */
+#testimonials {
+    min-height: auto;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* section/.testimonial-dots set display, which beats the UA [hidden] rule */
+#testimonials[hidden],
+.testimonial-dots[hidden] {
+    display: none;
+}
+#testimonials h2 {
+    margin-bottom: 24px;
+    color: #294D3B;
+}
+.testimonial-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial-track {
+    width: 100%;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+.testimonial {
+    display: none;
+    margin: 0;
+    text-align: center;
+}
+.testimonial.active {
+    display: block;
+    animation: testimonial-fade 0.4s ease;
+}
+@keyframes testimonial-fade {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: none; }
+}
+.testimonial blockquote {
+    position: relative;
+    max-width: 62ch;
+    margin: 0 auto 20px;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-style: italic;
+    color: #333;
+    text-align: left;
+}
+.testimonial blockquote p {
+    margin: 0 0 1em;
+}
+.testimonial blockquote p:last-child {
+    margin-bottom: 0;
+}
+.testimonial blockquote::before {
+    content: "\201C";
+    display: block;
+    font-size: 4rem;
+    line-height: 1;
+    color: #294D3B;
+    opacity: 0.35;
+    font-style: normal;
+}
+.testimonial figcaption {
+    font-weight: 600;
+    color: #294D3B;
+}
+.testimonial figcaption::before {
+    content: "\2014 ";
+}
+.testimonial-dots {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+}
+.testimonial-dot {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: rgba(41,77,59,0.3);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.testimonial-dot.active,
+.testimonial-dot:hover {
+    background: #294D3B;
+}
+@media (max-width: 600px) {
+    .testimonial-track {
+        padding: 0 44px;
+    }
+    .testimonial blockquote {
+        font-size: 1.1rem;
+    }
+}

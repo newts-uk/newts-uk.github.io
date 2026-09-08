@@ -223,3 +223,68 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadGallery();
 });
+
+// Testimonial carousel (dynamic from data/testimonials.json)
+document.addEventListener('DOMContentLoaded', async () => {
+    const carousel = document.getElementById('testimonial-carousel');
+    const track = document.getElementById('testimonial-track');
+    const dots = document.getElementById('testimonial-dots');
+    if (!carousel || !track || !dots) return;
+    const section = document.getElementById('testimonials');
+    let items = [];
+    try {
+        const res = await fetch('data/testimonials.json');
+        items = ((await res.json()).testimonials || []).filter(t => t.enabled !== false);
+    } catch (e) {
+        items = [];
+    }
+    if (items.length === 0) {
+        section.hidden = true;
+        return;
+    }
+    track.innerHTML = '';
+    items.forEach((t, i) => {
+        const fig = document.createElement('figure');
+        fig.className = 'testimonial' + (i === 0 ? ' active' : '');
+        const quote = document.createElement('blockquote');
+        // blank lines in the CMS statement become paragraphs
+        (t.statement || '').split(/\n\s*\n/).forEach(para => {
+            const p = document.createElement('p');
+            p.textContent = para.trim();
+            quote.appendChild(p);
+        });
+        const cap = document.createElement('figcaption');
+        cap.textContent = t.from;
+        fig.append(quote, cap);
+        track.appendChild(fig);
+
+        const dot = document.createElement('button');
+        dot.className = 'testimonial-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', `Testimonial ${i + 1}`);
+        dot.addEventListener('click', () => show(i));
+        dots.appendChild(dot);
+    });
+    const slides = track.querySelectorAll('.testimonial');
+    const dotEls = dots.querySelectorAll('.testimonial-dot');
+    let current = 0;
+    function show(idx) {
+        current = (idx + items.length) % items.length;
+        slides.forEach((s, i) => s.classList.toggle('active', i === current));
+        dotEls.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+    carousel.querySelector('.carousel-btn.prev').addEventListener('click', () => show(current - 1));
+    carousel.querySelector('.carousel-btn.next').addEventListener('click', () => show(current + 1));
+    let startX = null;
+    carousel.addEventListener('touchstart', e => { startX = e.touches[0].clientX; });
+    carousel.addEventListener('touchend', e => {
+        if (startX === null) return;
+        const dx = e.changedTouches[0].clientX - startX;
+        if (dx > 40) show(current - 1);
+        else if (dx < -40) show(current + 1);
+        startX = null;
+    });
+    if (items.length < 2) {
+        carousel.querySelectorAll('.carousel-btn').forEach(b => (b.hidden = true));
+        dots.hidden = true;
+    }
+});
