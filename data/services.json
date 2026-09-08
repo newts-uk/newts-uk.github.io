@@ -169,13 +169,6 @@
       "details": "<ul>\n<li>Schools. In school training for SENCOs, Teachers or Teaching Assistants.</li>\n<li>Parents. Online or small face-to-face group training available.</li>\n</ul>"
     },
     {
-      "id": "adhd-child-evaluation",
-      "title": "ADHD Child Evaluation",
-      "category": "assessments",
-      "summary": "Following a full diagnostic dyslexia assessment or a spotlight assessment, we offer an additional interview which can help highlight the core characteristics of ADHD.",
-      "details": "<ul>\n<li>Available for ages 5-17 years</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis of ADHD</li>\n<li>£120</li>\n</ul>"
-    },
-    {
       "id": "specialist-teaching-for-children-with-send",
       "title": "Specialist Teaching for Children with SEND",
       "category": "specialist-teaching",
@@ -237,6 +230,13 @@
       "category": "assessments",
       "summary": "As part of a Full Diagnostic Assessment, we offer an additional interview which can help highlight the core characteristics of ADHD.",
       "details": "<ul>\n<li>Suitable for Age 18+</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis</li>\n<li>£120</li>\n</ul>"
+    },
+    {
+      "id": "adhd-child-evaluation",
+      "title": "ADHD Child Evaluation",
+      "category": "assessments",
+      "summary": "Following a full diagnostic dyslexia assessment or a spotlight assessment, we offer an additional interview which can help highlight the core characteristics of ADHD.",
+      "details": "<ul>\n<li>Available for ages 5-17 years</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis of ADHD</li>\n<li>£120</li>\n</ul>"
     }
   ]
 }
