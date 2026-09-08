@@ -50,13 +50,6 @@
       "details": "<ul>\n<li>Completion of Part 1 of Form 8 is required prior to the assessment</li>\n<li>A thorough evaluation of the student&#39;s needs.</li>\n<li>Completion of Part 2 of Form 8 by assessor.</li>\n</ul>"
     },
     {
-      "id": "adhd-child-evaluation",
-      "title": "ADHD Child Evaluation",
-      "category": "assessments",
-      "summary": "Following a full diagnostic dyslexia assessment or a spotlight assessment, we offer an additional interview which can help highlight the core characteristics of ADHD.",
-      "details": "<ul>\n<li>Available for ages 5-17 years</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis of ADHD</li>\n<li>£120</li>\n</ul>"
-    },
-    {
       "id": "adult-support",
       "title": "Adult Support",
       "category": "post-16",
@@ -181,6 +174,13 @@
       "category": "training-and-development",
       "summary": "Bespoke training can be arranged on request. Usually we cover executive function skills, dyslexia and neurodiversity.",
       "details": "<ul>\n<li>Schools. In school training for SENCOs, Teachers or Teaching Assistants.</li>\n<li>Parents. Online or small face-to-face group training available.</li>\n</ul>"
+    },
+    {
+      "id": "adhd-child-evaluation",
+      "title": "ADHD Child Evaluation",
+      "category": "assessments",
+      "summary": "Following a full diagnostic dyslexia assessment or a spotlight assessment, we offer an additional interview which can help highlight the core characteristics of ADHD.",
+      "details": "<ul>\n<li>Available for ages 5-17 years</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis of ADHD</li>\n<li>£120</li>\n</ul>"
     },
     {
       "id": "specialist-teaching-for-children-with-send",
