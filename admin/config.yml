@@ -108,3 +108,19 @@ collections:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Alt Text, widget: string, hint: "Short description for screen readers." }
               - { name: title, label: Caption, widget: string }
+
+  - name: testimonials
+    label: Testimonials
+    label_singular: Testimonial
+    folder: data/testimonials
+    extension: json
+    format: json
+    create: true
+    identifier_field: from
+    summary: "{{from}} — {{date}}"
+    sortable_fields: [date, from]
+    fields:
+      - { name: statement, label: Statement, widget: text, hint: "The quote, in the person's own words. Don't add quotation marks." }
+      - { name: from, label: From, widget: string, hint: "Who said it, e.g. Parent of a Year 4 pupil." }
+      - { name: enabled, label: Show on website, widget: boolean, default: true }
+      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, picker_utc: true }
