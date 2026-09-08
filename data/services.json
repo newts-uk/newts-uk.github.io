@@ -162,13 +162,6 @@
       "details": "<ul>\n<li>Approximately 1.5 hours, this can be completed on children from age 6+</li>\n<li>Bespoke Spotlight will cover standardised test of underlying ability and one further area of cognitive processing; such as phonological processing or working memory. A word reading and word spelling test will also be administered.</li>\n<li>Detailed short written report, including recommendations.</li>\n<li>Can be accompanied by a pupil focussed observation in class, for an additional fee.</li>\n</ul>"
     },
     {
-      "id": "adhd-adult-interview",
-      "title": "ADHD Adult Interview",
-      "category": "assessments",
-      "summary": "As part of a Full Diagnostic Assessment, we offer an additional interview which can help highlight the core characteristics of ADHD.",
-      "details": "<ul>\n<li>Suitable for Age 18+</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis</li>\n<li>£120</li>\n</ul>"
-    },
-    {
       "id": "training",
       "title": "Training",
       "category": "training-and-development",
@@ -188,6 +181,13 @@
       "category": "specialist-teaching",
       "summary": "1:1 and small group specialist teaching for children with SEND. £60 per hour or £300 for a block of 6 hours.",
       "details": "<ul>\n<li>Some individuals may benefit from specialist teaching to support their learning and development. This can be delivered at the Strixton centre.</li>\n<li>Specialist teaching can focus on areas such as literacy, numeracy, executive function skills, social skills, and emotional regulation.</li>\n<li>Sessions are tailored to the individual&#39;s needs and learning style.</li>\n<li>Progress is regularly reviewed and feedback is provided to parents and carers.</li>\n<li>Six week blocks are available at a discounted rate.</li>\n</ul>"
+    },
+    {
+      "id": "adhd-adult-interview",
+      "title": "ADHD Adult Interview",
+      "category": "assessments",
+      "summary": "As part of a Full Diagnostic Assessment, we offer an additional interview which can help highlight the core characteristics of ADHD.",
+      "details": "<ul>\n<li>Suitable for Age 18+</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis</li>\n<li>£120</li>\n</ul>"
     },
     {
       "id": "workplace-needs-assessments",
