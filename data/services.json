@@ -43,6 +43,13 @@
   ],
   "services": [
     {
+      "id": "adhd-child-evaluation",
+      "title": "ADHD Child Evaluation",
+      "category": "assessments",
+      "summary": "Following a full diagnostic dyslexia assessment or a spotlight assessment, we offer an additional interview which can help highlight the core characteristics of ADHD.",
+      "details": "<ul>\n<li>Available for ages 5-17 years</li>\n<li>Will support onward referral</li>\n<li>Not a diagnosis of ADHD</li>\n<li>£120</li>\n</ul>"
+    },
+    {
       "id": "access-arrangements-testing",
       "title": "Access Arrangements Testing",
       "category": "assessments",
