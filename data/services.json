@@ -43,13 +43,6 @@
   ],
   "services": [
     {
-      "id": "adult-executive-function-coaching",
-      "title": "Adult Executive Function Coaching",
-      "category": "post-16",
-      "summary": "Online coaching to explore executive functioning, identify barriers and develop practical strategies that work for the individual within their role.",
-      "details": "<ul>\n<li>Online coaching</li>\n<li>Can be booked as a 50 minute session</li>\n<li>Or block booked for 6 sessions</li>\n<li>Age 18+</li>\n</ul>"
-    },
-    {
       "id": "access-arrangements-testing",
       "title": "Access Arrangements Testing",
       "category": "assessments",
@@ -118,6 +111,13 @@
       "category": "early-years",
       "summary": "Foundation stage project reception year. 13-14 hours. £700.",
       "details": "<ul>\n<li>Meeting with staff to plan via zoom</li>\n<li>Two mornings on site with staff carrying out whole cohort play based assessment</li>\n<li>Detailed long report</li>\n<li>Follow up meeting to support planning for cohort development key needs</li>\n<li>Two twilight trainings on topics related to key needs</li>\n</ul>"
+    },
+    {
+      "id": "adult-executive-function-coaching",
+      "title": "Adult Executive Function Coaching",
+      "category": "post-16",
+      "summary": "Online coaching to explore executive functioning, identify barriers and develop practical strategies that work for the individual within their role.",
+      "details": "<ul>\n<li>Online coaching</li>\n<li>Can be booked as a 50 minute session</li>\n<li>Or block booked for 6 sessions</li>\n<li>Age 18+</li>\n</ul>"
     },
     {
       "id": "developmental-language-disorder",
